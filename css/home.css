@@ -1,0 +1,23 @@
+.fondo
+{
+    background-image:url(/imagenes/fondo_jurassico_2.jpg);
+    position: relative;
+    overflow: auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height:auto;
+}
+footer
+{
+    font-style: italic;
+    background-color: rgb(0, 110, 0);
+}
+li
+{
+    color:rgb(0, 110, 0);
+}
+h1
+{
+    color:rgb(0, 110, 0);
+    font-style: italic;
+}
