@@ -1,2 +1,97 @@
 *{margin:0;padding:0;box-sizing:border-box;}
+p
+{
+    padding: 20px;
+}
+li
+{
+    padding: 20px;
+}
+nav
+{
+    background-color: rgba(152, 47, 2, 0.862);
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(70, 28, 2);
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    
+}
 
+h2
+{
+    font-size: 75px;
+    text-align: center;
+}
+
+h3
+{
+    padding: 20px;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.encabezado
+{
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lista_saurica
+{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: block;
+    margin: auto;
+}
+
+main
+{
+    background-color: burlywood;
+}
+
+.apartados
+{
+    text-decoration: none;
+    font-style: none;
+    color: rgb(70, 28, 2);
+    background-color: rgba(152, 47, 2, 0.539);
+    display: inline-table;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;            
+    height: 250px;            
+    border-radius: 15px;
+    font-size: 18px;     
+    border: 3px solid rgb(70, 28, 2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista_dinosaurios
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.texto_lista
+{
+    color: rgb(64, 25, 1);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -1,23 +1,139 @@
-.fondo
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body
 {
-    background-image:url(/imagenes/fondo_jurassico_2.jpg);
-    position: relative;
-    overflow: auto;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 255, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 255, 0);
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(115, 255, 0);
+    top: 0;
+}
+
+.sauriolink
+{
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fondo_jurassico
+{
+    background-image:url(/imagenes/fondo_jurassico_renderizado.png);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
     background-repeat: no-repeat;
-    max-width: 100%;
-    height:auto;
+    background-size: cover;
+    background-position: center;
 }
-footer
+
+.main_content
 {
-    font-style: italic;
-    background-color: rgb(0, 110, 0);
+    background-color: rgba(0, 105, 0, 0.418);
+    padding: 20px;
+    margin: 100px;
+    border-radius: 25px;
+    border: 2px solid rgb(115, 255, 0);
 }
-li
+
+.informacion_base
 {
-    color:rgb(0, 110, 0);
+    color: rgb(115, 255, 0);
+    font-size: 18px;
+    line-height: 1.5;
 }
+
 h1
 {
-    color:rgb(0, 110, 0);
+    color:rgb(115, 255, 0);
     font-style: italic;
+}
+
+.apartados
+{
+    color: rgb(115, 255, 0);
+    background-color: rgba(0, 105, 0, 0.418);
+    display: inline-table;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;            
+    height: 250px;            
+    border-radius: 15px;
+    font-size: 18px;     
+    border: 3px solid rgb(115, 255, 0);
+    text-align: justify;
+}
+
+.cuadrados_de_mierda
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.pie_pagina
+{
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(115, 255, 0);
+    color: rgb(115, 255, 0);
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    
+}
+
+.informacion_left
+{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+}
+
+.informacion_center
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.informacion_right
+{
+    text-transform: uppercase;
+    align-items: center;
+    text-align: right;
+    font-size: 14px;
+}
+
+.redes
+{
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    font-size: 14px;
 }
