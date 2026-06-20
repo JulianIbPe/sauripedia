@@ -1,0 +1,80 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+nav
+{
+    background-color: rgba(152, 47, 2, 0.862);
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(70, 28, 2);
+    top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.encabezado
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.separador
+{
+    display: flex;
+    gap: 20px;
+    padding: 20px;         
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.carnivoro
+{
+    background-color: rgba(255, 0, 0, 0.482);
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 0, 0);
+    font-style: none;
+}
+
+.herbivoro
+{
+    background-color: rgba(49, 202, 2, 0.616);
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    border-radius: 25px;
+    border: 2px solid rgb(102, 255, 0);
+    font-style: none;
+}
+
+.fondo_imagen
+{
+    background-color: rgba(0, 0, 0, 0.504);
+    border: 2px solid rgb(0, 0, 0);
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    gap: 20px;
+    margin: 20px;
+}
+
+.imagen
+{
+    width: 100%;
+    max-width: 665px;
+    height: auto;
+    object-fit: cover;
+}
