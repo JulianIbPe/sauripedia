@@ -19,7 +19,6 @@ nav
     top: 0;
     text-align: center;
     justify-content: center;
-    
 }
 
 h2
@@ -86,7 +85,8 @@ main
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 50px;
     gap: 20px;
 }
 
