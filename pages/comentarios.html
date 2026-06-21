@@ -4,7 +4,7 @@
         <title>Comentarios</title>
         <link rel="stylesheet" href="/css/estilos.css">
     </head>
-    <body>
+    <body id="fondo_comentarios">
         <header>
             <nav>
                 <ul>
@@ -16,6 +16,18 @@
                 </ul>
             </nav>
         </header>
-        <h1>juani tonto</h1>
+        <main>
+        <h2>Comentarios</h2>
+        <h3 id="subtitulo_comentario">Brinda tu opinión sobre los dinosaurios y el mundo prehistórico:</h3>
+            <section id="sec_comentarios">
+                <form action="/ComentariosServlet" method="POST" accept-charset="UTF-8">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
