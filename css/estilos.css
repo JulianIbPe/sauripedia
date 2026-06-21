@@ -40,6 +40,13 @@ li
     max-width: 500px;
     max-height: 500px;
 }
+#fondo_quiz
+{
+    background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 nav
 {
     background-color: rgba(152, 47, 2, 0.862);
