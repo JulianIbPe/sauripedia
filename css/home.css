@@ -138,3 +138,11 @@ h1
     text-decoration: none;
     font-size: 14px;
 }
+
+.opcion_seleccionada
+{
+    color: rgba(81, 175, 5, 0.5);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
