@@ -18,7 +18,7 @@ li
 }
 #sec_comentarios
 {
-    background-color: rgba(152, 47, 2, 0.862);
+    background-color: rgba(207, 73, 16, 0.862);
     padding: 20px;
     margin-top: 20px;
     margin-left: 100px;
@@ -31,14 +31,43 @@ li
     text-align: center;
     padding: 20px;
 }
+.introduccion_mundo
+{
+    background-color: rgba(207, 73, 16, 0.862);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(70, 28, 2);
+}
+.titulos_mapas
+{
+    text-align: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style: none;
+    font-size: 60px;
+}
+.cuadrados_mapas
+{
+    background-color: rgba(207, 73, 16, 0.862);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(70, 28, 2);
+    margin-bottom: 20px;
+}
 .mapas
 {
+    aspect-ratio: 1/1;
     display: block;
     margin: auto;
     padding: 20px;
     max-width: 100%;
     max-width: 500px;
     max-height: 500px;
+
 }
 #fondo_quiz
 {
@@ -102,21 +131,25 @@ main
 
 .apartados
 {
+    background-color: rgba(207, 73, 16, 0.862);
+    border: 3px solid rgb(70, 28, 2);
+    color: rgb(70, 28, 2);
     text-decoration: none;
     font-style: none;
-    color: rgb(70, 28, 2);
-    background-color: rgba(152, 47, 2, 0.539);
+    text-align: center;
     display: inline-table;
+    position: relative;
+    overflow: hidden;
     gap: 20px;
     padding: 20px;
     width: 300px;            
     height: 250px;            
     border-radius: 15px;
     font-size: 18px;     
-    border: 3px solid rgb(70, 28, 2);
-    text-align: center;
     margin-bottom: 20px;
 }
+
+
 
 .lista_dinosaurios
 {
