@@ -58,26 +58,33 @@ li
     list-style: none;
     font-size: 60px;
 }
-.cuadrados_mapas
-{
-    background-color: rgba(207, 73, 16, 0.862);
-    padding: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
-    border-radius: 25px;
-    border: 2px solid rgb(70, 28, 2);
-    margin-bottom: 20px;
-}
 .mapas
 {
-    aspect-ratio: 1/1;
-    display: block;
-    margin: auto;
-    padding: 20px;
+    display: none;
+    width: 100%;
     max-width: 100%;
-    max-width: 500px;
-    max-height: 500px;
-
+    height: 90vh;
+    object-fit: contain;
+    background-color: burlywood;
+}
+.mapa_activo
+{
+    display: block;
+    animation: aparecer_mapa 0.3s ease;
+}
+@keyframes aparecer_mapa
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.fondo_mapas
+{
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
 }
 #fondo_quiz
 {
@@ -92,6 +99,7 @@ nav
     padding: 10px;
     width: 100%;
     border-bottom: 2px solid rgb(70, 28, 2);
+    border-top: 2px solid rgb(70, 28, 2);
     top: 0;
     text-align: center;
     justify-content: center;
@@ -134,6 +142,18 @@ ul
     margin: auto;
 }
 
+.separacion_alfabetica
+{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 main
 {
     background-color: burlywood;
@@ -165,8 +185,7 @@ main
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    margin-left: 50px;
+    justify-content: center;
     gap: 20px;
 }
 

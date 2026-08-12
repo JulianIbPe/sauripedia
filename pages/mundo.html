@@ -9,10 +9,10 @@
             <nav>
                 <ul>
                     <li><a class="encabezado" href="/index.html" >Inicio</a></li>
-                    <li><a class="encabezado" href="pages/dinosaurioslista.html">Dinosaurios</a></li>
-                    <li><a class="opcion_seleccionada" href="pages/mundo.html">Mundo prehistorico</a></li>
-                    <li><a class="encabezado" href="pages/quiz.html" >Quiz</a></li>
-                    <li><a class="encabezado" href="pages/comentarios.html">Comentarios</a></li>
+                    <li><a class="encabezado" href="dinosaurioslista.html">Dinosaurios</a></li>
+                    <li><a class="opcion_seleccionada" href="mundo.html">Mundo prehistorico</a></li>
+                    <li><a class="encabezado" href="quiz.html" >Quiz</a></li>
+                    <li><a class="encabezado" href="comentarios.html">Comentarios</a></li>
                 </ul>
             </nav>
         </header>
@@ -25,22 +25,21 @@
                 <p>El mundo de los dinosaurios estaba lleno de vida y diversidad, y aunque muchos de estos animales se extinguieron hace millones de años, su legado sigue vivo en la actualidad a través de los fósiles y la investigación científica.</p>
             </div>
             <h3 class="h3_mundos">Mapas de los continentes durante la era de los dinosaurios</h3>
-            <ol>
-                <section>
-                    <div class="cuadrados_mapas">
-                        <li class="titulos_mapas"><h3>Periodo Triásico</h3></li>
-                        <img class="mapas" src="/imagenes/mapa triásico.png" >
-                    </div>
-                    <div class="cuadrados_mapas">
-                        <li class="titulos_mapas"><h3>Periodo Jurásico</h3></li>
-                        <img class="mapas" src="/imagenes/mapa jurásico.png" >
-                    </div>
-                    <div class="cuadrados_mapas">
-                        <li class="titulos_mapas"><h3>Periodo Cretásico</h3></li>
-                        <img class="mapas" src="/imagenes/mapa cretásico.png" >
-                    </div>
-                </section>
-            </ol>
+            <nav>
+                <ul>
+                    <button type="button" data-periodo="triasico">Periodo Triásico</button>
+                    <button type="button" data-periodo="jurasico">Periodo Jurásico</button>
+                    <button type="button" data-periodo="cretasico">Periodo Cretásico</button>
+                </ul>
+            </nav>
+                    <section>
+                        <div class="fondo_mapas">
+                            <img class="mapas" id="triasico" src="/imagenes/mapa triásico.png">
+                            <img class="mapas" id="jurasico" src="/imagenes/mapa jurásico.png">
+                            <img class="mapas" id="cretasico" src="/imagenes/mapa cretásico.png">
+                        </div>
+                    </section>
         </main>
+        <script src="/javascript/codigo.js"></script>
     </body>
 </html>
