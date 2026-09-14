@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'jurassic world';
+    src: url(../Fuentes/african.ttf);
+}
+
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body
@@ -145,4 +150,9 @@ h1
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
+}
+
+h2
+{
+    font-family: 'jurassic world';
 }

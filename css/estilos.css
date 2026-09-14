@@ -1,8 +1,14 @@
+@font-face {
+    font-family:'jurassic world';
+    src: url(/Fuentes/african.ttf);
+}
+
 *{margin:0;padding:0;box-sizing:border-box;}
 
 p
 {
     padding-left: 20px;
+    font-family: arial;
 }
 
 li
@@ -109,11 +115,13 @@ h2
 {
     font-size: 75px;
     text-align: center;
+    font-family: 'jurassic world';
 }
 
 h3
 {
     padding: 20px;
+    font-family: arial;
 }
 
 ul
