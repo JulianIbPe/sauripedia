@@ -1,6 +1,11 @@
 @font-face {
-    font-family:'jurassic world';
-    src: url(/Fuentes/african.ttf);
+    font-family:'jurassic';
+    src: url(../Fuentes/african.ttf);
+}
+
+@font-face {
+    font-family:'africa';
+    src: url(../Fuentes/africa.ttf);
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -115,7 +120,7 @@ h2
 {
     font-size: 75px;
     text-align: center;
-    font-family: 'jurassic world';
+    font-family: 'africa';
 }
 
 h3
@@ -187,7 +192,24 @@ main
     margin-bottom: 20px;
 }
 
+.busqueda_saurus
+{
+    background-color: rgba(255, 255, 255, 0.862);
+    border: 3px solid rgb(70, 28, 2);
+    color: black;
+    margin: 20px;
+    gap: 10px;
+    padding: 15px;
+    width: 280px;            
+    height: 75px;            
+    border-radius: 85px;
+    font-size: 18px;     
+}
 
+.busqueda_saurus::placeholder
+{
+    color: black;
+}
 
 .lista_dinosaurios
 {
@@ -223,4 +245,58 @@ main
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
+}
+
+.boton_mapa
+{
+    background-color: rgba(207, 73, 16, 0.862);
+    border: 3px solid rgb(70, 28, 2);
+    color: rgb(70, 28, 2);
+
+    margin-right: 75px;
+    margin-left: 75px;
+    gap: 15px;
+    padding: 20px;
+    width: 200px;            
+    height: 75px;            
+    border-radius: 45px;
+    font-size: 18px;     
+}
+
+#lista_alfabetica
+{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-color: rgba(10, 130, 235, 0);
+    border-radius: 5%;
+    margin-top: 10px;
+    flex-direction:column;
+    text-decoration: none;
+    position:sticky;
+    overflow: hidden;
+    padding: 10px;
+    max-width: 3%;
+    width: 3%;
+    text-decoration: none;
+    top: 0;
+    max-height: 100vh;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    padding:0%;
+}
+#items_lista_abc
+{
+    flex-direction: column;
+    gap:5px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.quiz_h3
+{
+    text-align: center;
+    font-size: 25px;
 }

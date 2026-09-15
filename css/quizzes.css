@@ -1,0 +1,42 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+#fondo_quiz
+{
+    background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav
+{
+    background-color: rgba(152, 47, 2, 0.862);
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(70, 28, 2);
+    border-top: 2px solid rgb(70, 28, 2);
+    top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.encabezado
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main
+{
+    background-color: burlywood;
+}

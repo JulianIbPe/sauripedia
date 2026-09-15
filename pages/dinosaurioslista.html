@@ -17,10 +17,10 @@
             </nav>
         </header>
         <main>
-            <form action="/buscar" method="GET">
-                <input type="search" id="busqueda" name="q" placeholder="Escribe tu búsqueda aquí..." required>
-            </form>
             <h2>Lista de Dinosaurios</h2>
+            <form action="/buscar" method="GET">
+                <input class="busqueda_saurus" type="search" id="busqueda" name="q" placeholder="Escribe tu búsqueda aquí..." required>
+            </form>
             <section>
                 <h3 class="separacion_alfabetica">A</h3>   
                 <ol class="lista_dinosaurios">
@@ -98,7 +98,9 @@
                     <li class="apartados"><a class="texto_lista" href="dinosaurios/velociraptor.html"> Velocirráptor</a><p></p><img class="lista_saurica" src="/imagenes/velocirráptor.png"></li>
                 </ol>
             </section>
+            
         </main>
         <script src="/javascript/busqueda.js"></script>
+        <script src="/javascript/panel_alfabetico.js"></script>
     </body>
 </html>
