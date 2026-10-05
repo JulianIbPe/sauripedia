@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz fácil</title>
         <link rel="stylesheet" href="/css/quizzes.css">
+        <script src="/js/quiz.js" defer></script>
     </head>
     <body id="fondo_quiz">
         <header>
@@ -17,7 +20,36 @@
             </nav>
         </header>
         <main>
-            
+            <section id="quiz" data-nivel="facil">
+                <h1 class="quiz-titulo">Quiz de dinosaurios: nivel fácil</h1>
+
+                <!-- Pantalla de preguntas -->
+                <div id="quiz-juego">
+                    <div class="quiz-info">
+                        <span id="contador"></span>
+                        <span id="puntaje"></span>
+                    </div>
+                    <div class="barra">
+                        <div id="barra-progreso"></div>
+                    </div>
+
+                    <p id="tipo-pregunta" class="tipo-pregunta"></p>
+                    <h2 id="pregunta"></h2>
+                    <div id="opciones"></div>
+                    <p id="mensaje" class="mensaje"></p>
+
+                    <button id="btn-siguiente" class="btn-quiz" type="button" hidden>Siguiente</button>
+                </div>
+
+                <!-- Pantalla de resultado -->
+                <div id="quiz-resultado" hidden>
+                    <h2>¡Quiz terminado!</h2>
+                    <p id="puntaje-final"></p>
+                    <p id="mensaje-final"></p>
+                    <button id="btn-reiniciar" class="btn-quiz" type="button">Intentar de nuevo</button>
+                    <a class="btn-quiz btn-link" href="/pages/quiz.html">Elegir otro nivel</a>
+                </div>
+            </section>
         </main>
     </body>
 </html>
