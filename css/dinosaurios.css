@@ -156,3 +156,9 @@ ul
     height: auto;
     object-fit: cover;
 }
+
+/* El título de la ficha ahora es h1; mantiene el tamaño que tenía como h2 */
+h1
+{
+    font-size: 1.5em;
+}

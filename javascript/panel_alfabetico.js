@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () =>
         {
             const letra = boton.dataset.letra;
 
-            // Busca el h3 cuyo texto coincide con la letra del botón
-            const letraElegida = Array.from(titulos).find(h3 => h3.textContent.trim().toUpperCase() === letra.toUpperCase());
+            // Busca el título (h2) cuyo texto coincide con la letra del botón
+            const letraElegida = Array.from(titulos).find(titulo => titulo.textContent.trim().toUpperCase() === letra.toUpperCase());
 
             if (letraElegida) 
             {

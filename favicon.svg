@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Sauripedia: huella de dinosaurio</title>
+  <rect width="64" height="64" rx="14" fill="#0b0f08"/>
+  <defs>
+    <g id="dedo">
+      <rect x="-6" y="-26" width="12" height="32" rx="6"/>
+      <path d="M-4.8 -22 L0 -38 L4.8 -22Z"/>
+    </g>
+  </defs>
+  <g fill="#73ff00">
+    <use href="#dedo" transform="translate(32 41) scale(.9)"/>
+    <use href="#dedo" transform="translate(23 45) rotate(-42) scale(.72)"/>
+    <use href="#dedo" transform="translate(41 45) rotate(42) scale(.72)"/>
+    <path d="M20.5 47 C20.5 42 25 40 32 40 C39 40 43.5 42 43.5 47 C43.5 53 39 58 32 58 C25 58 20.5 53 20.5 47Z"/>
+  </g>
+</svg>
