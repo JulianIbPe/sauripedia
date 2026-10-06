@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'jurassic world';
-    src: url(../Fuentes/african.ttf);
+    src: url(../fuentes/african.ttf);
+    font-display: swap;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -37,6 +38,7 @@ ul
 {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -44,7 +46,7 @@ ul
 .fondo_jurassico
 {
     background-color: chartreuse;
-    background-image:url(/imagenes/fondo_jurassico_renderizado.png);
+    background-image: url(../imagenes/fondo_jurassico_renderizado.png);
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -82,17 +84,30 @@ h1
     display: inline-table;
     gap: 20px;
     padding: 20px;
-    width: 300px;            
-    height: 250px;            
+    width: 300px;
+    height: 250px;
     border-radius: 15px;
-    font-size: 18px;     
+    font-size: 18px;
     border: 3px solid rgb(115, 255, 0);
     text-align: justify;
 }
 
-.cuadrados_de_mierda
+.apartados h2 a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.apartados h2 a:hover,
+.apartados h2 a:focus-visible
+{
+    text-decoration: underline;
+}
+
+.contenedor_apartados
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -127,6 +142,7 @@ h1
 {
     text-align: center;
     font-size: 18px;
+    font-style: normal;
 }
 
 .informacion_right
@@ -135,6 +151,12 @@ h1
     align-items: center;
     text-align: right;
     font-size: 14px;
+}
+
+.titulo_footer
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.17em;
 }
 
 .redes
@@ -146,13 +168,28 @@ h1
 
 .opcion_seleccionada
 {
-    color: rgba(81, 175, 5, 0.5);
-    text-decoration: none;
+    color: rgb(81, 175, 5);
+    text-decoration: underline;
     font-size: 25px;
     font-weight: bold;
 }
 
+a:focus-visible
+{
+    outline: 3px solid rgb(115, 255, 0);
+    outline-offset: 3px;
+}
+
 h2
 {
-    font-family: 'jurassic world';
+    font-family: 'jurassic world', Arial, sans-serif;
+}
+
+@media (max-width: 768px)
+{
+    .main_content { margin: 20px; }
+    .apartados { width: 100%; height: auto; }
+    .pie_pagina { flex-direction: column; text-align: center; }
+    .informacion_left, .informacion_right { text-align: center; justify-content: center; }
+    .sauriolink, .opcion_seleccionada { font-size: 18px; }
 }

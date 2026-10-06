@@ -1,11 +1,13 @@
 @font-face {
     font-family:'jurassic';
-    src: url(../Fuentes/african.ttf);
+    src: url(../fuentes/african.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family:'africa';
-    src: url(../Fuentes/africa.ttf);
+    src: url(../fuentes/africa.ttf);
+    font-display: swap;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -43,6 +45,50 @@ li
     border-radius: 25px;
     border: 2px solid rgb(70, 28, 2);
 }
+#sec_comentarios form
+{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#sec_comentarios br
+{
+    display: none;
+}
+
+#sec_comentarios label
+{
+    font-family: arial;
+    font-weight: bold;
+}
+
+#sec_comentarios input,
+#sec_comentarios textarea
+{
+    width: 100%;
+    padding: 8px 12px;
+    font-family: arial;
+    font-size: 16px;
+    border: 2px solid rgb(70, 28, 2);
+    border-radius: 10px;
+}
+
+#sec_comentarios button
+{
+    align-self: center;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(152, 47, 2);
+    border: 2px solid rgb(70, 28, 2);
+    border-radius: 20px;
+}
+
 #subtitulo_comentario
 {
     text-align: center;
@@ -59,12 +105,15 @@ li
     border: 2px solid rgb(70, 28, 2);
 }
 
-.h3_mundos
+.titulo_mapas
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: clamp(28px, 5vw, 50px);
+    line-height: 1.15;
+    text-align: center;
+    font-family: 'africa', Impact, sans-serif;
 }
 
 .titulos_mapas
@@ -122,15 +171,20 @@ nav
     justify-content: center;
 }
 
-h2
+/* Jerarquía de títulos: h1 = título de la página, h2 = secciones */
+h1
 {
-    font-size: 75px;
+    font-size: clamp(36px, 8vw, 75px);
+    line-height: 1.15;
+    padding: 14px 10px 6px;
     text-align: center;
-    font-family: 'africa';
+    font-family: 'africa', Impact, sans-serif;
+    overflow-wrap: anywhere;
 }
 
-h3
+h2
 {
+    font-size: 1.17em;
     padding: 20px;
     font-family: arial;
 }
@@ -324,7 +378,7 @@ main form
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.quiz_h3
+.quiz_h2
 {
     text-align: center;
     font-size: 25px;
@@ -368,4 +422,14 @@ main form
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px)
+{
+    .introduccion_mundo { margin-left: 12px; margin-right: 12px; font-size: 18px; }
+    .introduccion_quiz { margin: 24px 12px 0; }
+    .texto_quiz { padding-left: 15px; padding-right: 15px; font-size: 18px; }
+    .quiz_h2 { font-size: 20px; }
+    #sec_comentarios { margin-left: 12px; margin-right: 12px; }
 }
