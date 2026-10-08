@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
-</head>
-<body>
-    <header>
-        <nav class="paginas" aria-label="Navegación principal">
-            <ul>
-                <li><a href="/index.html" class="opcion_seleccionada" aria-current="page">Inicio</a></li>
-                <li><a href="/pages/dinosaurioslista.html">Dinosaurios</a></li>
-                <li><a href="/pages/mundo.html">Mundo prehistórico</a></li>
-                <li><a href="/pages/quiz.html">Quiz</a></li>
-                <li><a href="/pages/comentarios.html">Comentarios</a></li>
-                <li><button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button></li>
-                <li><button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button></li>
-             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Registrarse</h1>
-            <section id="sec_comentarios">
-                <form action="/ComentariosServlet" method="POST" accept-charset="UTF-8">
-                    <label for="nombre">Nombre de usuario:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="nombre">Correo electronico:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="comentario">Contraseña:</label><br>
-                    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
-                    <button type="submit">Regsitrarse</button>
-                </form>
-            </section>
-    </main>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body class="fondo_jurassico">
+        <header>
+            <nav class="paginas" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="/index.html" class="opcion_seleccionada" aria-current="page">Inicio</a></li>
+                    <li><a href="/pages/dinosaurioslista.html">Dinosaurios</a></li>
+                    <li><a href="/pages/mundo.html">Mundo prehistórico</a></li>
+                    <li><a href="/pages/quiz.html">Quiz</a></li>
+                    <li><a href="/pages/comentarios.html">Comentarios</a></li>
+                    <li><button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button></li>
+                    <li><button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <br></br>
+            <br></br>
+            <h1 class="contenedor_apartados">Registrarse</h1>
+                <section class="contenedor_apartados" id="sec_comentarios">
+                    <article class="apartados">
+                        <form action="/ComentariosServlet" method="POST" accept-charset="UTF-8">
+                            <label for="usuario">Nombre de usuario:</label><br>
+                            <input type="text" id="usuario" name="usuario" required><br><br>
+                            <label for="correo">Correo electronico:</label><br>
+                            <input type="text" id="correo" name="correo" required><br><br>
+                            <label for="contraseña">Contraseña:</label><br>
+                            <input type="text" id="contraseña" name="contraseña" required><br><br>
+                            <button type="submit">Regisitrarse</button>
+                        </form>
+                    </article>
+                </section>
+        </main>
+        <footer class="pie_pagina">
+            <div class="informacion_left">
+                <p>© 2026 Sauripedia.<br> Todos los derechos <br>reservados.</p>
+            </div>
+            <address class="informacion_center">
+                <h2 class="titulo_footer">Contacto</h2>
+                <p><a href="mailto:ibeasjulian08@gmail.com" class="redes">ibeasjulian08@gmail.com</a><br><a href="mailto:matiezeflorio6@gmail.com" class="redes">matiezeflorio6@gmail.com</a><br><a href="mailto:juan.i.colombo08@gmail.com" class="redes">juan.i.colombo08@gmail.com</a></p>
+            </address>
+                <div class="informacion_right">
+                    <h2 class="titulo_footer">Redes Sociales</h2>
+                    <p><a href="https://www.facebook.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Facebook</a><br><a href="https://www.twitter.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Twitter</a><br><a href="https://www.instagram.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+                </div>
+            </footer>
+        <script src="/javascript/usuario2.js"></script>
+    </body>
 </html>
