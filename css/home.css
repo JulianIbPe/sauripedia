@@ -62,7 +62,7 @@ body
 .fondo_jurassico
 {
     background-color: chartreuse;
-    background-image: url(../imagenes/fondo_jurassico_renderizado.png);
+    background-image: url(../imagenes/fondo_jurassico_renderizado.webp);
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
