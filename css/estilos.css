@@ -356,12 +356,6 @@ main form
     text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: reduce)
-{
-    .apartados { transition: none; }
-    .apartados:hover, .apartados:active { transform: none; }
-}
-
 .seleccion_mapas
 {
     background-color: rgb(0, 0, 0);
