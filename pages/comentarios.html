@@ -28,15 +28,17 @@
         <link rel="stylesheet" href="/css/estilos.css">
         <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ContactPage", "name": "Comentarios", "url": "https://www.sauripedia.com/pages/comentarios.html", "inLanguage": "es", "isPartOf": {"@type": "WebSite", "name": "Sauripedia", "url": "https://www.sauripedia.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.sauripedia.com/"}, {"@type": "ListItem", "position": 2, "name": "Comentarios", "item": "https://www.sauripedia.com/pages/comentarios.html"}]}]}</script>
     </head>
-    <body id="fondo_comentarios">
+    <body class="fondo_jurassico">
         <header>
-            <nav aria-label="Navegación principal">
+            <nav class="paginas" aria-label="Navegación principal">
                 <ul>
-                    <li><a class="encabezado" href="/index.html">Inicio</a></li>
-                    <li><a class="encabezado" href="dinosaurioslista.html">Dinosaurios</a></li>
-                    <li><a class="encabezado" href="mundo.html">Mundo prehistórico</a></li>
-                    <li><a class="encabezado" href="quiz.html">Quiz</a></li>
-                    <li><a class="opcion_seleccionada" href="comentarios.html" aria-current="page">Comentarios</a></li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/dinosaurioslista.html">Dinosaurios</a></li>
+                    <li><a href="/pages/mundo.html">Mundo prehistórico</a></li>
+                    <li><a href="/pages/quiz.html">Quiz</a></li>
+                    <li><a href="/pages/comentarios.html" class="opcion_seleccionada" aria-current="page">Comentarios</a></li>
+                    <li><button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button></li>
+                    <li><button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button></li>
                 </ul>
             </nav>
         </header>
@@ -71,5 +73,6 @@
             </div>
         </footer>
         <script src="../javascript/comentarios.js"></script>
+        <script src="/javascript/usuario2.js"></script>
     </body>
 </html>

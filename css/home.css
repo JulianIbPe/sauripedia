@@ -220,6 +220,51 @@ h2
     }
 }
 
+/* ===== Formularios de sesión (login / registro) ===== */
+#sec_comentarios .apartados
+{
+    display: block;
+    width: min(100%, 420px);
+    height: auto;
+    text-align: left;
+}
+
+#sec_comentarios label
+{
+    font-weight: bold;
+}
+
+#sec_comentarios input
+{
+    width: 100%;
+    padding: 8px 12px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: rgb(115, 255, 0);
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgb(115, 255, 0);
+    border-radius: 10px;
+}
+
+#sec_comentarios button
+{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(115, 255, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+#sec_comentarios button:hover
+{
+    filter: brightness(0.75);
+}
+
 @media (max-width: 768px)
 {
     .main_content { margin: 20px; }
