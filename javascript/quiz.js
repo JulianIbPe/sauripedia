@@ -1,9 +1,3 @@
-// ============================================================
-//  BANCO DE PREGUNTAS (3 niveles)
-//  tipo "multiple": { pregunta, opciones: [4 opciones], correcta: índice (0 a 3) }
-//  tipo "vf":       { pregunta (afirmación), correcta: true / false, explicacion }
-//  "ref" identifica el dato de la ficha: evita que una misma partida pregunte dos veces lo mismo.
-// ============================================================
 const QUIZZES = {
     // ---------- FÁCIL: identificar la criatura por su descripción, su dieta y su período. ----------
     facil: [

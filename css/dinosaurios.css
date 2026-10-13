@@ -31,9 +31,9 @@ ul
 .fondo_carnivoro
 {
     background-image: url(/imagenes/fondo_carnivoro.webp);
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,9 +42,9 @@ ul
 .fondo_herviboro
 {
     background-image: url(/imagenes/fondo_herviboro.webp);
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,12 +53,20 @@ ul
 .fondo_omnivoro
 {
     background-image: url(/imagenes/fondo_omnivoro.webp);
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+main
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .separador_omnivoro
@@ -161,4 +169,69 @@ ul
 h1
 {
     font-size: 1.5em;
+}
+
+/* ===== Footer (igual al del index) ===== */
+.pie_pagina, .pie_pagina *
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pie_pagina
+{
+    margin-top: auto;
+    background-color: rgb(70, 28, 2);
+    border-top: 2px solid rgb(152, 47, 2);
+    color: rgb(255, 243, 224);
+    padding: 10px 20px;
+    bottom: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+}
+
+.informacion_left
+{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+}
+
+.informacion_center
+{
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.informacion_right
+{
+    text-transform: uppercase;
+    align-items: center;
+    text-align: right;
+    font-size: 14px;
+}
+
+.titulo_footer
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.17em;
+}
+
+.redes
+{
+    color: rgb(255, 243, 224);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 768px)
+{
+    .pie_pagina { flex-direction: column; text-align: center; }
+    .informacion_left, .informacion_right { text-align: center; justify-content: center; }
 }
