@@ -1,8 +1,8 @@
 // Rutas de las páginas de usuario (relativas a index.html).
 // Si cambias la ubicación de los archivos, solo hay que editar este objeto.
 const RUTAS_USUARIO = {
-    login: "..pages/login.html",
-    singin: "..pages/singin.html"
+    login: "../pages/login.html",
+    singin: "../pages/singin.html"
 };
 
 // Redirige a la página asociada a una acción ("login" o "singin").
