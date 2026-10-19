@@ -221,20 +221,35 @@ h2
 }
 
 /* ===== Formularios de sesión (login / registro) ===== */
-#sec_comentarios .apartados
+/* ===== Formularios de sesión (login / registro) ===== */
+.sec_ingreso
 {
-    display: block;
     width: min(100%, 420px);
-    height: auto;
+    padding: 20px;
+    border-spacing: 0 10px;
+    color: rgb(115, 255, 0);
+    background-color: rgba(0, 105, 0, 0.418);
+    border: 3px solid rgb(115, 255, 0);
+    border-radius: 15px;
+    font-size: 18px;
     text-align: left;
 }
 
-#sec_comentarios label
+.sec_ingreso label
 {
     font-weight: bold;
 }
 
-#sec_comentarios input
+/* Primera fila ("Registrarse"): funciona como título */
+.sec_ingreso tr:first-child label
+{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sec_ingreso input[type="text"],
+.sec_ingreso input[type="password"]
 {
     width: 100%;
     padding: 8px 12px;
@@ -246,7 +261,7 @@ h2
     border-radius: 10px;
 }
 
-#sec_comentarios button
+.sec_ingreso input[type="submit"]
 {
     display: block;
     margin: 0 auto;
@@ -260,7 +275,7 @@ h2
     border-radius: 20px;
 }
 
-#sec_comentarios button:hover
+.sec_ingreso input[type="submit"]:hover
 {
     filter: brightness(0.75);
 }

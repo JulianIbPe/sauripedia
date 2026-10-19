@@ -20,19 +20,18 @@
             </nav>
         </header>
         <main>
-            <br></br>
-            <br></br>
-            <h1 class="contenedor_apartados">Iniciar Sesion</h1>
-                <section class="contenedor_apartados" id="sec_comentarios">
-                    <article class="apartados">
-                        <form action="/ComentariosServlet" method="POST" accept-charset="UTF-8">
-                            <label for="correo">Correo electronico:</label><br>
-                            <input type="text" id="correo" name="correo" required><br><br>
-                            <label for="contraseña">Contraseña:</label><br>
-                            <input type="text" id="contraseña" name="contraseña" required><br><br>
-                            <button type="submit">Iniciar sesion</button>
-                        </form>
-                    </article>
+            <br></br><br><br></br>
+                <section class="contenedor_apartados">
+                    <form method="POST" action="/ComentariosServlet" accept-charset="UTF-8">
+                        <table class="sec_ingreso">
+                            <tr><td colspan="2"><h1 >Iniciar Sesion</h1></td></tr>
+                            <tr><td colspan="2"><label>Usuario</label></td></tr>
+                            <tr><td colspan="2"><input type="text" name="txtusuario" /></td></tr>
+                            <tr><td colspan="2"><label>Contraseña</label></td></tr>
+                            <tr><td colspan="2"><input type="password" name="txtpassword" /></td></tr>
+                            <tr><td colspan="2"><input type="submit" value="Ingressar" /></td></tr>
+                        </table>
+                    </form>
                 </section>
         </main>
         <footer class="pie_pagina">
