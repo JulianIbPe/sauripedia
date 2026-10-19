@@ -162,7 +162,7 @@ main
 /* ===== Fondos de las páginas de dinosaurios (sin cambios) ===== */
 .fondo_carnivoro
 {
-    background-image: url(/imagenes/fondo_carnivoro.webp);
+    background-image: url(../imagenes/fondo_carnivoro.webp);
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -173,7 +173,7 @@ main
 
 .fondo_herviboro
 {
-    background-image: url(/imagenes/fondo_herviboro.webp);
+    background-image: url(../imagenes/fondo_herviboro.webp);
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -184,7 +184,7 @@ main
 
 .fondo_omnivoro
 {
-    background-image: url(/imagenes/fondo_omnivoro.webp);
+    background-image: url(../imagenes/fondo_omnivoro.webp);
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
