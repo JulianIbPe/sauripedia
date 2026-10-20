@@ -22,15 +22,15 @@
         <main>
             <br></br><br></br>
                 <section class="contenedor_apartados">
-                    <form method="POST" action="../ComentariosServlet" accept-charset="UTF-8">
+                    <form method="POST" action="../php/registro_usuario_be.php" accept-charset="UTF-8">
                         <table class="sec_ingreso">
                             <tr><td colspan="2"><h1>Registrarse</h1></td></tr>
                             <tr><td><label>Nombre de usuario</label></td></tr>
-                            <tr><td><input type="text" name="txtusuario" /></td></tr>
+                            <tr><td><input type="text" placeholder="Ingrese su nombre de usuario" name="usuario" /></td></tr>
                             <tr><td><label>Correo electronico</label></td></tr>
-                            <tr><td><input type="text" name="txtcorreo" /></td></tr>
+                            <tr><td><input type="text" placeholder="Ingrese su correo electrónico" name="correo" /></td></tr>
                             <tr><td><label>Contraseña</label></td></tr>
-                            <tr><td><input type="password" name="txtpassword" /></td></tr>
+                            <tr><td><input type="password" placeholder="Ingrese su contraseña" name="password" /></td></tr>
                             <tr><td><input type="submit" value="Ingressar" /></td></tr>
                         </table>
                     </form>
