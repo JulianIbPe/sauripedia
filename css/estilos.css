@@ -1,16 +1,169 @@
+/* ===== Diseño base (igual al del index) ===== */
 @font-face {
-    font-family:'jurassic';
+    font-family: 'jurassic world';
     src: url(../fuentes/african.ttf);
     font-display: swap;
 }
 
-@font-face {
-    font-family:'africa';
-    src: url(../fuentes/africa.ttf);
-    font-display: swap;
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body
+{
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 255, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
+main
+{
+    flex: 1;
+}
+
+/* ===== Barra de navegación (nav.paginas) ===== */
+.paginas
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 255, 0);
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(115, 255, 0);
+    top: 0;
+}
+
+.paginas ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.paginas a
+{
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.paginas .opcion_seleccionada
+{
+    color: rgb(81, 175, 5);
+    text-decoration: underline;
+}
+
+a:focus-visible
+{
+    outline: 3px solid rgb(115, 255, 0);
+    outline-offset: 3px;
+}
+
+h1
+{
+    color: rgb(115, 255, 0);
+    font-style: italic;
+}
+
+h2
+{
+    font-family: 'jurassic world', Arial, sans-serif;
+}
+
+/* ===== Botones de sesión (iniciar sesión / registrarse) ===== */
+.boton_sesion
+{
+    --fondo: rgb(255, 255, 255);
+    --texto: rgb(0, 0, 0);
+
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--texto);
+    background-color: var(--fondo);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 4px 16px;
+    cursor: pointer;
+
+    &:hover { filter: brightness(0.75); }
+    &:focus-visible { outline: 3px solid rgb(115, 255, 0); outline-offset: 3px; }
+
+    /* variante: botón "Registrarse" */
+    &.boton_sesion_destacado
+    {
+        --fondo: rgb(115, 255, 0);
+        --texto: rgb(0, 0, 0);
+    }
+}
+
+/* ===== Footer (igual al del index) ===== */
+.pie_pagina
+{
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(115, 255, 0);
+    color: rgb(115, 255, 0);
+    padding: 10px 20px;
+    bottom: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+}
+
+.informacion_left
+{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+}
+
+.informacion_center
+{
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.informacion_right
+{
+    text-transform: uppercase;
+    align-items: center;
+    text-align: right;
+    font-size: 14px;
+}
+
+.titulo_footer
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.17em;
+}
+
+.redes
+{
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ===== Fondo de las páginas (mismo paisaje que el index) ===== */
+.fondo_jurassico
+{
+    background-color: chartreuse;
+    background-image: url(../imagenes/fondo_jurassico_renderizado.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 html, body
 {
@@ -18,33 +171,55 @@ html, body
     max-width: 100%;
 }
 
-p
+/* Título de página: mismo panel que el h1 del index */
+main > h1
 {
-    padding-left: 20px;
-    font-family: arial;
+    background-color: rgba(0, 105, 0, 0.418);
+    border: 2px solid rgb(115, 255, 0);
+    border-radius: 25px;
+    font-size: clamp(28px, 5vw, 44px);
+    line-height: 1.15;
+    text-align: center;
+    overflow-wrap: anywhere;
+    padding: 14px 24px;
+    width: fit-content;
+    max-width: calc(100% - 40px);
+    margin: 20px auto;
 }
 
-li
+ul
 {
-    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-#fondo_comentarios
+
+/* ===== Comentarios ===== */
+#subtitulo_comentario
 {
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    text-align: center;
+    margin: 20px;
 }
+
 #sec_comentarios
 {
-    background-color: rgba(207, 73, 16, 0.862);
+    background-color: rgba(0, 105, 0, 0.418);
     padding: 20px;
     margin-top: 20px;
     margin-left: 100px;
-    margin-right: 110px;
+    margin-right: 100px;
     border-radius: 25px;
-    border: 2px solid rgb(70, 28, 2);
+    border: 2px solid rgb(115, 255, 0);
 }
+
+main form
+{
+    display: flex;
+    justify-content: center;
+}
+
 #sec_comentarios form
 {
     flex-direction: column;
@@ -61,7 +236,6 @@ li
 
 #sec_comentarios label
 {
-    font-family: arial;
     font-weight: bold;
 }
 
@@ -70,9 +244,11 @@ li
 {
     width: 100%;
     padding: 8px 12px;
-    font-family: arial;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
-    border: 2px solid rgb(70, 28, 2);
+    color: rgb(115, 255, 0);
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgb(115, 255, 0);
     border-radius: 10px;
 }
 
@@ -83,26 +259,38 @@ li
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: rgb(152, 47, 2);
-    border: 2px solid rgb(70, 28, 2);
+    color: rgb(0, 0, 0);
+    background-color: rgb(115, 255, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
 }
 
-#subtitulo_comentario
+#sec_comentarios button:hover
 {
-    text-align: center;
-    padding: 20px;
+    filter: brightness(0.75);
 }
+
+/* ===== Mundo prehistórico ===== */
 .introduccion_mundo
 {
-    background-color: rgba(207, 73, 16, 0.862);
+    background-color: rgba(0, 105, 0, 0.418);
     padding: 20px;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 25px;
     font-size: 20px;
-    border: 2px solid rgb(70, 28, 2);
+    line-height: 1.5;
+    border: 2px solid rgb(115, 255, 0);
+}
+
+.introduccion_mundo h2
+{
+    margin-bottom: 12px;
+}
+
+.introduccion_mundo p + p
+{
+    margin-top: 12px;
 }
 
 .titulo_mapas
@@ -113,17 +301,9 @@ li
     font-size: clamp(28px, 5vw, 50px);
     line-height: 1.15;
     text-align: center;
-    font-family: 'africa', Impact, sans-serif;
+    margin: 0 20px;
 }
 
-.titulos_mapas
-{
-    text-align: center;
-    text-decoration: none;
-    text-decoration-style: none;
-    list-style: none;
-    font-size: 60px;
-}
 .mapas
 {
     display: none;
@@ -131,18 +311,21 @@ li
     max-width: 100%;
     height: 90vh;
     object-fit: contain;
-    background-color: burlywood;
+    background-color: rgb(0, 0, 0);
 }
+
 .mapa_activo
 {
     display: block;
     animation: aparecer_mapa 0.3s ease;
 }
+
 @keyframes aparecer_mapa
 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
 .fondo_mapas
 {
     width: 100%;
@@ -150,62 +333,42 @@ li
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: burlywood;
-}
-#fondo_quiz
-{
-    background-color: burlywood;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-nav
-{
-    background-color: rgba(152, 47, 2, 0.862);
-    padding: 10px;
-    width: 100%;
-    border-bottom: 2px solid rgb(70, 28, 2);
-    border-top: 2px solid rgb(70, 28, 2);
-    top: 0;
-    text-align: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgb(115, 255, 0);
+    border-bottom: 2px solid rgb(115, 255, 0);
 }
 
-/* Jerarquía de títulos: h1 = título de la página, h2 = secciones */
-h1
+.boton_mapa
 {
-    font-size: clamp(36px, 8vw, 75px);
-    line-height: 1.15;
-    padding: 14px 10px 6px;
-    text-align: center;
-    font-family: 'africa', Impact, sans-serif;
-    overflow-wrap: anywhere;
-}
-
-h2
-{
-    font-size: 1.17em;
-    padding: 20px;
-    font-family: arial;
-}
-
-ul
-{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.encabezado
-{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 25px;
+    background-color: rgb(115, 255, 0);
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
+    cursor: pointer;
+
+    margin-right: 75px;
+    margin-left: 75px;
+    gap: 15px;
+    padding: 20px;
+    width: 200px;
+    height: 75px;
+    border-radius: 45px;
+    font-size: 18px;
 }
 
+.boton_mapa:hover
+{
+    filter: brightness(0.75);
+}
+
+.boton_mapa:focus-visible
+{
+    outline: 3px solid rgb(115, 255, 0);
+    outline-offset: 3px;
+}
+
+/* ===== Lista de dinosaurios ===== */
 .lista_saurica
 {
     width: 100%;
@@ -218,9 +381,9 @@ ul
 
 .separacion_alfabetica
 {
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(115, 255, 0);
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(115, 255, 0);
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -228,54 +391,23 @@ ul
     padding-bottom: 5px;
 }
 
-main
-{
-    background-color: burlywood;
-}
-
-.apartados
-{
-    background-color: rgba(207, 73, 16, 0.862);
-    border: 3px solid rgb(70, 28, 2);
-    color: rgb(70, 28, 2);
-    text-decoration: none;
-    font-style: none;
-    text-align: center;
-    display: inline-table;
-    position: relative;
-    overflow: hidden;
-    gap: 20px;
-    padding: 20px;
-    width: 300px;            
-    height: 250px;            
-    border-radius: 15px;
-    font-size: 18px;     
-    margin-bottom: 20px;
-}
-
-main form
-{
-    display: flex;
-    justify-content: center;
-}
-
 .busqueda_saurus
 {
-    background-color: rgba(255, 255, 255, 0.862);
-    border: 3px solid rgb(70, 28, 2);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 3px solid rgb(115, 255, 0);
+    color: rgb(115, 255, 0);
 
     gap: 10px;
     padding: 15px;
-    width: 280px;            
-    height: 75px;            
+    width: 280px;
+    height: 75px;
     border-radius: 85px;
-    font-size: 18px;     
+    font-size: 18px;
 }
 
 .busqueda_saurus::placeholder
 {
-    color: black;
+    color: rgba(115, 255, 0, 0.7);
 }
 
 .lista_dinosaurios
@@ -288,7 +420,7 @@ main form
 
 .texto_lista
 {
-    color: rgb(64, 25, 1);
+    color: rgb(115, 255, 0);
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -297,14 +429,29 @@ main form
 /* Tarjetas de dinosaurios: todo el cuadrado es un botón que abre la ficha */
 .apartados
 {
+    background-color: rgba(0, 105, 0, 0.418);
+    border: 3px solid rgb(115, 255, 0);
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    text-align: center;
+    display: inline-table;
+    position: relative;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .apartados:hover
 {
     transform: translateY(-4px);
-    background-color: rgba(224, 84, 22, 0.92);
-    box-shadow: 0 8px 16px rgba(70, 28, 2, 0.45);
+    background-color: rgba(0, 140, 0, 0.55);
+    box-shadow: 0 8px 16px rgba(115, 255, 0, 0.35);
 }
 
 .apartados:active
@@ -314,7 +461,7 @@ main form
 
 .apartados:has(.tarjeta_dinosaurio:focus-visible)
 {
-    outline: 3px solid rgb(70, 28, 2);
+    outline: 3px solid rgb(115, 255, 0);
     outline-offset: 3px;
 }
 
@@ -362,47 +509,11 @@ main form
     .apartados:hover, .apartados:active { transform: none; }
 }
 
-.seleccion_mapas
-{
-    background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
-    padding: 10px;
-    width: 100%;
-    border-bottom: 2px solid rgb(115, 255, 0);
-    top: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.opcion_seleccionada
-{
-    color: hsla(0, 0%, 100%, 0.5);
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.boton_mapa
-{
-    background-color: rgba(207, 73, 16, 0.862);
-    border: 3px solid rgb(70, 28, 2);
-    color: rgb(70, 28, 2);
-
-    margin-right: 75px;
-    margin-left: 75px;
-    gap: 15px;
-    padding: 20px;
-    width: 200px;            
-    height: 75px;            
-    border-radius: 45px;
-    font-size: 18px;     
-}
-
 #lista_alfabetica
 {
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.541);
-    border-color:rgb(224, 52, 0);   
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgb(115, 255, 0);
     border-radius: 12px;
     text-decoration: none;
     position: fixed;
@@ -414,6 +525,7 @@ main form
     height: 90vh;
     text-align: center;
 }
+
 #items_lista_abc
 {
     display: grid;
@@ -423,73 +535,84 @@ main form
     gap: 2px;
     text-decoration: none;
 }
+
 #items_lista_abc li
 {
     padding: 0;
     height: 100%;
     list-style: none;
 }
+
 .boton_abc
 {
     width: 100%;
     height: 100%;
     border: none;
     background: transparent;
-    color: white;
+    color: rgb(115, 255, 0);
     font-size: clamp(7px, 1.6vh, 13px);
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
 }
+
 .boton_abc:hover
 {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(115, 255, 0, 0.25);
 }
 
+/* ===== Quiz (pantalla de elección de nivel) ===== */
 .quiz_h2
 {
     text-align: center;
     font-size: 25px;
+    margin-bottom: 12px;
 }
 
 .botones_quiz
 {
-    background-color: rgba(207, 73, 16, 0.862);
-    border: 3px solid rgb(70, 28, 2);
-    color: rgb(255, 255, 255);
+    background-color: rgb(115, 255, 0);
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    text-align:center;
+    font-weight: bold;
+    text-align: center;
     justify-content: center;
     display: flex;
     margin-top: 50px;
     gap: 50px;
-    padding-top: 35px;  
-    width: 200px;            
-    height: 125px;            
+    padding-top: 35px;
+    width: 200px;
+    height: 125px;
     border-radius: 400px;
     font-size: 40px;
 }
 
+.botones_quiz:hover
+{
+    filter: brightness(0.75);
+}
+
 .introduccion_quiz
 {
-    background-color: rgba(207, 73, 16, 0.862);
-    border: 3px solid rgb(70, 28, 2);
-    color: rgb(70, 28, 2);
+    background-color: rgba(0, 105, 0, 0.418);
+    border: 2px solid rgb(115, 255, 0);
+    color: rgb(115, 255, 0);
     margin-right: 75px;
     margin-left: 75px;
     margin-top: 50px;
-    border-radius: 20px;
-    padding-bottom: 10px;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 .texto_quiz
 {
-    color: black;
     border-radius: 20px;
     text-align: center;
     font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    line-height: 1.5;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Ajustes para pantallas pequeñas */
@@ -497,79 +620,11 @@ main form
 {
     .introduccion_mundo { margin-left: 12px; margin-right: 12px; font-size: 18px; }
     .introduccion_quiz { margin: 24px 12px 0; }
-    .texto_quiz { padding-left: 15px; padding-right: 15px; font-size: 18px; }
+    .texto_quiz { padding-left: 10px; padding-right: 10px; font-size: 18px; }
     .quiz_h2 { font-size: 20px; }
     #sec_comentarios { margin-left: 12px; margin-right: 12px; }
-}
-
-/* Anula el padding global de p y h2 (en el index no existe) */
-.pie_pagina p,
-.pie_pagina h2
-{
-    padding: 0;
-}
- 
-.pie_pagina
-{
-    font-family: 'Arial', sans-serif;
-    margin-top: auto;
-    background-color: rgb(152, 47, 2, 0.862);
-    border: none;
-    border-top: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 243, 224);
-    padding: 10px 20px;
-    bottom: 0px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    display: flex;
-}
- 
-.informacion_left
-{
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    font-size: 14px;
-}
- 
-.informacion_center
-{
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-}
- 
-.informacion_right
-{
-    text-transform: uppercase;
-    align-items: center;
-    text-align: right;
-    font-size: 14px;
-}
- 
-.titulo_footer
-{
-    font-family: 'Arial', sans-serif;
-    font-size: 1.17em;
-}
- 
-.redes
-{
-    color: rgb(255, 243, 224);
-    text-decoration: none;
-    font-size: 14px;
-}
-
-main  /* el main se estira y empuja el footer hacia abajo */
-{
-    flex: 1;          
-}
-
-@media (max-width: 768px)
-{
+    .boton_mapa { margin-left: 0; margin-right: 0; }
     .pie_pagina { flex-direction: column; text-align: center; }
     .informacion_left, .informacion_right { text-align: center; justify-content: center; }
+    .paginas a { font-size: 18px; }
 }

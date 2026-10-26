@@ -1,189 +1,113 @@
+/* ===== Diseño base (igual al del index) ===== */
+@font-face {
+    font-family: 'jurassic world';
+    src: url(../fuentes/african.ttf);
+    font-display: swap;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;}
 
-nav
+body
 {
-    background-color: rgba(152, 47, 2, 0.862);
-    padding: 10px;
-    width: 100%;
-    border-bottom: 2px solid rgb(70, 28, 2);
-    top: 0;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.encabezado
-{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-ul
-{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.fondo_carnivoro
-{
-    background-image: url(/imagenes/fondo_carnivoro.webp);
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 255, 0);
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo_herviboro
-{
-    background-image: url(/imagenes/fondo_herviboro.webp);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo_omnivoro
-{
-    background-image: url(/imagenes/fondo_omnivoro.webp);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 main
 {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.separador_omnivoro
+/* ===== Barra de navegación (nav.paginas) ===== */
+.paginas
 {
-    background-color: rgba(22, 158, 111, 0.398);
-    border-bottom: 2px solid rgb(60, 255, 0);
-    border-top: 2px solid rgb(60, 255, 0);
-    border-left: 2px solid rgb(255, 0, 0);
-    border-right: 2px solid rgb(255, 0, 0);
-    border-radius: 20px;
-    margin: auto;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: auto;  
-    width: 1200px;
-}
-
-.separador_carnivoro
-{
-    background-color: rgba(255, 0, 0, 0.468);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    margin: auto;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: auto;  
-    width: 1200px;
-}
-
-.separador_herviboro
-{
-    background-color: rgba(106, 255, 0, 0.278);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    margin: auto;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: auto;  
-    width: 1200px;
-}
-
-.carnivoro
-{
-    background-color: rgba(249, 34, 34, 0.482);
+    background-color: rgb(0, 0, 0);
+    color: rgb(115, 255, 0);
     padding: 10px;
-    margin: 20px;
-    width: 500px;
-    border-radius: 25px;
-    border: 2px solid rgb(0, 0, 0);
-    font-style: none;
-    font-size: 18px;
-}
-
-.herbivoro
-{
-    background-color: rgba(49, 202, 2, 0.616);
-    padding: 10px;
-    margin: 20px;
-    width: 500px;
-    border-radius: 25px;
-    border: 2px solid rgb(0, 0, 0);
-    font-style: none;
-    font-size: 18px;
-}
-
-.fondo_imagen
-{
-    background-color: rgba(0, 0, 0, 0.504);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 20px;
-    aspect-ratio: 1/1;
     width: 100%;
-    max-width: 500px;
-    height: 450px;
-    gap: 20px;
-    margin: 20px;
+    border-bottom: 2px solid rgb(115, 255, 0);
+    top: 0;
+}
+
+.paginas ul
+{
+    list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-.imagen
+.paginas a
 {
-    width: 90%;
-    max-width: 600px;
-    height: auto;
-    object-fit: cover;
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-/* El título de la ficha ahora es h1; mantiene el tamaño que tenía como h2 */
+.paginas .opcion_seleccionada
+{
+    color: rgb(81, 175, 5);
+    text-decoration: underline;
+}
+
+a:focus-visible
+{
+    outline: 3px solid rgb(115, 255, 0);
+    outline-offset: 3px;
+}
+
 h1
 {
-    font-size: 1.5em;
+    color: rgb(115, 255, 0);
+    font-style: italic;
+}
+
+h2
+{
+    font-family: 'jurassic world', Arial, sans-serif;
+}
+
+/* ===== Botones de sesión (iniciar sesión / registrarse) ===== */
+.boton_sesion
+{
+    --fondo: rgb(255, 255, 255);
+    --texto: rgb(0, 0, 0);
+
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--texto);
+    background-color: var(--fondo);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 4px 16px;
+    cursor: pointer;
+
+    &:hover { filter: brightness(0.75); }
+    &:focus-visible { outline: 3px solid rgb(115, 255, 0); outline-offset: 3px; }
+
+    /* variante: botón "Registrarse" */
+    &.boton_sesion_destacado
+    {
+        --fondo: rgb(115, 255, 0);
+        --texto: rgb(0, 0, 0);
+    }
 }
 
 /* ===== Footer (igual al del index) ===== */
-.pie_pagina, .pie_pagina *
-{
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .pie_pagina
 {
     margin-top: auto;
-    background-color: rgb(70, 28, 2);
-    border-top: 2px solid rgb(152, 47, 2);
-    color: rgb(255, 243, 224);
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(115, 255, 0);
+    color: rgb(115, 255, 0);
     padding: 10px 20px;
     bottom: 0px;
     width: 100%;
@@ -225,13 +149,118 @@ h1
 
 .redes
 {
-    color: rgb(255, 243, 224);
+    color: rgb(115, 255, 0);
     text-decoration: none;
     font-size: 14px;
 }
 
+main
+{
+    padding: 30px 20px;
+}
+
+/* ===== Fondos de las páginas de dinosaurios (sin cambios) ===== */
+.fondo_carnivoro
+{
+    background-image: url(../imagenes/fondo_carnivoro.webp);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo_herviboro
+{
+    background-image: url(../imagenes/fondo_herviboro.webp);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo_omnivoro
+{
+    background-image: url(../imagenes/fondo_omnivoro.webp);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* ===== Paneles de la ficha (mismo estilo que los paneles del index) ===== */
+.separador_omnivoro,
+.separador_carnivoro,
+.separador_herviboro
+{
+    background-color: rgba(0, 105, 0, 0.418);
+    border: 2px solid rgb(115, 255, 0);
+    border-radius: 25px;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.carnivoro,
+.herbivoro
+{
+    background-color: rgba(0, 105, 0, 0.418);
+    color: rgb(115, 255, 0);
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    max-width: calc(100% - 40px);
+    border-radius: 25px;
+    border: 2px solid rgb(115, 255, 0);
+    font-style: normal;
+    font-size: 18px;
+}
+
+.fondo_imagen
+{
+    background-color: rgba(0, 0, 0, 0.504);
+    border: 2px solid rgb(115, 255, 0);
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    gap: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen
+{
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* El título de la ficha es h1; mantiene el tamaño que tenía como h2 */
+h1
+{
+    font-size: 1.5em;
+}
+
 @media (max-width: 768px)
 {
+    main { padding: 20px 10px; }
     .pie_pagina { flex-direction: column; text-align: center; }
     .informacion_left, .informacion_right { text-align: center; justify-content: center; }
+    .paginas a { font-size: 18px; }
 }
