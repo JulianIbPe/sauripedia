@@ -37,6 +37,7 @@
     
     if(mysqli_query($conexion, $query)){
         echo "Registro exitoso";
+        header("location: ../pages/login.html");
     }
     else{
         echo "Error en el registro";
