@@ -1,6 +1,6 @@
 <?php
 
-    //session_start();
+    session_start();
 
     include 'conexion_be.php';
 
@@ -26,8 +26,11 @@
         }
     */
     if(mysqli_num_rows($validar_login) > 0){
-        //$_SESSION['usuario'] = $usuario;
-        header("location: ../pages/index.html");
+        // Guardamos el nombre tal cual está en la base de datos (no el que se escribió en el formulario)
+        $fila = mysqli_fetch_assoc($validar_login);
+        session_regenerate_id(true);
+        $_SESSION['usuario'] = $fila['nombre_usuario'];
+        header("location: ../index.html");
         exit();
     }
     else{
