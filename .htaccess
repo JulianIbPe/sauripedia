@@ -1,0 +1,17 @@
+# --- Protección del servidor (Apache) ---
+Options -Indexes
+
+# Archivos que nunca deben descargarse desde la web (volcado de la base, configuraciones)
+<FilesMatch "\.(sql|md|log|ini|bak|env)$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "^(conexion_be|config_sesion)\.php$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>

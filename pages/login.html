@@ -26,9 +26,9 @@
                         <table class="sec_ingreso">
                             <tr><td colspan="2"><h1 >Iniciar Sesion</h1></td></tr>
                             <tr><td><label>Usuario</label></td></tr>
-                            <tr><td><input type="text" placeholder="Ingrese su nombre de usuario" name="usuario" /></td></tr>
+                            <tr><td><input type="text" placeholder="Ingrese su nombre de usuario" name="usuario" required maxlength="50" autocomplete="username" /></td></tr>
                             <tr><td><label>Contraseña</label></td></tr>
-                            <tr><td><input type="password" placeholder="Ingrese su contraseña" name="password" /></td></tr>
+                            <tr><td><input type="password" placeholder="Ingrese su contraseña" name="password" required maxlength="72" autocomplete="current-password" /></td></tr>
                             <tr><td><input type="submit" value="Ingresar" /></td></tr>
                         </table>
                     </form>

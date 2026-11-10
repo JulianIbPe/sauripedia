@@ -270,6 +270,51 @@ main form
     filter: brightness(0.75);
 }
 
+#sec_comentarios small
+{
+    text-align: right;
+}
+
+#aviso_comentario
+{
+    min-height: 1.2em;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#aviso_comentario.aviso_error { color: rgb(255, 200, 200); }
+
+#sec_comentarios button:disabled,
+#sec_comentarios textarea:disabled
+{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#lista_comentarios
+{
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 0 12px;
+}
+
+.comentario_item
+{
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border: 2px solid rgb(115, 255, 0);
+    border-radius: 15px;
+    background-color: rgba(0, 105, 0, 0.418);
+}
+
+.comentario_item p
+{
+    margin: 6px 0 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
 /* ===== Mundo prehistórico ===== */
 .introduccion_mundo
 {

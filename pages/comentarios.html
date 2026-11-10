@@ -49,14 +49,15 @@
         <h2 id="subtitulo_comentario">Brinda tu opinión sobre los dinosaurios y el mundo prehistórico:</h2>
         <br><br><br>
             <section id="sec_comentarios">
-                <form action="../ComentariosServlet" method="POST" accept-charset="UTF-8">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="comentario">Comentario:</label><br>
-                    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+                <form id="form_comentario" accept-charset="UTF-8">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" maxlength="500" required></textarea>
+                    <small id="contador_comentario">0 / 500</small>
+                    <p id="aviso_comentario" role="status" aria-live="polite"></p>
                     <button type="submit">Enviar Comentario</button>
                 </form>
             </section>
+            <section id="lista_comentarios" aria-label="Comentarios publicados"></section>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </main>
         <footer class="pie_pagina">

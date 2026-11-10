@@ -1,7 +1,13 @@
 <?php
 
-    session_start();
+    include 'config_sesion.php';
+
     $_SESSION = [];
+    // Borra también la cookie de sesión del navegador
+    if(ini_get('session.use_cookies')){
+        $p = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000, $p['path'], $p['domain'], $p['secure'], $p['httponly']);
+    }
     session_destroy();
 
     // Si lo llama usuario.js (fetch con POST) respondemos JSON y la página
@@ -14,7 +20,6 @@
     }
 
     // Si se abre directamente en el navegador, vuelve al inicio.
-    // (antes apuntaba a ../pages/index.html, pero index.html está en la raíz)
     header("location: ../index.html");
     exit();
 
