@@ -251,6 +251,47 @@ main
     object-fit: cover;
 }
 
+/* ===== Carnívoros: paneles rojos ===== */
+.separador_carnivoro,
+.separador_carnivoro .carnivoro,
+.separador_carnivoro .fondo_imagen
+{
+    border-color: rgb(255, 45, 45);
+}
+
+.separador_carnivoro,
+.separador_carnivoro .carnivoro
+{
+    background-color: rgba(120, 0, 0, 0.45);
+    color: rgb(255, 150, 150);
+}
+
+.separador_carnivoro h1
+{
+    color: rgb(255, 70, 70);
+}
+
+/* ===== Omnívoros: fusión verde + rojo (borde degradado sobre fondo opaco) ===== */
+.separador_omnivoro,
+.separador_omnivoro .carnivoro,
+.separador_omnivoro .herbivoro,
+.separador_omnivoro .fondo_imagen
+{
+    border-color: transparent;
+    background:
+        linear-gradient(135deg, rgb(8, 45, 0), rgb(60, 6, 6)) padding-box,
+        linear-gradient(135deg, rgb(115, 255, 0), rgb(255, 45, 45)) border-box;
+    color: rgb(255, 215, 90);
+}
+
+.separador_omnivoro h1
+{
+    background: linear-gradient(90deg, rgb(115, 255, 0), rgb(255, 70, 70));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 /* El título de la ficha es h1; mantiene el tamaño que tenía como h2 */
 h1
 {
