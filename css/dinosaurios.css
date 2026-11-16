@@ -11,7 +11,7 @@ body
 {
     font-family: 'Arial', sans-serif;
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -26,10 +26,10 @@ main
 .paginas
 {
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     padding: 10px;
     width: 100%;
-    border-bottom: 2px solid rgb(115, 255, 0);
+    border-bottom: 2px solid var(--acento);
     top: 0;
 }
 
@@ -45,7 +45,7 @@ main
 
 .paginas a
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -53,19 +53,19 @@ main
 
 .paginas .opcion_seleccionada
 {
-    color: rgb(81, 175, 5);
+    color: var(--acento-suave);
     text-decoration: underline;
 }
 
 a:focus-visible
 {
-    outline: 3px solid rgb(115, 255, 0);
+    outline: 3px solid var(--acento);
     outline-offset: 3px;
 }
 
 h1
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     font-style: italic;
 }
 
@@ -91,12 +91,12 @@ h2
     cursor: pointer;
 
     &:hover { filter: brightness(0.75); }
-    &:focus-visible { outline: 3px solid rgb(115, 255, 0); outline-offset: 3px; }
+    &:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
 
     /* variante: botón "Registrarse" */
     &.boton_sesion_destacado
     {
-        --fondo: rgb(115, 255, 0);
+        --fondo: var(--acento);
         --texto: rgb(0, 0, 0);
     }
 }
@@ -106,8 +106,8 @@ h2
 {
     margin-top: auto;
     background-color: rgb(0, 0, 0);
-    border-top: 2px solid rgb(115, 255, 0);
-    color: rgb(115, 255, 0);
+    border-top: 2px solid var(--acento);
+    color: var(--acento);
     padding: 10px 20px;
     bottom: 0px;
     width: 100%;
@@ -149,7 +149,7 @@ h2
 
 .redes
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 14px;
 }
@@ -197,8 +197,8 @@ main
 .separador_carnivoro,
 .separador_herviboro
 {
-    background-color: rgba(0, 105, 0, 0.418);
-    border: 2px solid rgb(115, 255, 0);
+    background-color: var(--panel);
+    border: 2px solid var(--acento);
     border-radius: 25px;
     margin: auto;
     gap: 20px;
@@ -215,14 +215,14 @@ main
 .carnivoro,
 .herbivoro
 {
-    background-color: rgba(0, 105, 0, 0.418);
-    color: rgb(115, 255, 0);
+    background-color: var(--panel);
+    color: var(--acento);
     padding: 10px;
     margin: 20px;
     width: 500px;
     max-width: calc(100% - 40px);
     border-radius: 25px;
-    border: 2px solid rgb(115, 255, 0);
+    border: 2px solid var(--acento);
     font-style: normal;
     font-size: 18px;
 }
@@ -230,7 +230,7 @@ main
 .fondo_imagen
 {
     background-color: rgba(0, 0, 0, 0.504);
-    border: 2px solid rgb(115, 255, 0);
+    border: 2px solid var(--acento);
     border-radius: 20px;
     aspect-ratio: 1/1;
     width: 100%;
@@ -279,14 +279,14 @@ main
 {
     border-color: transparent;
     background:
-        linear-gradient(135deg, rgb(8, 45, 0), rgb(60, 6, 6)) padding-box,
-        linear-gradient(135deg, rgb(115, 255, 0), rgb(255, 45, 45)) border-box;
+        linear-gradient(135deg, rgb(52, 16, 4), rgb(60, 6, 6)) padding-box,
+        linear-gradient(135deg, var(--acento), rgb(255, 45, 45)) border-box;
     color: rgb(255, 215, 90);
 }
 
 .separador_omnivoro h1
 {
-    background: linear-gradient(90deg, rgb(115, 255, 0), rgb(255, 70, 70));
+    background: linear-gradient(90deg, var(--acento), rgb(255, 70, 70));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

@@ -11,7 +11,7 @@ body
 {
     font-family: 'Arial', sans-serif;
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -26,10 +26,10 @@ main
 .paginas
 {
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     padding: 10px;
     width: 100%;
-    border-bottom: 2px solid rgb(115, 255, 0);
+    border-bottom: 2px solid var(--acento);
     top: 0;
 }
 
@@ -45,7 +45,7 @@ main
 
 .paginas a
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -53,19 +53,19 @@ main
 
 .paginas .opcion_seleccionada
 {
-    color: rgb(81, 175, 5);
+    color: var(--acento-suave);
     text-decoration: underline;
 }
 
 a:focus-visible
 {
-    outline: 3px solid rgb(115, 255, 0);
+    outline: 3px solid var(--acento);
     outline-offset: 3px;
 }
 
 h1
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     font-style: italic;
 }
 
@@ -91,12 +91,12 @@ h2
     cursor: pointer;
 
     &:hover { filter: brightness(0.75); }
-    &:focus-visible { outline: 3px solid rgb(115, 255, 0); outline-offset: 3px; }
+    &:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
 
     /* variante: botón "Registrarse" */
     &.boton_sesion_destacado
     {
-        --fondo: rgb(115, 255, 0);
+        --fondo: var(--acento);
         --texto: rgb(0, 0, 0);
     }
 }
@@ -106,8 +106,8 @@ h2
 {
     margin-top: auto;
     background-color: rgb(0, 0, 0);
-    border-top: 2px solid rgb(115, 255, 0);
-    color: rgb(115, 255, 0);
+    border-top: 2px solid var(--acento);
+    color: var(--acento);
     padding: 10px 20px;
     bottom: 0px;
     width: 100%;
@@ -149,7 +149,7 @@ h2
 
 .redes
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 14px;
 }
@@ -157,7 +157,7 @@ h2
 /* ===== Fondo de las páginas (mismo paisaje que el index) ===== */
 .fondo_jurassico
 {
-    background-color: chartreuse;
+    background-color: var(--fondo-base);
     background-image: url(../imagenes/fondo_jurassico_renderizado.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,8 +182,8 @@ h2
 
 .quiz-titulo
 {
-    background-color: rgba(0, 105, 0, 0.418);
-    border: 2px solid rgb(115, 255, 0);
+    background-color: var(--panel);
+    border: 2px solid var(--acento);
     border-radius: 25px;
     text-align: center;
     padding: 14px 24px;
@@ -193,8 +193,8 @@ h2
 #quiz-juego,
 #quiz-resultado
 {
-    background-color: rgba(0, 105, 0, 0.418);
-    border: 2px solid rgb(115, 255, 0);
+    background-color: var(--panel);
+    border: 2px solid var(--acento);
     border-radius: 25px;
     padding: 25px;
 }
@@ -204,7 +204,7 @@ h2
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     margin-bottom: 10px;
 }
 
@@ -212,7 +212,7 @@ h2
 {
     height: 14px;
     background-color: rgba(0, 0, 0, 0.6);
-    border: 2px solid rgb(115, 255, 0);
+    border: 2px solid var(--acento);
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 25px;
@@ -222,7 +222,7 @@ h2
 {
     height: 100%;
     width: 0;
-    background-color: rgb(115, 255, 0);
+    background-color: var(--acento);
     transition: width 0.3s ease;
 }
 
@@ -230,7 +230,7 @@ h2
 {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     margin-bottom: 20px;
 }
 
@@ -247,8 +247,8 @@ h2
     font-size: 18px;
     text-align: left;
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
-    border: 2px solid rgb(115, 255, 0);
+    color: var(--acento);
+    border: 2px solid var(--acento);
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
@@ -256,13 +256,13 @@ h2
 
 .opcion:hover:not(:disabled)
 {
-    background-color: rgb(0, 70, 0);
+    background-color: var(--panel-hover);
     transform: translateX(4px);
 }
 
 .opcion:focus-visible
 {
-    outline: 3px solid rgb(115, 255, 0);
+    outline: 3px solid var(--acento);
     outline-offset: 3px;
 }
 
@@ -273,15 +273,15 @@ h2
 
 .opcion.seleccionada
 {
-    background-color: rgb(0, 70, 0);
-    box-shadow: inset 6px 0 0 rgb(115, 255, 0);
+    background-color: var(--panel-hover);
+    box-shadow: inset 6px 0 0 var(--acento);
     font-weight: bold;
 }
 
 .opcion.correcta
 {
-    background-color: rgb(115, 255, 0);
-    border-color: rgb(115, 255, 0);
+    background-color: var(--correcto);
+    border-color: var(--correcto);
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -303,7 +303,7 @@ h2
 
 .mensaje.ok
 {
-    color: rgb(115, 255, 0);
+    color: var(--correcto);
 }
 
 .mensaje.mal
@@ -320,7 +320,7 @@ h2
     font-size: 18px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    background-color: rgb(115, 255, 0);
+    background-color: var(--acento);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
     cursor: pointer;
@@ -340,7 +340,7 @@ h2
 
 .btn-quiz:focus-visible
 {
-    outline: 3px solid rgb(115, 255, 0);
+    outline: 3px solid var(--acento);
     outline-offset: 3px;
 }
 
@@ -363,7 +363,7 @@ h2
 {
     font-size: 36px;
     font-weight: bold;
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     margin-bottom: 10px;
 }
 
@@ -383,7 +383,7 @@ h2
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgb(0, 0, 0);
-    background-color: rgb(115, 255, 0);
+    background-color: var(--acento);
     border-radius: 20px;
 }
 

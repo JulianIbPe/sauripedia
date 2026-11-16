@@ -10,7 +10,7 @@ body
 {
     font-family: 'Arial', sans-serif;
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,10 +20,10 @@ body
 .paginas
 {
     background-color: rgb(0, 0, 0);
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     padding: 10px;
     width: 100%;
-    border-bottom: 2px solid rgb(115, 255, 0);
+    border-bottom: 2px solid var(--acento);
     top: 0;
 }
 
@@ -39,7 +39,7 @@ body
 
 .paginas a
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -47,13 +47,13 @@ body
 
 .paginas .opcion_seleccionada
 {
-    color: rgb(81, 175, 5);
+    color: var(--acento-suave);
     text-decoration: underline;
 }
 
 .sesion
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
@@ -61,7 +61,7 @@ body
 
 .fondo_jurassico
 {
-    background-color: chartreuse;
+    background-color: var(--fondo-base);
     background-image: url(../imagenes/fondo_jurassico_renderizado.webp);
     width: 100%;
     height: auto;
@@ -73,30 +73,30 @@ body
 
 .main_content
 {
-    background-color: rgba(0, 105, 0, 0.418);
+    background-color: var(--panel);
     padding: 20px;
     margin: 100px;
     border-radius: 25px;
-    border: 2px solid rgb(115, 255, 0);
+    border: 2px solid var(--acento);
 }
 
 .informacion_base
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     font-size: 18px;
     line-height: 1.5;
 }
 
 h1
 {
-    color:rgb(115, 255, 0);
+    color:var(--acento);
     font-style: italic;
 }
 
 .apartados
 {
-    color: rgb(115, 255, 0);
-    background-color: rgba(0, 105, 0, 0.418);
+    color: var(--acento);
+    background-color: var(--panel);
     display: inline-table;
     gap: 20px;
     padding: 20px;
@@ -104,7 +104,7 @@ h1
     height: 250px;
     border-radius: 15px;
     font-size: 18px;
-    border: 3px solid rgb(115, 255, 0);
+    border: 3px solid var(--acento);
     text-align: justify;
 }
 
@@ -134,8 +134,8 @@ h1
 {
     margin-top: auto;
     background-color: rgb(0, 0, 0);
-    border-top: 2px solid rgb(115, 255, 0);
-    color: rgb(115, 255, 0);
+    border-top: 2px solid var(--acento);
+    color: var(--acento);
     padding: 10px 20px;
     bottom: 0px;
     width: 100%;
@@ -177,14 +177,14 @@ h1
 
 .redes
 {
-    color: rgb(115, 255, 0);
+    color: var(--acento);
     text-decoration: none;
     font-size: 14px;
 }
 
 a:focus-visible
 {
-    outline: 3px solid rgb(115, 255, 0);
+    outline: 3px solid var(--acento);
     outline-offset: 3px;
 }
 
@@ -210,26 +210,31 @@ h2
     cursor: pointer;
 
     &:hover { filter: brightness(0.75); }
-    &:focus-visible { outline: 3px solid rgb(115, 255, 0); outline-offset: 3px; }
+    &:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
 
     /* variante: botón "Registrarse" */
     &.boton_sesion_destacado
     {
-        --fondo: rgb(115, 255, 0);
+        --fondo: var(--acento);
         --texto: rgb(0, 0, 0);
     }
 }
 
 /* ===== Formularios de sesión (login / registro) ===== */
 /* ===== Formularios de sesión (login / registro) ===== */
+.contenedor_apartados > form
+{
+    width: min(100%, 540px);
+}
+
 .sec_ingreso
 {
-    width: min(100%, 420px);
-    padding: 20px;
+    width: 100%;
+    padding: 24px;
     border-spacing: 0 10px;
-    color: rgb(115, 255, 0);
-    background-color: rgba(0, 105, 0, 0.418);
-    border: 3px solid rgb(115, 255, 0);
+    color: var(--acento);
+    background-color: var(--panel);
+    border: 3px solid var(--acento);
     border-radius: 15px;
     font-size: 18px;
     text-align: left;
@@ -249,16 +254,22 @@ h2
 }
 
 .sec_ingreso input[type="text"],
+.sec_ingreso input[type="email"],
 .sec_ingreso input[type="password"]
 {
     width: 100%;
-    padding: 8px 12px;
+    padding: 12px 16px;
     font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: rgb(115, 255, 0);
+    font-size: 17px;
+    color: var(--acento);
     background-color: rgba(0, 0, 0, 0.75);
-    border: 2px solid rgb(115, 255, 0);
+    border: 2px solid var(--acento);
     border-radius: 10px;
+}
+
+.sec_ingreso input::placeholder
+{
+    color: rgba(var(--acento-rgb), 0.7);
 }
 
 .sec_ingreso input[type="submit"]
@@ -270,7 +281,7 @@ h2
     font-weight: bold;
     cursor: pointer;
     color: rgb(0, 0, 0);
-    background-color: rgb(115, 255, 0);
+    background-color: var(--acento);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
 }

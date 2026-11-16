@@ -1,0 +1,86 @@
+/* ============================================================
+   navegacion.css
+   - Botones "Iniciar sesión" / "Registrarse" pegados al lado derecho
+     de la barra, separados de los enlaces.
+   - Transición deslizante entre apartados (la maneja transiciones.js).
+   ============================================================ */
+
+/* ===== Botones de sesión a la derecha ===== */
+.paginas
+{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media (min-width: 1181px)
+{
+    .paginas ul
+    {
+        flex-wrap: nowrap;
+    }
+
+    /* Espaciador izquierdo: mantiene los enlaces centrados */
+    .paginas ul::before
+    {
+        content: "";
+        flex: 1 1 0;
+    }
+
+    .botones_sesion_nav
+    {
+        flex: 1 1 0;
+        justify-content: flex-end;
+        margin-left: 60px;   /* más separados que los enlaces entre sí (gap: 20px) */
+    }
+
+    /* Con sesión iniciada los botones se ocultan: se equilibra con otro espaciador */
+    .paginas.con_sesion ul::after
+    {
+        content: "";
+        flex: 1 1 0;
+    }
+}
+
+.botones_sesion_nav
+{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+}
+
+/* En pantallas angostas los botones pasan a su propia fila, a la derecha */
+@media (max-width: 1180px)
+{
+    .botones_sesion_nav
+    {
+        flex-basis: 100%;
+        justify-content: flex-end;
+    }
+}
+
+/* ===== Transición deslizante entre apartados ===== */
+html.nav_anim,
+html.nav_anim body
+{
+    overflow-x: hidden;
+}
+
+/* Sale la página actual */
+html.sale_izq main { animation: sale_izq 0.26s ease-in forwards; }
+html.sale_der main { animation: sale_der 0.26s ease-in forwards; }
+
+/* Entra la nueva página */
+html.entra_der main { animation: entra_der 0.38s cubic-bezier(0.22, 0.8, 0.3, 1) backwards; }
+html.entra_izq main { animation: entra_izq 0.38s cubic-bezier(0.22, 0.8, 0.3, 1) backwards; }
+
+@keyframes sale_izq  { to   { transform: translateX(-60vw); opacity: 0; } }
+@keyframes sale_der  { to   { transform: translateX(60vw);  opacity: 0; } }
+@keyframes entra_der { from { transform: translateX(60vw);  opacity: 0; } }
+@keyframes entra_izq { from { transform: translateX(-60vw); opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce)
+{
+    html.sale_izq main, html.sale_der main,
+    html.entra_der main, html.entra_izq main { animation: none; }
+}

@@ -25,7 +25,7 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <link rel="manifest" href="/site.webmanifest">
-        <meta name="theme-color" content="#0b0f08">
+        <meta name="theme-color" content="#120706">
 
         <!-- Open Graph / redes sociales -->
         <meta property="og:type" content="website">
@@ -38,6 +38,9 @@
         <meta name="twitter:card" content="summary_large_image">
 
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/tema_volcan.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+        <script src="javascript/transiciones.js"></script>
 
         <script type="application/ld+json">
         {
@@ -59,8 +62,10 @@
                     <li><a href="pages/mundo.html">Mundo prehistórico</a></li>
                     <li><a href="pages/quiz.html">Quiz</a></li>
                     <li><a href="pages/comentarios.html">Comentarios</a></li>
-                    <li><button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button></li>
-                    <li><button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button></li>
+                    <li class="botones_sesion_nav">
+                        <button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button>
+                        <button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button>
+                    </li>
                 </ul>
             </nav>
         </header>

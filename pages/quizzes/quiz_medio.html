@@ -12,7 +12,7 @@
         <link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
         <link rel="manifest" href="../../site.webmanifest">
-        <meta name="theme-color" content="#0b0f08">
+        <meta name="theme-color" content="#120706">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="es_AR">
         <meta property="og:site_name" content="Sauripedia">
@@ -26,6 +26,9 @@
         <meta name="twitter:description" content="Responde el quiz de dinosaurios de nivel medio, con preguntas de dificultad intermedia. Verdadero o falso y opción múltiple, con puntaje al final.">
         <meta name="twitter:image" content="https://www.sauripedia.com/imagenes/fondo_jurassico_renderizado.webp">
         <link rel="stylesheet" href="../../css/quizzes.css">
+        <link rel="stylesheet" href="../../css/tema_volcan.css">
+        <link rel="stylesheet" href="../../css/navegacion.css">
+        <script src="../../javascript/transiciones.js"></script>
         <script src="../../javascript/quiz.js" defer></script>
         <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Quiz de dinosaurios nivel medio", "url": "https://www.sauripedia.com/pages/quizzes/quiz_medio.html", "inLanguage": "es", "isPartOf": {"@type": "WebSite", "name": "Sauripedia", "url": "https://www.sauripedia.com/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.sauripedia.com/"}, {"@type": "ListItem", "position": 2, "name": "Quiz", "item": "https://www.sauripedia.com/pages/quiz.html"}, {"@type": "ListItem", "position": 3, "name": "Nivel medio", "item": "https://www.sauripedia.com/pages/quizzes/quiz_medio.html"}]}]}</script>
     </head>
@@ -38,8 +41,10 @@
                     <li><a href="../../pages/mundo.html">Mundo prehistórico</a></li>
                     <li><a href="../../pages/quiz.html" class="opcion_seleccionada">Quiz</a></li>
                     <li><a href="../../pages/comentarios.html">Comentarios</a></li>
-                    <li><button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button></li>
-                    <li><button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button></li>
+                    <li class="botones_sesion_nav">
+                        <button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button>
+                        <button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button>
+                    </li>
                 </ul>
             </nav>
         </header>
