@@ -85,15 +85,15 @@ function color_perfil(string $nombre): string
         <meta name="twitter:card" content="summary_large_image">
 
         <!-- Estilos: base y tema en todas las páginas, luego los propios de la página -->
-        <link rel="stylesheet" href="<?= url('css/base.css') ?>">
-        <link rel="stylesheet" href="<?= url('css/tema_medianoche.css') ?>">
-        <link rel="stylesheet" href="<?= url('css/transiciones.css') ?>">
+        <link rel="stylesheet" href="<?= url_version('css/base.css') ?>">
+        <link rel="stylesheet" href="<?= url_version('css/tema_medianoche.css') ?>">
+        <link rel="stylesheet" href="<?= url_version('css/transiciones.css') ?>">
 <?php foreach ($pagina['css'] as $hoja): ?>
-        <link rel="stylesheet" href="<?= url('css/' . $hoja) ?>">
+        <link rel="stylesheet" href="<?= url_version('css/' . $hoja) ?>">
 <?php endforeach; ?>
 
         <!-- Va en el <head> (sin defer) para preparar la animación de entrada antes de pintar -->
-        <script src="<?= url('javascript/transiciones.js') ?>"></script>
+        <script src="<?= url_version('javascript/transiciones.js') ?>"></script>
 
 <?php if ($pagina['json_ld']): ?>
         <script type="application/ld+json"><?= json_encode($pagina['json_ld'], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) ?></script>

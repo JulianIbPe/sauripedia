@@ -46,6 +46,17 @@ function url(string $ruta = ''): string
     return $RAIZ . $ruta;
 }
 
+/**
+ * Igual que url(), pero agrega ?v=<fecha de modificación> para que el navegador
+ * descargue de nuevo el archivo cada vez que cambia (evita ver CSS/JS viejos en caché).
+ */
+function url_version(string $ruta): string
+{
+    $archivo = dirname(__DIR__) . '/' . $ruta;
+    $version = is_file($archivo) ? filemtime($archivo) : 0;
+    return url($ruta) . '?v=' . $version;
+}
+
 /** URL absoluta (con dominio) para canonical, og:url, sitemap, etc. */
 function url_absoluta(string $ruta = ''): string
 {

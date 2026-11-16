@@ -82,7 +82,7 @@ require __DIR__ . '/../includes/cabecera.php';
                 <ol>
                     <li><a href="<?= url('index.php') ?>">Inicio</a></li>
                     <li><a href="<?= url('pages/dinosaurios.php') ?>">Dinosaurios</a></li>
-                    <li aria-current="page"><?= e($dino['nombre']) ?></li>
+                    <li aria-current="page"><span class="nombre_dino"><?= e($dino['nombre']) ?></span></li>
                 </ol>
             </nav>
 
@@ -123,11 +123,11 @@ require __DIR__ . '/../includes/cabecera.php';
 
             <nav class="ficha_navegacion" aria-label="Otras fichas">
 <?php if ($anterior): ?>
-                <a class="boton boton_secundario" href="<?= url(ruta_dinosaurio($anterior['id'])) ?>" rel="prev">← <?= e($anterior['nombre_lista']) ?></a>
+                <a class="boton boton_secundario" href="<?= url(ruta_dinosaurio($anterior['id'])) ?>" rel="prev">← <span class="nombre_dino"><?= e($anterior['nombre_lista']) ?></span></a>
 <?php endif; ?>
                 <a class="boton" href="<?= url('pages/dinosaurios.php') ?>#letra-<?= e(mb_strtoupper(mb_substr($dino['nombre_lista'], 0, 1))) ?>">Volver a la lista</a>
 <?php if ($siguiente): ?>
-                <a class="boton boton_secundario" href="<?= url(ruta_dinosaurio($siguiente['id'])) ?>" rel="next"><?= e($siguiente['nombre_lista']) ?> →</a>
+                <a class="boton boton_secundario" href="<?= url(ruta_dinosaurio($siguiente['id'])) ?>" rel="next"><span class="nombre_dino"><?= e($siguiente['nombre_lista']) ?></span> →</a>
 <?php endif; ?>
             </nav>
 <?php require __DIR__ . '/../includes/pie.php'; ?>

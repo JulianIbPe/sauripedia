@@ -178,8 +178,10 @@
 
 .texto_lista
 {
+    font-family: 'jurassic world', Arial, sans-serif;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: normal;
+    letter-spacing: 0.5px;
     overflow-wrap: anywhere;
 }
 
@@ -234,7 +236,7 @@
 .ficha_significado
 {
     font-size: 19px;
-    font-style: italic;
+    font-style: normal;
 }
 
 .ficha_clasificacion

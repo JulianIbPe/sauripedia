@@ -51,9 +51,9 @@
             </div>
         </footer>
 
-        <script src="<?= url('javascript/usuario.js') ?>" defer></script>
+        <script src="<?= url_version('javascript/usuario.js') ?>" defer></script>
 <?php foreach ($pagina['scripts'] as $script): ?>
-        <script src="<?= url('javascript/' . $script) ?>" defer></script>
+        <script src="<?= url_version('javascript/' . $script) ?>" defer></script>
 <?php endforeach; ?>
     </body>
 </html>

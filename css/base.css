@@ -10,7 +10,7 @@
 @font-face
 {
     font-family: 'jurassic world';
-    src: url(../fuentes/SauriWorld-Regular.ttf) format('truetype');
+    src: url(../Fuentes/SauriWorld-Regular.ttf) format('truetype');
     font-display: swap;
 }
 
@@ -78,12 +78,14 @@ h1, h2, h3
     line-height: 1.2;
 }
 
-h1
+h1, h2, h3
 {
-    font-style: italic;
+    font-family: 'jurassic world', Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 
-h2
+.nombre_dino
 {
     font-family: 'jurassic world', Arial, sans-serif;
     font-weight: normal;
@@ -475,9 +477,9 @@ address.pie_columna
 .titulo_footer
 {
     margin-bottom: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'jurassic world', Arial, sans-serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
