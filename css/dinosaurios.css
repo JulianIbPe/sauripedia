@@ -1,307 +1,332 @@
-/* ===== Diseño base (igual al del index) ===== */
-@font-face {
-    font-family: 'jurassic world';
-    src: url(../fuentes/african.ttf);
-    font-display: swap;
+/* ============================================================
+   dinosaurios.css  -  Lista de dinosaurios y ficha de cada especie
+   ============================================================ */
+
+/* ---------- Color por dieta ----------
+   Cada tarjeta o ficha define --color-dieta según su clase;
+   el resto de las reglas solo usan esa variable. */
+.dieta_carnivoro { --color-dieta: var(--carnivoro); }
+.dieta_herbivoro { --color-dieta: var(--herbivoro); }
+.dieta_omnivoro  { --color-dieta: var(--omnivoro); }
+
+.dieta_etiqueta
+{
+    display: inline-block;
+    padding: 2px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-dieta);
+    border: 1px solid var(--color-dieta);
+    border-radius: 999px;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
+/* ============================================================
+   LISTA
+   ============================================================ */
 
-body
+.buscador
 {
-    font-family: 'Arial', sans-serif;
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.busqueda_saurus
+{
+    width: min(100%, 420px);
+    padding: 14px 24px;
+    font-size: 18px;
+    color: var(--texto);
+    background-color: var(--campo);
+    border: 2px solid var(--acento);
+    border-radius: 999px;
+    transition: box-shadow 0.2s ease;
+}
+
+.busqueda_saurus:focus
+{
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(var(--acento-rgb), 0.3);
+}
+
+.busqueda_saurus::placeholder
+{
+    color: var(--texto-suave);
+}
+
+.aviso_busqueda
+{
+    max-width: 480px;
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+/* Índice alfabético fijo a la izquierda */
+#lista_alfabetica
+{
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    z-index: 50;
+    transform: translateY(-50%);
+    padding: 6px 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--borde-suave);
+    border-radius: 12px;
+}
+
+#lista_alfabetica ul
+{
+    display: grid;
+    gap: 1px;
+    list-style: none;
+}
+
+.boton_abc
+{
+    display: block;
+    width: 28px;
+    padding: 1px 0;
+    font-size: clamp(9px, 1.6vh, 13px);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     color: var(--acento);
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.boton_abc:hover
+{
+    color: var(--acento);
+    background-color: rgba(var(--acento-rgb), 0.25);
+}
+
+/* Grupo de una letra */
+.grupo_letra
+{
+    margin-bottom: 30px;
+    scroll-margin-top: 90px; /* que el título no quede tapado por la barra fija */
+}
+
+.separacion_alfabetica
+{
+    margin-bottom: 16px;
+    padding: 6px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-top: 1px solid var(--borde-suave);
+    border-bottom: 1px solid var(--borde-suave);
+}
+
+.lista_dinosaurios
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+    list-style: none;
+}
+
+/* Tarjeta: todo el cuadro es un enlace */
+.tarjeta_dinosaurio
+{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
-
-main
-{
-    flex: 1;
-}
-
-/* ===== Barra de navegación (nav.paginas) ===== */
-.paginas
-{
-    background-color: rgb(0, 0, 0);
-    color: var(--acento);
-    padding: 10px;
-    width: 100%;
-    border-bottom: 2px solid var(--acento);
-    top: 0;
-}
-
-.paginas ul
-{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.paginas a
-{
-    color: var(--acento);
+    gap: 10px;
+    padding: 16px;
+    text-align: center;
     text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
+    color: var(--acento);
+    background-color: var(--panel);
+    border: 1px solid var(--borde-suave);
+    border-bottom: 3px solid var(--color-dieta);
+    border-radius: 18px;
+    transition: transform 0.25s var(--vt-curva), box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-.paginas .opcion_seleccionada
-{
-    color: var(--acento-suave);
-    text-decoration: underline;
-}
-
-a:focus-visible
-{
-    outline: 3px solid var(--acento);
-    outline-offset: 3px;
-}
-
-h1
+.tarjeta_dinosaurio:hover
 {
     color: var(--acento);
+    transform: translateY(-5px);
+    background-color: var(--panel-hover);
+    border-color: var(--acento);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta_dinosaurio:active
+{
+    transform: translateY(-2px) scale(0.98);
+}
+
+.tarjeta_dinosaurio img
+{
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    transition: transform 0.35s var(--vt-curva);
+}
+
+.tarjeta_dinosaurio:hover img
+{
+    transform: scale(1.06);
+}
+
+.texto_lista
+{
+    font-size: 21px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Al filtrar, las tarjetas que quedan aparecen suavemente (busqueda.js agrega la clase) */
+.tarjeta.reaparece
+{
+    animation: aparecer-escalonado 0.35s var(--vt-curva) both;
+}
+
+/* ============================================================
+   FICHA
+   ============================================================ */
+
+.ficha
+{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.ficha_textos
+{
+    display: grid;
+    gap: 18px;
+}
+
+.ficha .panel
+{
+    border-color: var(--color-dieta);
+}
+
+/* Los bloques de la ficha entran uno tras otro */
+.ficha_bloque,
+.ficha_imagen
+{
+    animation: aparecer-escalonado 0.55s var(--vt-curva) both;
+}
+
+.ficha_bloque:nth-child(1) { animation-delay: 0.08s; }
+.ficha_bloque:nth-child(2) { animation-delay: 0.16s; }
+.ficha_bloque:nth-child(3) { animation-delay: 0.24s; }
+.ficha_imagen              { animation-delay: 0.18s; }
+
+.ficha h1
+{
+    margin-bottom: 8px;
+    font-size: clamp(30px, 4vw, 42px);
+    color: var(--color-dieta);
+}
+
+.ficha_significado
+{
+    font-size: 19px;
     font-style: italic;
 }
 
-h2
+.ficha_clasificacion
 {
-    font-family: 'jurassic world', Arial, sans-serif;
+    color: var(--texto-suave);
 }
 
-/* ===== Botones de sesión (iniciar sesión / registrarse) ===== */
-.boton_sesion
+.ficha .dieta_etiqueta
 {
-    --fondo: rgb(255, 255, 255);
-    --texto: rgb(0, 0, 0);
+    margin-top: 12px;
+}
 
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
+.ficha_datos
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.ficha_datos div
+{
+    padding: 10px 14px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+
+.ficha_datos dt
+{
+    font-size: 13px;
     font-weight: bold;
-    color: var(--texto);
-    background-color: var(--fondo);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 15px;
-    padding: 4px 16px;
-    cursor: pointer;
-
-    &:hover { filter: brightness(0.75); }
-    &:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
-
-    /* variante: botón "Registrarse" */
-    &.boton_sesion_destacado
-    {
-        --fondo: var(--acento);
-        --texto: rgb(0, 0, 0);
-    }
-}
-
-/* ===== Footer (igual al del index) ===== */
-.pie_pagina
-{
-    margin-top: auto;
-    background-color: rgb(0, 0, 0);
-    border-top: 2px solid var(--acento);
-    color: var(--acento);
-    padding: 10px 20px;
-    bottom: 0px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    display: flex;
-}
-
-.informacion_left
-{
+    letter-spacing: 0.5px;
     text-transform: uppercase;
+    color: var(--color-dieta);
+}
+
+.ficha_datos dd
+{
+    font-size: 19px;
+}
+
+.ficha_imagen
+{
+    position: sticky;
+    top: 90px;
+    display: grid;
+    place-items: center;
+    min-height: 360px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.ficha_imagen img
+{
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Botones anterior / volver / siguiente */
+.ficha_navegacion
+{
     display: flex;
-    align-items: center;
-    text-align: left;
-    font-size: 14px;
-}
-
-.informacion_center
-{
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-}
-
-.informacion_right
-{
-    text-transform: uppercase;
-    align-items: center;
-    text-align: right;
-    font-size: 14px;
-}
-
-.titulo_footer
-{
-    font-family: 'Arial', sans-serif;
-    font-size: 1.17em;
-}
-
-.redes
-{
-    color: var(--acento);
-    text-decoration: none;
-    font-size: 14px;
-}
-
-main
-{
-    padding: 30px 20px;
-}
-
-/* ===== Fondos de las páginas de dinosaurios (sin cambios) ===== */
-.fondo_carnivoro
-{
-    background-image: url(../imagenes/fondo_carnivoro.webp);
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo_herviboro
-{
-    background-image: url(../imagenes/fondo_herviboro.webp);
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo_omnivoro
-{
-    background-image: url(../imagenes/fondo_omnivoro.webp);
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-/* ===== Paneles de la ficha (mismo estilo que los paneles del index) ===== */
-.separador_omnivoro,
-.separador_carnivoro,
-.separador_herviboro
-{
-    background-color: var(--panel);
-    border: 2px solid var(--acento);
-    border-radius: 25px;
-    margin: auto;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    display: flex;
-    height: auto;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.carnivoro,
-.herbivoro
-{
-    background-color: var(--panel);
-    color: var(--acento);
-    padding: 10px;
-    margin: 20px;
-    width: 500px;
-    max-width: calc(100% - 40px);
-    border-radius: 25px;
-    border: 2px solid var(--acento);
-    font-style: normal;
-    font-size: 18px;
-}
-
-.fondo_imagen
-{
-    background-color: rgba(0, 0, 0, 0.504);
-    border: 2px solid var(--acento);
-    border-radius: 20px;
-    aspect-ratio: 1/1;
-    width: 100%;
-    max-width: 500px;
-    height: 450px;
-    gap: 20px;
-    margin: 20px;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 12px;
+    margin-top: 32px;
 }
 
-.imagen
+/* ---------- Responsive ---------- */
+@media (max-width: 900px)
 {
-    width: 90%;
-    max-width: 600px;
-    height: auto;
-    object-fit: cover;
-}
-
-/* ===== Carnívoros: paneles rojos ===== */
-.separador_carnivoro,
-.separador_carnivoro .carnivoro,
-.separador_carnivoro .fondo_imagen
-{
-    border-color: rgb(255, 45, 45);
-}
-
-.separador_carnivoro,
-.separador_carnivoro .carnivoro
-{
-    background-color: rgba(120, 0, 0, 0.45);
-    color: rgb(255, 150, 150);
-}
-
-.separador_carnivoro h1
-{
-    color: rgb(255, 70, 70);
-}
-
-/* ===== Omnívoros: fusión verde + rojo (borde degradado sobre fondo opaco) ===== */
-.separador_omnivoro,
-.separador_omnivoro .carnivoro,
-.separador_omnivoro .herbivoro,
-.separador_omnivoro .fondo_imagen
-{
-    border-color: transparent;
-    background:
-        linear-gradient(135deg, rgb(52, 16, 4), rgb(60, 6, 6)) padding-box,
-        linear-gradient(135deg, var(--acento), rgb(255, 45, 45)) border-box;
-    color: rgb(255, 215, 90);
-}
-
-.separador_omnivoro h1
-{
-    background: linear-gradient(90deg, var(--acento), rgb(255, 70, 70));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-/* El título de la ficha es h1; mantiene el tamaño que tenía como h2 */
-h1
-{
-    font-size: 1.5em;
+    .ficha { grid-template-columns: 1fr; }
+    .ficha_imagen { position: static; min-height: 0; order: -1; } /* en celular la imagen va primero */
 }
 
 @media (max-width: 768px)
 {
-    main { padding: 20px 10px; }
-    .pie_pagina { flex-direction: column; text-align: center; }
-    .informacion_left, .informacion_right { text-align: center; justify-content: center; }
-    .paginas a { font-size: 18px; }
+    /* El índice fijo tapaba las tarjetas: en celular pasa a una fila deslizable */
+    #lista_alfabetica
+    {
+        position: sticky;
+        top: 0;
+        left: auto;
+        transform: none;
+        margin: 0 -12px 20px;
+        padding: 6px;
+        border-radius: 0;
+        overflow-x: auto;
+    }
+
+    #lista_alfabetica ul { grid-auto-flow: column; }
+    .boton_abc { font-size: 15px; padding: 4px 0; }
+    .lista_dinosaurios { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .texto_lista { font-size: 17px; }
 }

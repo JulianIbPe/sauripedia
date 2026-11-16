@@ -1,0 +1,302 @@
+/* ============================================================
+   quiz.css  -  Elección de nivel (quiz.php) y partida (quiz_juego.php)
+   ============================================================ */
+
+/* ---------- Elección de nivel ---------- */
+.introduccion_quiz
+{
+    max-width: 900px;
+    margin: 0 auto 40px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.introduccion_quiz h2
+{
+    margin-bottom: 12px;
+}
+
+.niveles_quiz
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.niveles_quiz li
+{
+    animation: aparecer-escalonado 0.55s var(--vt-curva) both;
+}
+
+.niveles_quiz li:nth-child(1) { animation-delay: 0.10s; }
+.niveles_quiz li:nth-child(2) { animation-delay: 0.18s; }
+.niveles_quiz li:nth-child(3) { animation-delay: 0.26s; }
+
+.boton_nivel
+{
+    width: 240px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--sobre-acento);
+    background-color: var(--acento);
+    border-radius: 28px;
+    transition: transform 0.25s var(--vt-curva), box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.boton_nivel:hover
+{
+    color: var(--sobre-acento);
+    background-color: var(--acento-fuerte);
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(var(--acento-rgb), 0.3);
+}
+
+.boton_nivel_titulo
+{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.boton_nivel_texto
+{
+    font-size: 15px;
+}
+
+/* ---------- Partida ---------- */
+#quiz
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#quiz-juego,
+#quiz-resultado
+{
+    animation: aparecer-escalonado 0.5s var(--vt-curva) both;
+}
+
+/* Mientras quiz.js descarga las preguntas se muestra solo el texto de carga */
+#quiz-juego:not(.listo) > :not(.quiz-cargando) { display: none; }
+#quiz-juego.listo .quiz-cargando { display: none; }
+
+.quiz-info
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--acento);
+}
+
+.barra
+{
+    height: 12px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--borde-suave);
+    border-radius: 999px;
+}
+
+#barra-progreso
+{
+    width: 0;
+    height: 100%;
+    background-color: var(--acento);
+    border-radius: inherit;
+    transition: width 0.5s var(--vt-curva);
+}
+
+.tipo-pregunta
+{
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--sobre-acento);
+    background-color: var(--acento);
+    border-radius: 999px;
+}
+
+#pregunta
+{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+/* Cada pregunta nueva entra deslizándose (quiz.js reinicia la clase) */
+#zona-pregunta.entra
+{
+    animation: pregunta-entra 0.45s var(--vt-curva) both;
+}
+
+@keyframes pregunta-entra
+{
+    from { opacity: 0; transform: translateX(36px); }
+}
+
+#opciones
+{
+    display: grid;
+    gap: 12px;
+}
+
+#opciones.vf
+{
+    grid-template-columns: 1fr 1fr;
+}
+
+.opcion
+{
+    padding: 14px 16px;
+    font: 18px Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: var(--texto);
+    background-color: var(--campo);
+    border: 1px solid var(--borde-suave);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s var(--vt-curva);
+}
+
+/* Las opciones aparecen una tras otra */
+#zona-pregunta.entra .opcion
+{
+    animation: aparecer-escalonado 0.4s var(--vt-curva) both;
+}
+
+#zona-pregunta.entra .opcion:nth-child(1) { animation-delay: 0.08s; }
+#zona-pregunta.entra .opcion:nth-child(2) { animation-delay: 0.13s; }
+#zona-pregunta.entra .opcion:nth-child(3) { animation-delay: 0.18s; }
+#zona-pregunta.entra .opcion:nth-child(4) { animation-delay: 0.23s; }
+#zona-pregunta.entra .opcion:nth-child(n+5) { animation-delay: 0.28s; }
+
+.opcion:hover:not(:disabled)
+{
+    background-color: var(--panel-hover);
+    border-color: var(--acento);
+    transform: translateX(4px);
+}
+
+.opcion:disabled
+{
+    cursor: default;
+}
+
+.opcion.seleccionada
+{
+    border-color: var(--acento);
+    background-color: var(--panel-hover);
+    box-shadow: inset 5px 0 0 var(--acento);
+    font-weight: bold;
+}
+
+.opcion.correcta
+{
+    color: var(--sobre-acento);
+    background-color: var(--correcto);
+    border-color: var(--correcto);
+    font-weight: bold;
+    animation: opcion-acierto 0.4s ease;
+}
+
+.opcion.incorrecta
+{
+    color: #fff;
+    background-color: var(--error-fondo);
+    border-color: var(--error);
+    animation: opcion-error 0.4s ease;
+}
+
+@keyframes opcion-acierto
+{
+    50% { transform: scale(1.02); }
+}
+
+@keyframes opcion-error
+{
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+#opciones.vf .opcion
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+#opciones.vf .opcion:hover:not(:disabled)
+{
+    transform: translateY(-2px);
+}
+
+.mensaje
+{
+    min-height: 28px;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mensaje.ok  { color: var(--correcto); }
+.mensaje.mal { color: var(--error); }
+
+#btn-siguiente
+{
+    margin-top: 14px;
+}
+
+/* ---------- Resultado ---------- */
+#quiz-resultado
+{
+    text-align: center;
+}
+
+#quiz-resultado h2
+{
+    margin-bottom: 14px;
+}
+
+#puntaje-final
+{
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--acento);
+}
+
+#mensaje-final
+{
+    margin-bottom: 18px;
+    font-size: 19px;
+}
+
+.quiz-acciones
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+@media (max-width: 600px)
+{
+    #pregunta { font-size: 19px; }
+    .opcion { font-size: 16px; }
+    .boton_nivel { width: 100%; }
+    .niveles_quiz li { width: 100%; max-width: 320px; }
+}

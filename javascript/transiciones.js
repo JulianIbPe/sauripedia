@@ -1,64 +1,114 @@
 // ============================================================
 // transiciones.js
-// Transición entre los apartados del nav: el contenido se desliza
-//   - hacia la izquierda si vas a un apartado que está MÁS A LA DERECHA
-//     en el nav (la página nueva entra desde la derecha),
-//   - hacia la derecha si vas a uno que está MÁS A LA IZQUIERDA.
-// Se carga en el <head> para que la animación de entrada empiece
-// antes de que se pinte la página (sin parpadeos).
+// Decide hacia dónde se anima el cambio de página. Los movimientos
+// están en css/transiciones.css; acá solo se elige cuál usar.
+//
+// Cada página indica su lugar en el sitio en la etiqueta <html>
+// (lo escribe includes/cabecera.php):
+//   data-orden = posición de su sección en el menú (0 = Inicio, 1 = Dinosaurios...)
+//   data-nivel = 0 si es la página de la sección, 1 si es una subpágina (ficha, partida)
+//
+// Al irse de una página se guarda su posición; la página nueva la compara
+// con la suya y elige el tipo: adelante, atras, entrar, salir o fundido.
+// Funciona también con los botones Atrás/Adelante del navegador.
+//
+// Se carga en el <head> sin defer para preparar la animación antes de pintar.
 // ============================================================
 (function () {
     "use strict";
 
-    var CLAVE = "sauripedia_direccion_nav";
-    var DURACION_SALIDA = 260; // ms (igual que en navegacion.css)
+    var CLAVE = "sauripedia_pagina_anterior";
+    var VIGENCIA_MS = 5000; // si pasó más tiempo, no es una navegación "directa"
     var raiz = document.documentElement;
-    var sinMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var CLASES = ["nav_anim", "sale_izq", "sale_der", "entra_izq", "entra_der"];
 
-    function limpiar() {
-        CLASES.forEach(function (c) { raiz.classList.remove(c); });
+    var actual = {
+        orden: Number(raiz.dataset.orden) || 0,
+        nivel: Number(raiz.dataset.nivel) || 0
+    };
+
+    // ¿El navegador soporta View Transitions entre páginas? (evento pagereveal)
+    var soportaVistas = "onpagereveal" in window;
+
+    // ---------- 1) Elegir el tipo de transición comparando con la página anterior ----------
+    function tipoDeTransicion(anterior) {
+        if (!anterior) {
+            return null; // primera visita, enlace externo o pestaña nueva: sin animación
+        }
+        if (anterior.forzado) {
+            return anterior.forzado; // ej. "Siguiente ficha" -> adelante
+        }
+        if (anterior.orden !== actual.orden) {
+            return actual.orden > anterior.orden ? "adelante" : "atras";
+        }
+        if (anterior.nivel !== actual.nivel) {
+            return actual.nivel > anterior.nivel ? "entrar" : "salir";
+        }
+        return "fundido";
     }
 
-    // --- Entrada: ¿venimos de un clic en el nav? ---
-    var direccion = null;
-    try {
-        direccion = sessionStorage.getItem(CLAVE);
-        sessionStorage.removeItem(CLAVE);
-    } catch (e) { /* sin sessionStorage: simplemente no hay animación */ }
-
-    if (direccion && !sinMovimiento) {
-        raiz.classList.add("nav_anim", "entra_" + direccion);
-        setTimeout(limpiar, 500);
+    function leerAnterior() {
+        try {
+            var guardado = JSON.parse(sessionStorage.getItem(CLAVE));
+            sessionStorage.removeItem(CLAVE);
+            if (guardado && Date.now() - guardado.momento < VIGENCIA_MS) {
+                return guardado;
+            }
+        } catch (e) { /* sin sessionStorage (modo privado estricto): sin animación */ }
+        return null;
     }
 
-    // Al volver con "atrás" el navegador puede restaurar la página a mitad de salida
-    window.addEventListener("pageshow", function (e) { if (e.persisted) limpiar(); });
+    // ---------- 2) Aplicar la animación de entrada ----------
+    if (soportaVistas) {
+        // El navegador ya está animando: en "pagereveal" le decimos qué tipo usar.
+        // Se lee recién ahí porque la página vieja guarda su posición en "pageswap",
+        // que el navegador garantiza que ocurre antes.
+        window.addEventListener("pagereveal", function (evento) {
+            var tipo = tipoDeTransicion(leerAnterior());
+            if (!evento.viewTransition) {
+                return;
+            }
+            if (!tipo) {
+                evento.viewTransition.skipTransition(); // sin origen conocido: aparece sin animar
+            } else if (evento.viewTransition.types) {
+                evento.viewTransition.types.add(tipo);
+            }
+        }, { once: true });
+    } else {
+        // Respaldo: clase en <html> que anima solo la entrada del <main>
+        var tipo = tipoDeTransicion(leerAnterior());
+        if (tipo) {
+            raiz.classList.add("entrada-" + tipo);
+            setTimeout(function () { raiz.classList.remove("entrada-" + tipo); }, 900);
+        }
+    }
 
-    // --- Salida: al hacer clic en un enlace del nav ---
-    document.addEventListener("DOMContentLoaded", function () {
-        var enlaces = Array.from(document.querySelectorAll(".paginas ul a[href]"));
-        if (!enlaces.length) return;
+    // ---------- 3) Al irse de esta página, guardar su posición ----------
+    var forzado = null;
 
-        var actual = enlaces.findIndex(function (a) {
-            return a.classList.contains("opcion_seleccionada") || a.getAttribute("aria-current") === "page";
-        });
+    // Los enlaces rel="next" / rel="prev" (fichas siguiente/anterior) tienen dirección propia
+    document.addEventListener("click", function (evento) {
+        var enlace = evento.target.closest && evento.target.closest("a[rel~='next'], a[rel~='prev']");
+        if (enlace) {
+            forzado = enlace.relList.contains("next") ? "adelante" : "atras";
+        }
+    });
 
-        enlaces.forEach(function (enlace, destino) {
-            enlace.addEventListener("click", function (e) {
-                // Respeta clic con Ctrl/Cmd/Shift, botón central, nueva pestaña, etc.
-                if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-                if (enlace.target && enlace.target !== "_self") return;
-                if (sinMovimiento || destino === actual) return;
+    function guardarPosicion() {
+        try {
+            sessionStorage.setItem(CLAVE, JSON.stringify({
+                orden: actual.orden,
+                nivel: actual.nivel,
+                forzado: forzado,
+                momento: Date.now()
+            }));
+        } catch (e) { /* sin sessionStorage: la próxima página entra sin animación */ }
+    }
 
-                e.preventDefault();
-                // Destino más a la derecha => el contenido sale hacia la izquierda
-                var haciaDerecha = actual === -1 || destino > actual;
-                try { sessionStorage.setItem(CLAVE, haciaDerecha ? "der" : "izq"); } catch (err) {}
-
-                raiz.classList.add("nav_anim", haciaDerecha ? "sale_izq" : "sale_der");
-                setTimeout(function () { window.location.href = enlace.href; }, DURACION_SALIDA);
-            });
-        });
+    // pageswap: justo antes de cambiar de página (navegadores con View Transitions).
+    // pagehide: al salir, en todos los navegadores (clic, Atrás, Adelante, otra URL).
+    window.addEventListener("pageswap", guardarPosicion);
+    window.addEventListener("pagehide", function () {
+        guardarPosicion();
+        forzado = null;
     });
 })();

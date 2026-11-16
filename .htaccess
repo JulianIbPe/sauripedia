@@ -1,17 +1,37 @@
-# --- Protección del servidor (Apache) ---
+# ============================================================
+# Configuración de Apache para Sauripedia
+# ============================================================
 Options -Indexes
+DirectoryIndex index.php
 
-# Archivos que nunca deben descargarse desde la web (volcado de la base, configuraciones)
-<FilesMatch "\.(sql|md|log|ini|bak|env)$">
+# ---- Archivos que nunca deben descargarse desde la web ----
+# (volcados de la base, backups, comprimidos con el código fuente, configuraciones)
+<FilesMatch "\.(sql|md|log|ini|bak|env|zip|rar|7z|tar|gz)$">
     Require all denied
 </FilesMatch>
-<FilesMatch "^(conexion_be|config_sesion)\.php$">
-    Require all denied
-</FilesMatch>
+# Las carpetas includes/ y sql/ tienen su propio .htaccess con "Require all denied".
 
+# ---- Cabeceras de seguridad ----
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# ---- Direcciones nuevas y redirecciones de las viejas ----
+# Las páginas pasaron de .html a .php. Estas reglas (301 = permanente) llevan a
+# la página nueva a quien tenga un enlace o marcador viejo, y le avisan a Google.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+    RewriteRule ^index\.html$ index.php [R=301,L,NC]
+    RewriteRule ^pages/dinosaurios/dinosaurioslista\.html$ pages/dinosaurios.php [R=301,L,NC]
+    RewriteRule ^pages/dinosaurios/([a-z0-9-]+)\.html$ pages/dinosaurio.php?id=$1 [R=301,L,NC]
+    RewriteRule ^pages/dinosaurioslista\.html$ pages/dinosaurios.php [R=301,L,NC]
+    RewriteRule ^pages/singin\.html$ pages/registro.php [R=301,L,NC]
+    RewriteRule ^pages/quizzes/quiz_(facil|medio|dificil)\.html$ pages/quiz_juego.php?nivel=$1 [R=301,L,NC]
+    RewriteRule ^pages/(mundo|quiz|comentarios|login)\.html$ pages/$1.php [R=301,L,NC]
 </IfModule>

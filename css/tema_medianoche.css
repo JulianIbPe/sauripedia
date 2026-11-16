@@ -1,0 +1,56 @@
+/* ============================================================
+   tema_medianoche.css  -  Tema "Medianoche verde"
+   Fondo casi negro, acento verde menta suave, bajo brillo.
+   TODOS los colores del sitio salen de estas variables:
+   para cambiar de paleta solo se editan los valores de :root.
+   ============================================================ */
+:root
+{
+    color-scheme: dark;
+
+    --fondo-base: #050a05;               /* color detrás de todo */
+    --barra: #000;                       /* nav y pie */
+    --acento: #7fd36a;                   /* títulos, bordes, botones, enlaces */
+    --acento-rgb: 127, 211, 106;         /* el mismo color, para usar con transparencia */
+    --acento-fuerte: #a6e894;            /* hover y enlace activo */
+    --sobre-acento: #04140a;             /* texto encima de un botón verde */
+    --texto: #e6f2e1;                    /* párrafos */
+    --texto-suave: #b5c9ae;              /* textos secundarios */
+    --panel: rgba(6, 18, 8, 0.9);        /* fondo de los paneles */
+    --panel-hover: rgba(14, 36, 16, 0.94);
+    --campo: #030803;                    /* fondo de inputs y textarea */
+    --borde-suave: rgba(127, 211, 106, 0.35);
+
+    --correcto: #7fd36a;                 /* respuesta correcta del quiz */
+    --error: #ff8a7a;                    /* mensajes de error, respuesta incorrecta */
+    --error-fondo: rgba(120, 20, 10, 0.55);
+
+    /* Colores por dieta: se mantienen distinguibles pero apagados, a tono con el tema */
+    --carnivoro: #e07a68;
+    --herbivoro: #7fd36a;
+    --omnivoro: #d9b85c;
+
+    /* Cómo se oscurece la foto de fondo (mismo filtro que la muestra de opciones_colores) */
+    --filtro-fondo: brightness(0.35) saturate(0.7);
+}
+
+/* Capa fija sobre la foto de fondo que la oscurece y le baja la saturación */
+body::before
+{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: rgba(5, 10, 5, 0.65); /* respaldo si el navegador no soporta backdrop-filter */
+}
+
+@supports (backdrop-filter: brightness(1)) or (-webkit-backdrop-filter: brightness(1))
+{
+    body::before
+    {
+        background: rgba(5, 10, 5, 0.1);
+        -webkit-backdrop-filter: var(--filtro-fondo);
+        backdrop-filter: var(--filtro-fondo);
+    }
+}

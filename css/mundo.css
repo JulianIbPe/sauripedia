@@ -1,0 +1,78 @@
+/* ============================================================
+   mundo.css  -  Mundo prehistórico (mapas por período)
+   ============================================================ */
+
+.introduccion_mundo
+{
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    font-size: 19px;
+}
+
+.introduccion_mundo h2
+{
+    margin-bottom: 14px;
+}
+
+.titulo_mapas
+{
+    margin: 0 auto 24px;
+    max-width: 900px;
+    font-size: clamp(24px, 4vw, 40px);
+    text-align: center;
+}
+
+.botones_mapa
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.boton_mapa
+{
+    min-width: 200px;
+    padding: 14px 24px;
+    font-size: 17px;
+    color: var(--acento);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Período elegido: botón relleno */
+.boton_mapa[aria-pressed="true"]
+{
+    color: var(--sobre-acento);
+    background-color: var(--acento);
+}
+
+.fondo_mapas
+{
+    display: grid;
+    place-items: center;
+    min-height: 160px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--borde-suave);
+    border-radius: 22px;
+}
+
+.mapa
+{
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 12px;
+    animation: aparecer_mapa 0.5s var(--vt-curva) both;
+}
+
+.mapa_ayuda
+{
+    color: var(--texto-suave);
+}
+
+@keyframes aparecer_mapa
+{
+    from { opacity: 0; transform: scale(0.97); }
+}

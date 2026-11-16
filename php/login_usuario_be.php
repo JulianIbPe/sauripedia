@@ -1,86 +1,106 @@
 <?php
+// ============================================================
+// login_usuario_be.php
+// Procesa el formulario de pages/login.php.
+// Flujo: validar método y CSRF -> frenar fuerza bruta -> verificar credenciales
+//        -> iniciar sesión o volver al formulario con un mensaje.
+// Patrón POST/Redirect/GET: siempre termina en una redirección, así
+// recargar la página nunca reenvía la contraseña.
+// ============================================================
+require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/../includes/conexion.php';
 
-    include 'config_sesion.php';
-    include 'conexion_be.php';
+// Límite de intentos fallidos POR IP, guardado en la base de datos.
+// (Antes se guardaba en la sesión: bastaba con borrar la cookie para saltarlo.)
+const MAX_INTENTOS   = 5;
+const VENTANA_MINUTOS = 5;
 
-    function volver_a_login($mensaje){
-        echo '
-            <script>
-                alert(' . json_encode($mensaje, JSON_UNESCAPED_UNICODE) . ');
-                window.location = "../pages/login.html";
-            </script>
-        ';
-        exit();
-    }
+/** Vuelve al formulario mostrando un error y conservando el usuario escrito. */
+function volver_a_login(string $mensaje, string $usuario = ''): void
+{
+    guardar_flash('error', $mensaje, ['usuario' => $usuario]);
+    redirigir('pages/login.php');
+}
 
-    if($_SERVER['REQUEST_METHOD'] !== 'POST'){
-        header("location: ../pages/login.html");
-        exit();
-    }
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    redirigir('pages/login.php');
+}
 
-    $usuario  = trim($_POST['usuario'] ?? '');
-    $password = $_POST['password'] ?? '';
+$usuario  = trim((string) ($_POST['usuario'] ?? ''));
+$password = (string) ($_POST['password'] ?? '');
 
-    if($usuario === '' || $password === ''){
-        volver_a_login("Completa usuario y contraseña.");
-    }
+if (!csrf_valido($_POST['csrf_token'] ?? null)) {
+    volver_a_login('La sesión del formulario expiró. Intenta nuevamente.', $usuario);
+}
+if ($usuario === '' || $password === '') {
+    volver_a_login('Completa usuario y contraseña.', $usuario);
+}
 
-    // ---- Límite de intentos fallidos (frena la fuerza bruta básica) ----
-    $MAX_INTENTOS = 5;
-    $BLOQUEO_SEG  = 300; // 5 minutos
-    if(!empty($_SESSION['bloqueo_hasta']) && time() < $_SESSION['bloqueo_hasta']){
-        volver_a_login("Demasiados intentos fallidos. Espera unos minutos e intenta de nuevo.");
-    }
+$bd = conectar_bd();
+if (!$bd) {
+    volver_a_login('No se pudo conectar con el servidor. Intenta más tarde.', $usuario);
+}
 
-    $stmt = mysqli_prepare($conexion, "SELECT id, nombre_usuario, password FROM usuarios WHERE nombre_usuario = ? LIMIT 1");
-    mysqli_stmt_bind_param($stmt, "s", $usuario);
-    mysqli_stmt_execute($stmt);
-    $resultado = mysqli_stmt_get_result($stmt);
-    $fila = mysqli_fetch_assoc($resultado);
+$ip = $_SERVER['REMOTE_ADDR'] ?? 'desconocida';
+
+// ---- 1) ¿Esta IP superó el límite de intentos fallidos? ----
+$stmt = consulta($bd,
+    'SELECT COUNT(*) FROM intentos_login WHERE ip = ? AND fecha > NOW() - INTERVAL ? MINUTE',
+    'si', [$ip, VENTANA_MINUTOS]);
+$intentos = 0;
+if ($stmt) {
+    mysqli_stmt_bind_result($stmt, $intentos);
+    mysqli_stmt_fetch($stmt);
     mysqli_stmt_close($stmt);
+}
+if ($intentos >= MAX_INTENTOS) {
+    volver_a_login('Demasiados intentos fallidos. Espera unos minutos e intenta de nuevo.', $usuario);
+}
 
-    $valido = false;
-    if($fila){
-        $guardada = $fila['password'];
-        if(password_verify($password, $guardada)){
-            $valido = true;
-            // Si el algoritmo por defecto mejoró, se actualiza el hash
-            if(password_needs_rehash($guardada, PASSWORD_DEFAULT)){
-                $nuevo = password_hash($password, PASSWORD_DEFAULT);
-                $upd = mysqli_prepare($conexion, "UPDATE usuarios SET password = ? WHERE id = ?");
-                mysqli_stmt_bind_param($upd, "si", $nuevo, $fila['id']);
-                mysqli_stmt_execute($upd);
-                mysqli_stmt_close($upd);
-            }
-        }
-        // Compatibilidad: cuentas antiguas guardadas con SHA-512. Si coincide,
-        // se migra automáticamente a bcrypt en este primer inicio de sesión.
-        elseif(strlen($guardada) === 128 && hash_equals($guardada, hash('sha512', $password))){
-            $valido = true;
-            $nuevo = password_hash($password, PASSWORD_DEFAULT);
-            $upd = mysqli_prepare($conexion, "UPDATE usuarios SET password = ? WHERE id = ?");
-            mysqli_stmt_bind_param($upd, "si", $nuevo, $fila['id']);
-            mysqli_stmt_execute($upd);
-            mysqli_stmt_close($upd);
-        }
+// ---- 2) Buscar al usuario y verificar la contraseña ----
+$fila = null;
+$stmt = consulta($bd, 'SELECT id, nombre_usuario, password FROM usuarios WHERE nombre_usuario = ? LIMIT 1', 's', [$usuario]);
+if ($stmt) {
+    $fila = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
+    mysqli_stmt_close($stmt);
+}
+
+$valido = false;
+$rehash = false;
+if ($fila) {
+    $guardada = $fila['password'];
+
+    if (password_verify($password, $guardada)) {
+        $valido = true;
+        $rehash = password_needs_rehash($guardada, PASSWORD_DEFAULT); // el algoritmo por defecto mejoró
+    } elseif (strlen($guardada) === 128 && hash_equals($guardada, hash('sha512', $password))) {
+        // Compatibilidad: cuentas antiguas guardadas con SHA-512 se migran a bcrypt al entrar
+        $valido = true;
+        $rehash = true;
     }
 
-    mysqli_close($conexion);
-
-    if($valido){
-        session_regenerate_id(true);
-        unset($_SESSION['intentos_fallidos'], $_SESSION['bloqueo_hasta']);
-        // Guardamos el nombre tal cual está en la base de datos (no el que se escribió en el formulario)
-        $_SESSION['usuario'] = $fila['nombre_usuario'];
-        header("location: ../index.html");
-        exit();
+    if ($valido && $rehash) {
+        $stmt = consulta($bd, 'UPDATE usuarios SET password = ? WHERE id = ?', 'si', [password_hash($password, PASSWORD_DEFAULT), $fila['id']]);
+        if ($stmt) mysqli_stmt_close($stmt);
     }
+}
 
-    $_SESSION['intentos_fallidos'] = ($_SESSION['intentos_fallidos'] ?? 0) + 1;
-    if($_SESSION['intentos_fallidos'] >= $MAX_INTENTOS){
-        $_SESSION['bloqueo_hasta'] = time() + $BLOQUEO_SEG;
-        $_SESSION['intentos_fallidos'] = 0;
-    }
-    // Mismo mensaje para "usuario inexistente" y "contraseña incorrecta"
-    volver_a_login("Usuario o contraseña incorrectos, por favor verifique los datos ingresados");
-?>
+// ---- 3) Resultado ----
+if ($valido) {
+    // Login correcto: se olvidan los intentos fallidos de esta IP
+    $stmt = consulta($bd, 'DELETE FROM intentos_login WHERE ip = ?', 's', [$ip]);
+    if ($stmt) mysqli_stmt_close($stmt);
+
+    // Se guarda el nombre tal como está en la base (no el que se escribió en el formulario)
+    iniciar_sesion_usuario($fila['nombre_usuario']);
+    redirigir('index.php');
+}
+
+// Login fallido: se registra el intento y se limpian los registros viejos (más de un día)
+$stmt = consulta($bd, 'INSERT INTO intentos_login (ip) VALUES (?)', 's', [$ip]);
+if ($stmt) mysqli_stmt_close($stmt);
+$stmt = consulta($bd, 'DELETE FROM intentos_login WHERE fecha < NOW() - INTERVAL 1 DAY');
+if ($stmt) mysqli_stmt_close($stmt);
+
+// Mismo mensaje para "usuario inexistente" y "contraseña incorrecta": no revela qué usuarios existen
+volver_a_login('Usuario o contraseña incorrectos. Verifica los datos ingresados.', $usuario);

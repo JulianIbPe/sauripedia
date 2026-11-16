@@ -4,104 +4,124 @@
 // Todo el texto de los usuarios se inserta con textContent (nunca
 // innerHTML), así un comentario con código HTML/JS se ve como texto
 // y no se ejecuta (evita ataques XSS).
+//
+// Si el visitante no inició sesión, PHP no dibuja el formulario:
+// este script solo carga la lista.
 // ============================================================
 (function () {
-    const formulario = document.getElementById("form_comentario");
-    const lista = document.getElementById("lista_comentarios");
-    const aviso = document.getElementById("aviso_comentario");
-    const contador = document.getElementById("contador_comentario");
-    if (!formulario || !lista) { return; }
+    "use strict";
 
-    const caja = document.getElementById("comentario");
-    const boton = formulario.querySelector("button[type=submit]");
-    const MAX = 500;
+    var MAX = 500;
+    var raiz = document.documentElement.dataset.raiz || "";
+    var API = raiz + "php/comentarios_be.php";
 
-    function mostrarAviso(texto, esError) {
-        aviso.textContent = texto;
-        aviso.className = esError ? "aviso_error" : "aviso_ok";
+    var lista = document.getElementById("lista_comentarios");
+    var formulario = document.getElementById("form_comentario"); // null sin sesión
+    if (!lista) {
+        return;
     }
 
     function formatearFecha(valor) {
-        const f = new Date(String(valor).replace(" ", "T") + "Z");
-        return isNaN(f) ? "" : f.toLocaleString("es-AR", { dateStyle: "medium", timeStyle: "short" });
+        // La base guarda en UTC: se agrega "Z" para que el navegador la pase a la hora local
+        var fecha = new Date(String(valor).replace(" ", "T") + "Z");
+        return isNaN(fecha) ? "" : fecha.toLocaleString("es-AR", { dateStyle: "medium", timeStyle: "short" });
     }
 
-    async function cargarComentarios() {
+    function crearComentario(c, esNuevo) {
+        var item = document.createElement("article");
+        item.className = "panel comentario_item" + (esNuevo ? " nuevo" : "");
+
+        var autor = document.createElement("strong");
+        autor.textContent = c.usuario;
+
+        var fecha = document.createElement("time");
+        fecha.dateTime = String(c.fecha).replace(" ", "T") + "Z";
+        fecha.textContent = " · " + formatearFecha(c.fecha);
+
+        var texto = document.createElement("p");
+        texto.textContent = c.texto;
+
+        item.append(autor, fecha, texto);
+        return item;
+    }
+
+    function mensajeEnLista(texto) {
+        var p = document.createElement("p");
+        p.className = "panel comentario_item";
+        p.textContent = texto;
+        lista.replaceChildren(p);
+    }
+
+    // animarPrimero: true justo después de publicar, para animar el comentario nuevo
+    async function cargarComentarios(animarPrimero) {
         try {
-            const r = await fetch("../php/comentarios_be.php", { cache: "no-store", credentials: "same-origin" });
-            const datos = await r.json();
-            lista.replaceChildren();
-            if (!datos.comentarios || datos.comentarios.length === 0) {
-                const vacio = document.createElement("p");
-                vacio.textContent = "Todavía no hay comentarios. ¡Sé el primero!";
-                lista.appendChild(vacio);
+            var respuesta = await fetch(API, { cache: "no-store", credentials: "same-origin" });
+            var datos = await respuesta.json();
+            if (!respuesta.ok || !datos.ok) {
+                throw new Error(datos.error || "HTTP " + respuesta.status);
+            }
+            if (datos.comentarios.length === 0) {
+                mensajeEnLista("Todavía no hay comentarios. ¡Sé el primero!");
                 return;
             }
-            datos.comentarios.forEach(function (c) {
-                const item = document.createElement("article");
-                item.className = "comentario_item";
-                const autor = document.createElement("strong");
-                autor.textContent = c.usuario;
-                const fecha = document.createElement("time");
-                fecha.textContent = " · " + formatearFecha(c.fecha);
-                const texto = document.createElement("p");
-                texto.textContent = c.texto;
-                item.append(autor, fecha, texto);
-                lista.appendChild(item);
-            });
-        } catch (e) {
-            lista.textContent = "No se pudieron cargar los comentarios.";
+            lista.replaceChildren.apply(lista, datos.comentarios.map(function (c, i) {
+                return crearComentario(c, animarPrimero && i === 0);
+            }));
+        } catch (error) {
+            console.error("No se pudieron cargar los comentarios:", error);
+            mensajeEnLista("No se pudieron cargar los comentarios.");
         }
     }
 
-    // Habilita o deshabilita el formulario según haya sesión iniciada
-    async function revisarSesion() {
-        let logueado = false;
-        try {
-            const r = await fetch("../php/sesion_be.php", { cache: "no-store", credentials: "same-origin" });
-            const d = await r.json();
-            logueado = !!(d && d.logueado);
-        } catch (e) { /* sin servidor: se queda como sin sesión */ }
-        caja.disabled = !logueado;
-        boton.disabled = !logueado;
-        if (!logueado) {
-            mostrarAviso("Para comentar, inicia sesión o regístrate.", true);
+    // ---------- Formulario (solo con sesión iniciada) ----------
+    if (formulario) {
+        var caja = document.getElementById("comentario");
+        var boton = formulario.querySelector("button[type=submit]");
+        var aviso = document.getElementById("aviso_comentario");
+        var contador = document.getElementById("contador_comentario");
+        var token = formulario.dataset.csrf;
+
+        function mostrarAviso(texto, esError) {
+            aviso.textContent = texto;
+            aviso.className = "aviso " + (esError ? "aviso_error" : "aviso_ok");
         }
-    }
 
-    caja.addEventListener("input", function () {
-        contador.textContent = caja.value.length + " / " + MAX;
-    });
+        caja.addEventListener("input", function () {
+            contador.textContent = caja.value.length + " / " + MAX;
+        });
 
-    formulario.addEventListener("submit", async function (evento) {
-        evento.preventDefault();
-        const texto = caja.value.trim();
-        if (!texto) { mostrarAviso("Escribe un comentario.", true); return; }
-        boton.disabled = true;
-        try {
-            const t = await fetch("../php/token_csrf.php", { cache: "no-store", credentials: "same-origin" });
-            const { token } = await t.json();
-            const r = await fetch("../php/comentarios_be.php", {
-                method: "POST",
-                credentials: "same-origin",
-                headers: { "Content-Type": "application/json", "X-CSRF-Token": token },
-                body: JSON.stringify({ comentario: texto })
-            });
-            const d = await r.json();
-            if (r.ok && d.ok) {
-                caja.value = "";
-                contador.textContent = "0 / " + MAX;
-                mostrarAviso("¡Comentario publicado!", false);
-                cargarComentarios();
-            } else {
-                mostrarAviso(d.error || "No se pudo publicar el comentario.", true);
+        formulario.addEventListener("submit", async function (evento) {
+            evento.preventDefault();
+            var texto = caja.value.trim();
+            if (!texto) {
+                mostrarAviso("Escribe un comentario.", true);
+                caja.focus();
+                return;
             }
-        } catch (e) {
-            mostrarAviso("No se pudo conectar con el servidor.", true);
-        }
-        boton.disabled = false;
-    });
 
-    cargarComentarios();
-    revisarSesion();
+            boton.disabled = true;
+            try {
+                var respuesta = await fetch(API, {
+                    method: "POST",
+                    credentials: "same-origin",
+                    headers: { "Content-Type": "application/json", "X-CSRF-Token": token },
+                    body: JSON.stringify({ comentario: texto })
+                });
+                var datos = await respuesta.json();
+                if (respuesta.ok && datos.ok) {
+                    caja.value = "";
+                    contador.textContent = "0 / " + MAX;
+                    mostrarAviso("¡Comentario publicado!", false);
+                    cargarComentarios(true);
+                } else {
+                    mostrarAviso(datos.error || "No se pudo publicar el comentario.", true);
+                }
+            } catch (error) {
+                mostrarAviso("No se pudo conectar con el servidor.", true);
+            }
+            boton.disabled = false;
+        });
+    }
+
+    cargarComentarios(false);
 })();

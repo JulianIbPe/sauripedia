@@ -1,0 +1,98 @@
+/* ============================================================
+   transiciones.css
+   Animaciones al cambiar de página. Trabaja junto con transiciones.js.
+
+   Dos caminos (mejora progresiva):
+   1) Navegadores con "View Transitions" entre documentos (Chrome/Edge 126+,
+      Safari 18.2+): el navegador captura la página vieja y la nueva y las
+      anima a la vez. Es lo más fluido: no hay que esperar a que termine
+      la salida para empezar a cargar.
+   2) El resto (ej. Firefox): solo se anima la ENTRADA de la página nueva,
+      también sin demoras al hacer clic.
+
+   Tipos de transición (los decide transiciones.js):
+     adelante -> vas a una sección más a la derecha del menú (o a la ficha siguiente)
+     atras    -> vas a una más a la izquierda (o a la ficha anterior)
+     entrar   -> entras a una subpágina (lista -> ficha, quiz -> partida)
+     salir    -> vuelves de una subpágina
+     fundido  -> recarga o página del mismo nivel
+   ============================================================ */
+
+:root
+{
+    --vt-duracion: 0.45s;
+    --vt-curva: cubic-bezier(0.22, 1, 0.36, 1);   /* arranca rápido y frena suave */
+    --vt-distancia: 48px;
+}
+
+/* ---------- Camino 1: View Transitions ---------- */
+@view-transition
+{
+    navigation: auto;
+}
+
+/* La barra y el pie quedan quietos; solo se mueve el contenido */
+.cabecera   { view-transition-name: barra; }
+main        { view-transition-name: contenido; }
+.pie_pagina { view-transition-name: pie; }
+
+::view-transition-group(*)
+{
+    animation-duration: var(--vt-duracion);
+    animation-timing-function: var(--vt-curva);
+}
+
+/* Por defecto: fundido cruzado suave del contenido */
+::view-transition-old(contenido) { animation: vt-desvanecer 0.22s ease-in both; }
+::view-transition-new(contenido) { animation: vt-aparecer var(--vt-duracion) var(--vt-curva) both; }
+
+html:active-view-transition-type(adelante)::view-transition-old(contenido) { animation: vt-sale-izquierda 0.28s ease-in both; }
+html:active-view-transition-type(adelante)::view-transition-new(contenido) { animation: vt-entra-derecha var(--vt-duracion) var(--vt-curva) both; }
+
+html:active-view-transition-type(atras)::view-transition-old(contenido)    { animation: vt-sale-derecha 0.28s ease-in both; }
+html:active-view-transition-type(atras)::view-transition-new(contenido)    { animation: vt-entra-izquierda var(--vt-duracion) var(--vt-curva) both; }
+
+html:active-view-transition-type(entrar)::view-transition-old(contenido)   { animation: vt-alejar 0.28s ease-in both; }
+html:active-view-transition-type(entrar)::view-transition-new(contenido)   { animation: vt-acercar var(--vt-duracion) var(--vt-curva) both; }
+
+html:active-view-transition-type(salir)::view-transition-old(contenido)    { animation: vt-hundir 0.28s ease-in both; }
+html:active-view-transition-type(salir)::view-transition-new(contenido)    { animation: vt-emerger var(--vt-duracion) var(--vt-curva) both; }
+
+/* ---------- Camino 2: solo animación de entrada ---------- */
+html.entrada-adelante main { animation: vt-entra-derecha var(--vt-duracion) var(--vt-curva) both; }
+html.entrada-atras main    { animation: vt-entra-izquierda var(--vt-duracion) var(--vt-curva) both; }
+html.entrada-entrar main   { animation: vt-acercar var(--vt-duracion) var(--vt-curva) both; }
+html.entrada-salir main    { animation: vt-emerger var(--vt-duracion) var(--vt-curva) both; }
+html.entrada-fundido main  { animation: vt-aparecer var(--vt-duracion) var(--vt-curva) both; }
+
+/* ---------- Movimientos ---------- */
+@keyframes vt-aparecer        { from { opacity: 0; transform: translateY(10px); } }
+@keyframes vt-desvanecer      { to   { opacity: 0; } }
+
+@keyframes vt-entra-derecha   { from { opacity: 0; transform: translateX(var(--vt-distancia)); } }
+@keyframes vt-entra-izquierda { from { opacity: 0; transform: translateX(calc(var(--vt-distancia) * -1)); } }
+@keyframes vt-sale-izquierda  { to   { opacity: 0; transform: translateX(calc(var(--vt-distancia) * -0.6)); } }
+@keyframes vt-sale-derecha    { to   { opacity: 0; transform: translateX(calc(var(--vt-distancia) * 0.6)); } }
+
+@keyframes vt-acercar         { from { opacity: 0; transform: scale(0.96) translateY(16px); } }
+@keyframes vt-alejar          { to   { opacity: 0; transform: scale(1.02); } }
+@keyframes vt-emerger         { from { opacity: 0; transform: scale(1.03); } }
+@keyframes vt-hundir          { to   { opacity: 0; transform: scale(0.97) translateY(12px); } }
+
+/* ---------- Animación de aparición escalonada (la usan las fichas, tarjetas y formularios) ----------
+   Uso en el CSS de cada página:  animation: aparecer-escalonado ...; animation-delay: calc(N * 70ms) */
+@keyframes aparecer-escalonado { from { opacity: 0; transform: translateY(18px); } }
+
+/* ---------- Accesibilidad: quien pide menos movimiento no ve animaciones ---------- */
+@media (prefers-reduced-motion: reduce)
+{
+    @view-transition { navigation: none; }
+
+    *, *::before, *::after
+    {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

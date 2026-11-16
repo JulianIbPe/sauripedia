@@ -1,40 +1,59 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const buscar = document.getElementById("busqueda");
-    const grupos = document.querySelectorAll(".lista_dinosaurios");
+// ============================================================
+// busqueda.js
+// Filtra en vivo la lista de dinosaurios mientras se escribe.
+// Ignora mayúsculas y tildes ("iguanodon" encuentra "Iguanodón")
+// y oculta las letras que se quedan sin resultados.
+// ============================================================
+(function () {
+    "use strict";
 
-    //Previene el envio del formulario
-    const formulario = document.querySelector("form");
-    formulario.addEventListener("submit", function(event) {
-        event.preventDefault();
+    var buscador = document.getElementById("busqueda");
+    var sinResultados = document.getElementById("sin_resultados");
+    var grupos = document.querySelectorAll(".grupo_letra");
+    if (!buscador) {
+        return;
+    }
+
+    // Pasa a minúsculas y quita tildes: "Pteranodón" -> "pteranodon"
+    function normalizar(texto) {
+        return texto.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
+    }
+
+    // Se calcula una sola vez el texto de cada tarjeta (no en cada tecla)
+    var tarjetas = Array.from(document.querySelectorAll(".lista_dinosaurios .tarjeta")).map(function (tarjeta) {
+        return { elemento: tarjeta, texto: normalizar(tarjeta.textContent) };
     });
 
-    buscar.addEventListener("input", function(){
-        //guarda la busqueda e ignora mayusculas, minuscular y espacios en blanco
-        let texto = buscar.value.toLowerCase().trim();
+    // El formulario no se envía: la búsqueda es solo en la página
+    buscador.form.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+    });
 
-        //Empieza la busqueda usando como referencias las letras y despues busca por dinosaurio
-        grupos.forEach(function(grupo){
-            let letra = grupo.previousElementSibling;
-            let dinosaurios = grupo.querySelectorAll(".apartados");
-            let hayVisibles = false;
+    buscador.addEventListener("input", function () {
+        var busqueda = normalizar(buscador.value);
+        var visibles = 0;
 
-            dinosaurios.forEach(function(dinosaurio){
-                //Busca los dinosaurios sin importar mayuscular y minuscular
-                let saurus = dinosaurio.textContent.toLowerCase();
+        tarjetas.forEach(function (t) {
+            var coincide = busqueda === "" || t.texto.includes(busqueda);
+            var estabaOculta = t.elemento.hidden;
+            t.elemento.hidden = !coincide;
 
-                //Muestra todo en caso de que no haya ninguna busqueda
-                if(texto === "" || saurus.includes(texto))
-                {
-                    dinosaurio.style.display = "list-item";
-                    hayVisibles = true;
-                }
-                else
-                {
-                    dinosaurio.style.display = "none";
-                }
-            })
+            // Animación suave para las tarjetas que vuelven a aparecer
+            if (coincide && estabaOculta) {
+                t.elemento.classList.remove("reaparece");
+                void t.elemento.offsetWidth; // fuerza reinicio de la animación
+                t.elemento.classList.add("reaparece");
+            }
+            if (coincide) {
+                visibles++;
+            }
+        });
 
-            letra.style.display = hayVisibles ? "block" : "none";
-        })
-    })
-});
+        // Oculta el título de una letra si no le quedan tarjetas visibles
+        grupos.forEach(function (grupo) {
+            grupo.hidden = !grupo.querySelector(".tarjeta:not([hidden])");
+        });
+
+        sinResultados.hidden = visibles > 0;
+    });
+})();

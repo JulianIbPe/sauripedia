@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /experimentos/
+Disallow: /php/
 
 Sitemap: https://www.sauripedia.com/sitemap.xml

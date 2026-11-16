@@ -1,0 +1,3163 @@
+[
+  {
+    "id": "albertosaurus",
+    "nombre": "Albertosaurus",
+    "nombre_lista": "Albertosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de Alberta",
+    "clasificacion": "Terópodo/Tyrannosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Alberta, Canadá.",
+    "descripcion": "El Albertosaurus fue catalogado en el año 1905 y vivió hace 70 millones de años. Era un pariente más pequeño y liviano del Tyrannosaurus Rex. En el yacimiento de Dry Island se hallaron más de veinte ejemplares juntos, lo que sugiere que pudo haber cazado en grupo.",
+    "datos": {
+      "altura": "3,4 m",
+      "longitud": "9 m",
+      "peso": "2500 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "30"
+    },
+    "imagen": {
+      "archivo": "albertosaurus.webp",
+      "ancho": 900,
+      "alto": 461
+    },
+    "miniatura": {
+      "archivo": "albertosaurus.webp",
+      "ancho": 900,
+      "alto": 461
+    },
+    "meta_descripcion": "Albertosaurus: Dinosaurio carnívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "alosaurio",
+    "nombre": "Allosaurus",
+    "nombre_lista": "Alosaurio",
+    "dieta": "carnivoro",
+    "significado": "Lagarto extraño",
+    "clasificacion": "Terópodo/Allosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Tanzania, China, Siberia rusa, Portugal y EE.UU.",
+    "descripcion": "Es uno de los dinosaurios terópodos más reconocidos, ya que se sabe más de él que de cualquier carnívoro, catalogado en el año 1877 y vivió hace 150 millones de años. A juzgar por el gran desarrollo de los lóbulos olfativos en comparación con el resto del cerebro, usaba el olfato como principal medio para detectar su alimento.",
+    "datos": {
+      "altura": "3,5 m",
+      "longitud": "10 m",
+      "peso": "3000 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "60"
+    },
+    "imagen": {
+      "archivo": "alosaurio.webp",
+      "ancho": 612,
+      "alto": 408
+    },
+    "miniatura": {
+      "archivo": "alosaurio.webp",
+      "ancho": 612,
+      "alto": 408
+    },
+    "meta_descripcion": "Allosaurus: Dinosaurio carnívoro ubicado en Tanzania, China, Siberia rusa, Portugal y EE.UU. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "amargasaurus",
+    "nombre": "Amargasaurus",
+    "nombre_lista": "Amargasaurus",
+    "dieta": "herbivoro",
+    "significado": "Reptil de amarga",
+    "clasificacion": "Saurópodo/Dicraeosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en la Patagonia Argentina.",
+    "descripcion": "El Amargasaurus fue caralogado en el año 1991 y vivió hace 130 millones de años. Poseía espinas altas y una cresta que servía para atraer a las hembras y espantar a los depredadores. La cresta de piel, o de una lámina córnea dura, también le servía para regular su temperatura corporal.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "10 m",
+      "peso": "8000 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "amargasaurus.webp",
+      "ancho": 330,
+      "alto": 192
+    },
+    "miniatura": {
+      "archivo": "amargasaurus.webp",
+      "ancho": 330,
+      "alto": 192
+    },
+    "meta_descripcion": "Amargasaurus: Reptil de amarga Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "ankilosaurio",
+    "nombre": "Ankylosaurus",
+    "nombre_lista": "Ankilosaurio",
+    "dieta": "herbivoro",
+    "significado": "Lagarto blindado",
+    "clasificacion": "Tireóforo/Ankilosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Centro oeste de América del Norte.",
+    "descripcion": "El Ankylosaurus fue catalogado en el año 1908 y vivió hace 70 millones de años. Estaba cubierto desde la cabeza hasta la cola por una gruesa armadura de láminas óseas que le sevían de protección. El famoso mazo caudal del Ankylosaurus podría generar la fuerza suficiente para romper los huesos de sus atacantes durante los impactos.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "9 m",
+      "peso": "6000 kg",
+      "velocidad": "8 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "75"
+    },
+    "imagen": {
+      "archivo": "ankylosaurus.webp",
+      "ancho": 1000,
+      "alto": 777
+    },
+    "miniatura": {
+      "archivo": "ankylosaurus.webp",
+      "ancho": 1000,
+      "alto": 777
+    },
+    "meta_descripcion": "Ankylosaurus: Dinosaurio herbívoro ubicado en Centro oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "argentinosaurio",
+    "nombre": "Argentinosaurus",
+    "nombre_lista": "Argentinosaurio",
+    "dieta": "herbivoro",
+    "significado": "Lagarto Argentino",
+    "clasificacion": "Sarópodo/Titamosauria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en la Patagonia Argentina.",
+    "descripcion": "Es uno de los dinosaurios más grandes que se conocen, catalogado en el año 1933 y vivió hace 95 millones de años. Es el dinosaurio más grande del cual se tiene buena evidencia y el mayor ser vivo terrestre que jamás haya existido. Su reproducción en un museo es la más grande jamas montada. Tenía costillas huecas que disminuían su peso y le permitían desplazarse con mayor comodidad.",
+    "datos": {
+      "altura": "10 m",
+      "longitud": "34 m",
+      "peso": "90000 kg",
+      "velocidad": "5 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "argentinosaurus.webp",
+      "ancho": 281,
+      "alto": 179
+    },
+    "miniatura": {
+      "archivo": "argentinosaurus.webp",
+      "ancho": 281,
+      "alto": 179
+    },
+    "meta_descripcion": "Argentinosaurus: Dinosaurio herbívoro ubicado en la Patagonia Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "bambiraptor",
+    "nombre": "Bambiraptor",
+    "nombre_lista": "Bambiraptor",
+    "dieta": "carnivoro",
+    "significado": "Ladrón Bambi",
+    "clasificacion": "Terópodo/Dromaeosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Montana, EE.UU.",
+    "descripcion": "El Bambiraptor fue catalogado en el año 2000 y vivió hace 75 millones de años. Lo encontró un chico de 14 años en 1993. Era un pequeño cazador emplumado con un cerebro grande para su tamaño.",
+    "datos": {
+      "altura": "0,5 m",
+      "longitud": "0,9 m",
+      "peso": "2 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "bambiraptor.webp",
+      "ancho": 900,
+      "alto": 481
+    },
+    "miniatura": {
+      "archivo": "bambiraptor.webp",
+      "ancho": 900,
+      "alto": 481
+    },
+    "meta_descripcion": "Bambiraptor: Dinosaurio carnívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "baryonyx",
+    "nombre": "Baryonyx",
+    "nombre_lista": "Baryonyx",
+    "dieta": "carnivoro",
+    "significado": "Garra Pesada",
+    "clasificacion": "Terópodo/Spinosauridae",
+    "ubicacion": "Dinosaurio Piscívoro ubicado en España, Portugal, Inglaterra y Níger.",
+    "descripcion": "El Baryonyx fue catalogado en el año 1987 y vivió hace 125 millones de años. Es un terópodo muy inusual, ya que se cree pasaba la mator parte del tiempo desplazándose como cuadrúpedo. Las mandíbulas semejantes a las de un cocodrilo y el gran número de dientes aserrados indican que el Baryonyx fue un animal predominantemente piscívoro.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "12 m",
+      "peso": "1750 kg",
+      "velocidad": "29 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "6"
+    },
+    "imagen": {
+      "archivo": "baryonyx.webp",
+      "ancho": 1363,
+      "alto": 748
+    },
+    "miniatura": {
+      "archivo": "baryonyx.webp",
+      "ancho": 1363,
+      "alto": 748
+    },
+    "meta_descripcion": "Baryonyx: Dinosaurio Piscívoro ubicado en España, Portugal, Inglaterra y Níger. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "brachiosaurio",
+    "nombre": "Brachiosaurus",
+    "nombre_lista": "Brachiosaurio",
+    "dieta": "herbivoro",
+    "significado": "Lagarto Brazo",
+    "clasificacion": "Sarópodo/Brachiosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Centro de EE.UU, África y Europa.",
+    "descripcion": "El Brachiosaurus fue catalogado en el año 1903 y vivió hace 150 millones de años. Es uno de dinosaurio más grande y conocidos. Lo más notable son sus gigantescas extremidades delanteras. Se creía que utilizaba sus fosas nasales (ubicadas sobre la cabeza) para bucear, y que pasaba la mayor parte del tiempo en el agua. Ahora se sostiene que era un animal terrestre por naturaleza, ya que la presión del agua habría sido demasiado grande para que pudiera respirar bajo el agua.",
+    "datos": {
+      "altura": "13 m",
+      "longitud": "25 m",
+      "peso": "50000 kg",
+      "velocidad": "14 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "7"
+    },
+    "imagen": {
+      "archivo": "brachiosaurus.webp",
+      "ancho": 612,
+      "alto": 611
+    },
+    "miniatura": {
+      "archivo": "brachiosaurus.webp",
+      "ancho": 612,
+      "alto": 611
+    },
+    "meta_descripcion": "Brachiosaurus: Dinosaurio herbívoro ubicado en Centro de EE.UU, África y Europa. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "brontosaurus",
+    "nombre": "Brontosaurus",
+    "nombre_lista": "Brontosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto trueno",
+    "clasificacion": "Saurópodo/Diplodocidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Wyoming y Colorado, EE.UU.",
+    "descripcion": "El Brontosaurus fue catalogado en el año 1879 y vivió hace 150 millones de años. Durante casi un siglo se pensó que era el mismo animal que el Apatosaurus, pero en 2015 un estudio volvió a separarlo como género propio.",
+    "datos": {
+      "altura": "6 m",
+      "longitud": "22 m",
+      "peso": "15000 kg",
+      "velocidad": "15 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "brontosaurus.webp",
+      "ancho": 900,
+      "alto": 438
+    },
+    "miniatura": {
+      "archivo": "brontosaurus.webp",
+      "ancho": 900,
+      "alto": 438
+    },
+    "meta_descripcion": "Brontosaurus: Dinosaurio herbívoro ubicado en Wyoming y Colorado, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "camarasaurus",
+    "nombre": "Camarasaurus",
+    "nombre_lista": "Camarasaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Cámaras",
+    "clasificacion": "Sarópodo/Camarasauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Norteamérica.",
+    "descripcion": "El Camarasaurus fue catalogado en el año 1877 y vivió hace 150 millones de años. Es uno de los grandes saurópodos. Poseía unas cámaras o huecos en la columna vertebral que servían para reducir su peso. A pesar de su gran tamaño y fuerza, pudo haber sido presa de grandes terópodos carnívoros, como el Allosaurus. Los huesos de este gran herbívoroeran mucho más gruesos que los del Diplodocus.",
+    "datos": {
+      "altura": "6,5 m",
+      "longitud": "18 m",
+      "peso": "18000 kg",
+      "velocidad": "12 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "30"
+    },
+    "imagen": {
+      "archivo": "camarasaurus.webp",
+      "ancho": 700,
+      "alto": 700
+    },
+    "miniatura": {
+      "archivo": "camarasaurus.webp",
+      "ancho": 700,
+      "alto": 700
+    },
+    "meta_descripcion": "Camarasaurus: Dinosaurio herbívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "carcharodontosaurus",
+    "nombre": "Carcharodontosaurus",
+    "nombre_lista": "Carcharodontosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto con dientes de tiburón",
+    "clasificacion": "Terópodo/Carcharodontosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Marruecos, Argelia y Egipto.",
+    "descripcion": "El Carcharodontosaurus fue catalogado en el año 1931 y vivió hace 95 millones de años. Sus dientes aserrados de hasta 20 cm se parecen a los del gran tiburón blanco, de ahí su nombre. Los fósiles originales se perdieron en un bombardeo sobre Múnich en 1944.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "12,5 m",
+      "peso": "7000 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "carcharodontosaurus.webp",
+      "ancho": 900,
+      "alto": 449
+    },
+    "miniatura": {
+      "archivo": "carcharodontosaurus.webp",
+      "ancho": 900,
+      "alto": 449
+    },
+    "meta_descripcion": "Carcharodontosaurus: Dinosaurio carnívoro ubicado en Marruecos, Argelia y Egipto. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "carnotauro",
+    "nombre": "Carnotaurus",
+    "nombre_lista": "Carnotauro",
+    "dieta": "carnivoro",
+    "significado": "Toro Carnívoro",
+    "clasificacion": "Terópodo/Abelisauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en la Patagonia Argentina.",
+    "descripcion": "El Carnotaurus fue catalogado en el año 1985 y vivió hace 75 millones de años. Carnívoro de tamaño medio, poseía unos cuernos similares a los de un toro. Probablemente embestía a sus víctimas. Se cree que el Carnotaurus resistía grandes fuerzas con su cráneo, tales como las producidas por impactos de alta velocidad sobre sus presas. Esta era su estrategia de caza.",
+    "datos": {
+      "altura": "3,5 m",
+      "longitud": "9 m",
+      "peso": "2000 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "carnotaurus.webp",
+      "ancho": 1152,
+      "alto": 768
+    },
+    "miniatura": {
+      "archivo": "carnotaurus.webp",
+      "ancho": 1152,
+      "alto": 768
+    },
+    "meta_descripcion": "Carnotaurus: Dinosaurio carnívoro ubicado en la Patagonia Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "ceratosaurus",
+    "nombre": "Ceratosaurus",
+    "nombre_lista": "Ceratosaurus",
+    "dieta": "carnivoro",
+    "significado": "Reptil con cuernos",
+    "clasificacion": "Terópodo/Ceratosauria",
+    "ubicacion": "Dinosaurio carnívoro ubicado en el centro de EE.UU., Tanzania y Portugal.",
+    "descripcion": "Carnívoro bípedo del período jurásico tardío, se caracteriza por un cuerno grande, situado justo encima del morro, catalogado en el año 1884 y vivió hace 150 millones de años. El cuerno no puede ser considerado como un arma para atacar, ya que era demaciado delgado. Seguramente le servía para reconocer a los de su misma especie. Cazaba presas acuáticas como peces y reptiles, aunque también tenía potencial para alimentarse de grandes dinosaurios.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "7 m",
+      "peso": "750 kg",
+      "velocidad": "44 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "10"
+    },
+    "imagen": {
+      "archivo": "ceratosaurus.webp",
+      "ancho": 1000,
+      "alto": 1000
+    },
+    "miniatura": {
+      "archivo": "ceratosaurus.webp",
+      "ancho": 1000,
+      "alto": 1000
+    },
+    "meta_descripcion": "Ceratosaurus: Reptil con cuernos Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "coelophysis",
+    "nombre": "Coelophysis",
+    "nombre_lista": "Coelophysis",
+    "dieta": "carnivoro",
+    "significado": "Forma hueca",
+    "clasificacion": "Terópodo/Coelophysidae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Nuevo México y Arizona, EE.UU.",
+    "descripcion": "El Coelophysis fue catalogado en el año 1889 y vivió hace 210 millones de años. Su nombre alude a sus huesos huecos y livianos. En Ghost Ranch se encontraron cientos de ejemplares juntos, y en 1998 uno de sus cráneos viajó al espacio a bordo del transbordador Endeavour.",
+    "datos": {
+      "altura": "1 m",
+      "longitud": "3 m",
+      "peso": "25 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "Cientos"
+    },
+    "imagen": {
+      "archivo": "coelophysis.webp",
+      "ancho": 900,
+      "alto": 476
+    },
+    "miniatura": {
+      "archivo": "coelophysis.webp",
+      "ancho": 900,
+      "alto": 476
+    },
+    "meta_descripcion": "Coelophysis: Dinosaurio carnívoro ubicado en Nuevo México y Arizona, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "compsognathus",
+    "nombre": "Compsognathus",
+    "nombre_lista": "Compsognathus",
+    "dieta": "carnivoro",
+    "significado": "Mandíbuka elegante",
+    "clasificacion": "Terópodo/Compsognathidae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en el centro de Europa.",
+    "descripcion": "Este pequeño terópodo era muy agil. Vivía en zonas costeras y poseía 68 dientes afilados para atrapar insectos y lagartos, catalogado en el año 1859 y vivió hace 150 millones de años. Hasta los años 80 y 90 del siglo XX, Compsognathus era el dinosauriomás pequeño conocido y el pariente supuesto más cercano del pájaro primitivo Archaeopteryx.",
+    "datos": {
+      "altura": "0,4 m",
+      "longitud": "0,7 m",
+      "peso": "5 kg",
+      "velocidad": "64 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "compsognathus.webp",
+      "ancho": 352,
+      "alto": 350
+    },
+    "miniatura": {
+      "archivo": "compsognathus.webp",
+      "ancho": 352,
+      "alto": 350
+    },
+    "meta_descripcion": "Compsognathus: Dinosaurio carnívoro ubicado en el centro de Europa. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "deinonychus",
+    "nombre": "Deinonychus",
+    "nombre_lista": "Deinonychus",
+    "dieta": "carnivoro",
+    "significado": "Garra terrible",
+    "clasificacion": "Terópodo/Dromaeosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en el centro norte de EE.UU.",
+    "descripcion": "depredador ágil y veloz, su cola le servía para mantener el equilibrio. Cazaba en manadas, posiblemente Iguanodontes, catalogado en el año 1931 y vivió hace 110 millones de años. No utilizaba las garras para desgarrar, sino que le servían para apuñalar, como las aves rapaces actuales. Debía de ser bastante inteligente como para realizar emboscadas.",
+    "datos": {
+      "altura": "1,2 m",
+      "longitud": "3 m",
+      "peso": "60 kg",
+      "velocidad": "72 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "10"
+    },
+    "imagen": {
+      "archivo": "deinonychus.webp",
+      "ancho": 845,
+      "alto": 563
+    },
+    "miniatura": {
+      "archivo": "deinonychus.webp",
+      "ancho": 845,
+      "alto": 563
+    },
+    "meta_descripcion": "Deinonychus: Dinosaurio carnívoro ubicado en el centro norte de EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "dilophosaurus",
+    "nombre": "Dilophosaurus",
+    "nombre_lista": "Dilophosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de dos crestas",
+    "clasificacion": "Terópodo/Dilophosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en el centro oeste de EE.UU.",
+    "descripcion": "Fue uno de los primeros dinosaurios carnívoros. Llamaba la atención por sus crestas, probablemente coloridas, catalogado en el año 1870 y vivió hace 193 millones de años. Ha aparecido varias veces en la cultutra popular represenrado como un escupidor de veneno, algo imposible de comprobar a partir de los fósiles.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "7 m",
+      "peso": "350 kg",
+      "velocidad": "48 km/h",
+      "periodo": "Jurásico inferior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "dilophosaurus.webp",
+      "ancho": 500,
+      "alto": 437
+    },
+    "miniatura": {
+      "archivo": "dilophosaurus.webp",
+      "ancho": 500,
+      "alto": 437
+    },
+    "meta_descripcion": "Dilophosaurus: Dinosaurio carnívoro ubicado en el centro oeste de EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "dimetrodon",
+    "nombre": "Dimetrodón",
+    "nombre_lista": "Dimetrodón",
+    "dieta": "carnivoro",
+    "significado": "Diente de dos medidas",
+    "clasificacion": "Teromorfo/Synapsida",
+    "ubicacion": "Sinápsido carnívoro ubicado en el sur de EE.UU. y Alemania.",
+    "descripcion": "Poseía una cresta de forma semicircular que le servía como termorregulador. Se asemeja a los actuales mamíferos, catalogado en el año 1878 y vivió hace 280 millones de años. El Dimetrodón se confunde frecuentemente con un dinosaurio, pero en realidad vivió al menos 40 millones de años antes de la aparición de estos.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "3,2 m",
+      "peso": "300 kg",
+      "velocidad": "12 km/h",
+      "periodo": "Pérmico inferior",
+      "especimenes": "40"
+    },
+    "imagen": {
+      "archivo": "dimetrodon.webp",
+      "ancho": 660,
+      "alto": 815
+    },
+    "miniatura": {
+      "archivo": "dimetrodon.webp",
+      "ancho": 660,
+      "alto": 815
+    },
+    "meta_descripcion": "Ficha de Dimetrodón. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "diplodocus",
+    "nombre": "Diplodocus",
+    "nombre_lista": "Diplodocus",
+    "dieta": "herbivoro",
+    "significado": "Doble viga",
+    "clasificacion": "Saurópodo/Diplodócido",
+    "ubicacion": "Dinosaurio herbívoro ubicado en el centro de EE.UU.",
+    "descripcion": "Este saurópodo es uno de los dinosaurios más conocidos. Tenía un gran cuerpo, el cuello largo y la cabeza muy pequeña, catalogado en el año 1878 y vivió hace 150 millones de años. La larga cola era probablemente su principal arma contra los depredadores. LOs estudios que utilizan programas avanzados de modelado han sugerido que podia azotar la cola a una velocidad cercana a los 800Km/h.",
+    "datos": {
+      "altura": "12 m",
+      "longitud": "25 m",
+      "peso": "25000 kg",
+      "velocidad": "16 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "25"
+    },
+    "imagen": {
+      "archivo": "diplodocus.webp",
+      "ancho": 600,
+      "alto": 342
+    },
+    "miniatura": {
+      "archivo": "diplodocus.webp",
+      "ancho": 600,
+      "alto": 342
+    },
+    "meta_descripcion": "Diplodocus: Dinosaurio herbívoro ubicado en el centro de EE.UU. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "edmontosaurus",
+    "nombre": "Edmontosaurus",
+    "nombre_lista": "Edmontosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Edmonton",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en el Oeste de América del Norte.",
+    "descripcion": "El Edmontosaurus fue catalogado en el año 1917 y vivió hace 68 millones de años. Era un dinosaurio de pico de pato con cientos de dientes para triturar plantas. Se hallaron ejemplares momificados con impresiones de piel, y uno con una mordida curada de Tyrannosaurus en la cola.",
+    "datos": {
+      "altura": "3,5 m",
+      "longitud": "12 m",
+      "peso": "4000 kg",
+      "velocidad": "45 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "edmontosaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "miniatura": {
+      "archivo": "edmontosaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "meta_descripcion": "Edmontosaurus: Dinosaurio herbívoro ubicado en el Oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "einiosaurus",
+    "nombre": "Einiosaurus",
+    "nombre_lista": "Einiosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto búfalo",
+    "clasificacion": "Marginocéfalo/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Montana, EE.UU.",
+    "descripcion": "El Einiosaurus fue catalogado en el año 1995 y vivió hace 75 millones de años. Tenía un cuerno nasal curvado hacia adelante, como un abrelatas, y dos largas espinas en la gola. Se hallaron restos de muchos ejemplares juntos.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "4,5 m",
+      "peso": "2000 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "einiosaurus.webp",
+      "ancho": 900,
+      "alto": 464
+    },
+    "miniatura": {
+      "archivo": "einiosaurus.webp",
+      "ancho": 900,
+      "alto": 464
+    },
+    "meta_descripcion": "Einiosaurus: Dinosaurio herbívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "elasmosaurus",
+    "nombre": "Elasmosaurus",
+    "nombre_lista": "Elasmosaurus",
+    "dieta": "carnivoro",
+    "significado": "Placa delgada",
+    "clasificacion": "Plesiosaurio/Elasmosauridae",
+    "ubicacion": "Reptil marino ovoviviparo ubicado en los mares de europa.",
+    "descripcion": "Era el mayor de los plesiosaurios. Poseia un enorme cuello de siete metros de largo y acechaba a los cardumenes. Frecuentemente denominado como dinosaurio. En realidad, el Elasmosaurus era un reptil marino que vivió durante el período Cretácico, hace aproximadamente 80 millones de años. Tenía un cuerpo robusto, cuatro aletas y un cuello extremadamente largo con una cabeza pequeña en comparación con su cuerpo. Se alimentaba principalmente de peces y otros animales marinos.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "15 m",
+      "peso": "2000 kg",
+      "velocidad": "16 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "elasmosaurus.webp",
+      "ancho": 800,
+      "alto": 427
+    },
+    "miniatura": {
+      "archivo": "elasmosaurus.webp",
+      "ancho": 800,
+      "alto": 427
+    },
+    "meta_descripcion": "Elasmosaurus: Reptil marino ovoviviparo ubicado en los mares de europa Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "eoraptor",
+    "nombre": "Eoraptor",
+    "nombre_lista": "Eoraptor",
+    "dieta": "omnivoro",
+    "significado": "Ladrón del amanecer",
+    "clasificacion": "Saurischia/Sauropodomorpha",
+    "ubicacion": "Dinosaurio omnívoro ubicado en San Juan, Argentina.",
+    "descripcion": "El Eoraptor fue catalogado en el año 1993 y vivió hace 231 millones de años. Es uno de los dinosaurios más antiguos que se conocen. Sus dientes de distintas formas sugieren que comía tanto plantas como pequeños animales.",
+    "datos": {
+      "altura": "0,5 m",
+      "longitud": "1 m",
+      "peso": "10 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "eoraptor.webp",
+      "ancho": 900,
+      "alto": 452
+    },
+    "miniatura": {
+      "archivo": "eoraptor.webp",
+      "ancho": 900,
+      "alto": 452
+    },
+    "meta_descripcion": "Eoraptor: Dinosaurio omnívoro ubicado en San Juan, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "falcarius",
+    "nombre": "Falcarius",
+    "nombre_lista": "Falcarius",
+    "dieta": "omnivoro",
+    "significado": "Hoz",
+    "clasificacion": "Terópodo/Therizinosauria",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Utah, EE.UU.",
+    "descripcion": "El Falcarius fue catalogado en el año 2005 y vivió hace 126 millones de años. Es uno de los terizinosaurios más primitivos y muestra el paso de una dieta carnívora a una herbívora. Se hallaron miles de huesos de cientos de ejemplares.",
+    "datos": {
+      "altura": "1,3 m",
+      "longitud": "4 m",
+      "peso": "100 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Cientos"
+    },
+    "imagen": {
+      "archivo": "falcarius.webp",
+      "ancho": 900,
+      "alto": 584
+    },
+    "miniatura": {
+      "archivo": "falcarius.webp",
+      "ancho": 900,
+      "alto": 584
+    },
+    "meta_descripcion": "Falcarius: Dinosaurio omnívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "fruitadens",
+    "nombre": "Fruitadens",
+    "nombre_lista": "Fruitadens",
+    "dieta": "omnivoro",
+    "significado": "Dientes de Fruita",
+    "clasificacion": "Ornithischia/Heterodontosauridae",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Colorado, EE.UU.",
+    "descripcion": "El Fruitadens fue catalogado en el año 2010 y vivió hace 150 millones de años. Es uno de los dinosaurios ornitisquios más pequeños que se conocen. Tenía dientes de varias formas, ideales para comer plantas e insectos.",
+    "datos": {
+      "altura": "0,3 m",
+      "longitud": "0,7 m",
+      "peso": "1 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "4"
+    },
+    "imagen": {
+      "archivo": "fruitadens.webp",
+      "ancho": 900,
+      "alto": 479
+    },
+    "miniatura": {
+      "archivo": "fruitadens.webp",
+      "ancho": 900,
+      "alto": 479
+    },
+    "meta_descripcion": "Fruitadens: Dinosaurio omnívoro ubicado en Colorado, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "fukuiraptor",
+    "nombre": "Fukuiraptor",
+    "nombre_lista": "Fukuiraptor",
+    "dieta": "carnivoro",
+    "significado": "Ladrón de Fukui",
+    "clasificacion": "Terópodo/Megaraptora",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Fukui, Japón.",
+    "descripcion": "El Fukuiraptor fue catalogado en el año 2000 y vivió hace 120 millones de años. Es uno de los dinosaurios carnívoros más conocidos de Japón. Tenía grandes garras en las manos que usaba para atrapar a sus presas.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "4,5 m",
+      "peso": "175 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "fukuiraptor.webp",
+      "ancho": 900,
+      "alto": 485
+    },
+    "miniatura": {
+      "archivo": "fukuiraptor.webp",
+      "ancho": 900,
+      "alto": 485
+    },
+    "meta_descripcion": "Fukuiraptor: Dinosaurio carnívoro ubicado en Fukui, Japón. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "futalognkosaurus",
+    "nombre": "Futalognkosaurus",
+    "nombre_lista": "Futalognkosaurus",
+    "dieta": "herbivoro",
+    "significado": "Jefe gigante",
+    "clasificacion": "Saurópodo/Titanosauria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Neuquén, Argentina.",
+    "descripcion": "El Futalognkosaurus fue catalogado en el año 2007 y vivió hace 87 millones de años. Es uno de los dinosaurios más grandes descubiertos en la Argentina, con un cuello de más de 17 metros de largo. Su esqueleto es de los más completos entre los titanosaurios gigantes, ya que se conservó cerca del 70% de sus huesos en el yacimiento del lago Barreales.",
+    "datos": {
+      "altura": "6 m",
+      "longitud": "32 m",
+      "peso": "40000 kg",
+      "velocidad": "8 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "futalognkosaurus.webp",
+      "ancho": 1125,
+      "alto": 711
+    },
+    "miniatura": {
+      "archivo": "futalognkosaurus.webp",
+      "ancho": 1125,
+      "alto": 711
+    },
+    "meta_descripcion": "Futalognkosaurus: Dinosaurio herbívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "gallimimus",
+    "nombre": "Gallimimus",
+    "nombre_lista": "Gallimimus",
+    "dieta": "omnivoro",
+    "significado": "Imitador de gallina",
+    "clasificacion": "Terópodo/Ornithomimidae",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Mongolia.",
+    "descripcion": "El Gallimimus fue catalogado en el año 1972 y vivió hace 70 millones de años. Es el ornitomímido más grande conocido de Mongolia. Tenía un pico sin dientes, cuello largo y patas muy largas que lo convertían en un gran corredor. Comía plantas, insectos y pequeños animales.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "6 m",
+      "peso": "440 kg",
+      "velocidad": "55 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "gallimimus.webp",
+      "ancho": 900,
+      "alto": 605
+    },
+    "miniatura": {
+      "archivo": "gallimimus.webp",
+      "ancho": 900,
+      "alto": 605
+    },
+    "meta_descripcion": "Gallimimus: Dinosaurio omnívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "gastonia",
+    "nombre": "Gastonia",
+    "nombre_lista": "Gastonia",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Gaston",
+    "clasificacion": "Tireóforo/Polacanthidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Utah, EE.UU.",
+    "descripcion": "El Gastonia fue catalogado en el año 1998 y vivió hace 125 millones de años. Estaba cubierto de placas óseas y largas espinas en los costados. Convivió con el Utahraptor, que probablemente lo cazaba.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "5 m",
+      "peso": "1900 kg",
+      "velocidad": "8 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "gastonia.webp",
+      "ancho": 900,
+      "alto": 296
+    },
+    "miniatura": {
+      "archivo": "gastonia.webp",
+      "ancho": 900,
+      "alto": 296
+    },
+    "meta_descripcion": "Gastonia: Dinosaurio herbívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "giganotosaurus",
+    "nombre": "Giganotosaurus",
+    "nombre_lista": "Giganotosaurus",
+    "dieta": "carnivoro",
+    "significado": "Reptil gigante del viento del sur",
+    "clasificacion": "Terópodo/Carcharodontosaurido",
+    "ubicacion": "Dinosaurio carnívoro ubicado en la Patagonia Argentina.",
+    "descripcion": "Cuando se descubrieron sus restos en 1993 y vivió hace 40 millones de años, pasó a ser el carnívoro más grande. Ese lugar lo ocupaba antes el Tyrannosaurus. Su cerebro tenía forma de plátano y era más pequeño que el del Tyrannosaurus, a pesar de ser un animal más grande. Se han encontrado dientes de 20cm de longitud.",
+    "datos": {
+      "altura": "5 m",
+      "longitud": "13 m",
+      "peso": "8000 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "giganotosaurus.webp",
+      "ancho": 1000,
+      "alto": 794
+    },
+    "miniatura": {
+      "archivo": "giganotosaurus.webp",
+      "ancho": 1000,
+      "alto": 794
+    },
+    "meta_descripcion": "Giganotosaurus: Reptil gigante del viento del sur Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "gigantoraptor",
+    "nombre": "Gigantoraptor",
+    "nombre_lista": "Gigantoraptor",
+    "dieta": "omnivoro",
+    "significado": "Ladrón gigante",
+    "clasificacion": "Terópodo/Oviraptoridae",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Mongolia.",
+    "descripcion": "Sus restos fueron encontrados en el 2007 y vivió hace 80 millones de años. Es uno de los animales emplumados más grandes que haya existido. Tenía fuertes garras y un pico para triturar. Se cree que fue omnívoro porque tiene las características de un herbívoro pero, a su vez, todos los bípedos conocidos de este tamaño eran carnívoros.",
+    "datos": {
+      "altura": "3,5 m",
+      "longitud": "8 m",
+      "peso": "1400 kg",
+      "velocidad": "44 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "gigantoraptor.webp",
+      "ancho": 1800,
+      "alto": 1050
+    },
+    "miniatura": {
+      "archivo": "gigantoraptor.webp",
+      "ancho": 1800,
+      "alto": 1050
+    },
+    "meta_descripcion": "Gigantoraptor: Dinosaurio omnívoro ubicado en Mongolia Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "hadrosaurus",
+    "nombre": "Hadrosaurus",
+    "nombre_lista": "Hadrosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto robusto",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Nueva Jersey, EE.UU.",
+    "descripcion": "El Hadrosaurus fue catalogado en el año 1858 y vivió hace 78 millones de años. Fue el primer esqueleto de dinosaurio bastante completo hallado en Norteamérica y en 1868 se convirtió en el primero montado en un museo.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "8 m",
+      "peso": "2500 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "hadrosaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "miniatura": {
+      "archivo": "hadrosaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "meta_descripcion": "Hadrosaurus: Dinosaurio herbívoro ubicado en Nueva Jersey, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "herrerasaurus",
+    "nombre": "Herrerasaurus",
+    "nombre_lista": "Herrerasaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de Herrera",
+    "clasificacion": "Terópodo/Herrerasauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Cuyo, Argentina.",
+    "descripcion": "Sus restos fueron encontrados en 1963 y vivió hace 228 millones de años. A pesar de que apenas tenía unos metros de longitud, fue uno de los animales bípedos más grandes del mundo en ese momento. Vivió en una época en que la mayoría de los dinosaurios eran muy pequeños, llamada la época de los reptiles no dinosaurios.",
+    "datos": {
+      "altura": "1.5 m",
+      "longitud": "4 m",
+      "peso": "275 kg",
+      "velocidad": "42 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "herrerasaurus.webp",
+      "ancho": 1000,
+      "alto": 548
+    },
+    "miniatura": {
+      "archivo": "herrerasaurus.webp",
+      "ancho": 1000,
+      "alto": 548
+    },
+    "meta_descripcion": "Herrerasaurus: Dinosaurio carnívoro ubicado en Cuyo, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "huayangosaurus",
+    "nombre": "Huayangosaurus",
+    "nombre_lista": "Huayangosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Huayang",
+    "clasificacion": "Tireóforo/Stegosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Sichuan, China.",
+    "descripcion": "El Huayangosaurus fue catalogado en el año 1982 y vivió hace 165 millones de años. Es uno de los estegosaurios más antiguos y pequeños. Tenía placas puntiagudas en el lomo y espinas en los hombros y la cola.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "4,5 m",
+      "peso": "600 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Jurásico medio",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "huayangosaurus.webp",
+      "ancho": 900,
+      "alto": 470
+    },
+    "miniatura": {
+      "archivo": "huayangosaurus.webp",
+      "ancho": 900,
+      "alto": 470
+    },
+    "meta_descripcion": "Huayangosaurus: Dinosaurio herbívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "hypsilophodon",
+    "nombre": "Hypsilophodon",
+    "nombre_lista": "Hypsilophodon",
+    "dieta": "herbivoro",
+    "significado": "Diente de cresta alta",
+    "clasificacion": "Ornithopoda/Hypsilophodontidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en la Isla de Wight, Inglaterra.",
+    "descripcion": "El Hypsilophodon fue catalogado en el año 1869 y vivió hace 125 millones de años. Era un pequeño herbívoro muy veloz. Durante años se creyó por error que trepaba a los árboles.",
+    "datos": {
+      "altura": "0,6 m",
+      "longitud": "2 m",
+      "peso": "20 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "hypsilophodon.webp",
+      "ancho": 900,
+      "alto": 479
+    },
+    "miniatura": {
+      "archivo": "hypsilophodon.webp",
+      "ancho": 900,
+      "alto": 479
+    },
+    "meta_descripcion": "Hypsilophodon: Dinosaurio herbívoro ubicado en la Isla de Wight, Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "iguanodon",
+    "nombre": "Iguanodon",
+    "nombre_lista": "Iguanodón",
+    "dieta": "herbivoro",
+    "significado": "Diente de iguana",
+    "clasificacion": "Ornithopoda/Iguanodontidae",
+    "ubicacion": "Dinosaurio herviboro ubicado en el centro de EE.UU., Europa y Asia Oriental.",
+    "descripcion": "Vivió hace 130 millones de años y sus restos se catalogaron en 1825. Dinosaurio bastante común, tenía el tamaño de un elefante y era capaz de desplazarse con dos o cuatro patas. Poseía un espolón que le servía como una daga para defenderse de sus agresores. Al igual que las vacas y los caballos actuales, tenía pies de tres dedos con pezuñas.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "10 m",
+      "peso": "4500 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "85"
+    },
+    "imagen": {
+      "archivo": "iguanodon.webp",
+      "ancho": 1489,
+      "alto": 895
+    },
+    "miniatura": {
+      "archivo": "iguanodon.webp",
+      "ancho": 1489,
+      "alto": 895
+    },
+    "meta_descripcion": "Iguanodon: Dinosaurio herviboro ubicado en el centro de EE.UU., Europa y Asia Oriental Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "incisivosaurus",
+    "nombre": "Incisivosaurus",
+    "nombre_lista": "Incisivosaurus",
+    "dieta": "omnivoro",
+    "significado": "Lagarto con incisivos",
+    "clasificacion": "Terópodo/Oviraptorosauria",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Liaoning, China.",
+    "descripcion": "El Incisivosaurus fue catalogado en el año 2002 y vivió hace 125 millones de años. Tenía dos dientes delanteros grandes, parecidos a los de un roedor, algo muy raro en un terópodo. Probablemente comía sobre todo plantas.",
+    "datos": {
+      "altura": "0,4 m",
+      "longitud": "1 m",
+      "peso": "4 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "incisivosaurus.webp",
+      "ancho": 900,
+      "alto": 477
+    },
+    "miniatura": {
+      "archivo": "incisivosaurus.webp",
+      "ancho": 900,
+      "alto": 477
+    },
+    "meta_descripcion": "Incisivosaurus: Dinosaurio omnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "irritator",
+    "nombre": "Irritator",
+    "nombre_lista": "Irritator",
+    "dieta": "carnivoro",
+    "significado": "El que irrita",
+    "clasificacion": "Terópodo/Spinosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Brasil.",
+    "descripcion": "El Irritator fue catalogado en el año 1996 y vivió hace 110 millones de años. Su nombre refleja el enojo de los científicos al descubrir que el cráneo había sido alterado con yeso por los vendedores del fósil. Comía sobre todo peces.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "7 m",
+      "peso": "1000 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "irritator.webp",
+      "ancho": 900,
+      "alto": 452
+    },
+    "miniatura": {
+      "archivo": "irritator.webp",
+      "ancho": 900,
+      "alto": 452
+    },
+    "meta_descripcion": "Irritator: Dinosaurio carnívoro ubicado en Brasil. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "isisaurus",
+    "nombre": "Isisaurus",
+    "nombre_lista": "Isisaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto del ISI",
+    "clasificacion": "Saurópodo/Titanosauria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en India.",
+    "descripcion": "El Isisaurus fue catalogado en el año 2003 y vivió hace 70 millones de años. Su nombre honra al Instituto de Estadística de la India. Tenía un cuello corto y patas delanteras largas, lo que le daba una postura parecida a la de una jirafa.",
+    "datos": {
+      "altura": "5 m",
+      "longitud": "18 m",
+      "peso": "15000 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "isisaurus.webp",
+      "ancho": 900,
+      "alto": 556
+    },
+    "miniatura": {
+      "archivo": "isisaurus.webp",
+      "ancho": 900,
+      "alto": 556
+    },
+    "meta_descripcion": "Isisaurus: Dinosaurio herbívoro ubicado en India. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "jinzhousaurus",
+    "nombre": "Jinzhousaurus",
+    "nombre_lista": "Jinzhousaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Jinzhou",
+    "clasificacion": "Ornithopoda/Iguanodontia",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Liaoning, China.",
+    "descripcion": "El Jinzhousaurus fue catalogado en el año 2001 y vivió hace 125 millones de años. Se conoce por un esqueleto casi completo con el cráneo. Era un pariente cercano de los dinosaurios de pico de pato.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "7 m",
+      "peso": "1500 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "jinzhousaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "miniatura": {
+      "archivo": "jinzhousaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "meta_descripcion": "Jinzhousaurus: Dinosaurio herbívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "jobaria",
+    "nombre": "Jobaria",
+    "nombre_lista": "Jobaria",
+    "dieta": "herbivoro",
+    "significado": "Criatura de Jobar",
+    "clasificacion": "Saurópodo/Neosauropoda",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Níger.",
+    "descripcion": "El Jobaria fue catalogado en el año 1999 y vivió hace 164 millones de años. Su nombre hace referencia a Jobar, una criatura de la mitología tuareg. Se conocen esqueletos casi completos de varios individuos, lo que lo convirtió en uno de los saurópodos mejor conocidos de África. Conserva rasgos más primitivos que otros saurópodos de su tamaño.",
+    "datos": {
+      "altura": "6 m",
+      "longitud": "21 m",
+      "peso": "20000 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Jurásico medio",
+      "especimenes": "20"
+    },
+    "imagen": {
+      "archivo": "jobaria.webp",
+      "ancho": 800,
+      "alto": 566
+    },
+    "miniatura": {
+      "archivo": "jobaria.webp",
+      "ancho": 800,
+      "alto": 566
+    },
+    "meta_descripcion": "Jobaria: Dinosaurio herbívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "juratyrant",
+    "nombre": "Juratyrant",
+    "nombre_lista": "Juratyrant",
+    "dieta": "carnivoro",
+    "significado": "Tirano del Jurásico",
+    "clasificacion": "Terópodo/Tyrannosauroidea",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Dorset, Inglaterra.",
+    "descripcion": "El Juratyrant fue catalogado en el año 2013 y vivió hace 150 millones de años. Es un pariente lejano y mucho más antiguo del Tyrannosaurus Rex. Al principio sus restos se habían atribuido a otro dinosaurio.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "5 m",
+      "peso": "400 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "juratyrant.webp",
+      "ancho": 900,
+      "alto": 498
+    },
+    "miniatura": {
+      "archivo": "juratyrant.webp",
+      "ancho": 900,
+      "alto": 498
+    },
+    "meta_descripcion": "Juratyrant: Dinosaurio carnívoro ubicado en Dorset, Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "juravenator",
+    "nombre": "Juravenator",
+    "nombre_lista": "Juravenator",
+    "dieta": "carnivoro",
+    "significado": "Cazador del Jura",
+    "clasificacion": "Terópodo/Compsognathidae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Baviera, Alemania.",
+    "descripcion": "El Juravenator fue catalogado en el año 2006 y vivió hace 150 millones de años. Se conoce por un único ejemplar joven muy bien conservado, con restos de piel con escamas en la cola.",
+    "datos": {
+      "altura": "0,3 m",
+      "longitud": "0,75 m",
+      "peso": "1 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "juravenator.webp",
+      "ancho": 900,
+      "alto": 444
+    },
+    "miniatura": {
+      "archivo": "juravenator.webp",
+      "ancho": 900,
+      "alto": 444
+    },
+    "meta_descripcion": "Juravenator: Dinosaurio carnívoro ubicado en Baviera, Alemania. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "kentrosaurus",
+    "nombre": "Kentrosaurus",
+    "nombre_lista": "Kentrosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto con púas",
+    "clasificacion": "Tireóforo/Stegosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Tanzania.",
+    "descripcion": "El Kentrosaurus fue catalogado en el año 1915 y vivió hace 152 millones de años. Tenía placas óseas en el cuello y el comienzo del lomo, y largas púas en la cadera y la cola que usaba como defensa. Sus fósiles fueron hallados en la formación Tendaguru y hoy hay un esqueleto montado en el Museo de Historia Natural de Berlín.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "4,5 m",
+      "peso": "1000 kg",
+      "velocidad": "6 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "50"
+    },
+    "imagen": {
+      "archivo": "kentosaurus.webp",
+      "ancho": 480,
+      "alto": 360
+    },
+    "miniatura": {
+      "archivo": "kentosaurus.webp",
+      "ancho": 480,
+      "alto": 360
+    },
+    "meta_descripcion": "Kentrosaurus: Dinosaurio herbívoro ubicado en Tanzania. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "kosmoceratops",
+    "nombre": "Kosmoceratops",
+    "nombre_lista": "Kosmoceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara con cuernos adornada",
+    "clasificacion": "Marginocéfalo/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Utah, EE.UU.",
+    "descripcion": "El Kosmoceratops fue catalogado en el año 2010 y vivió hace 76 millones de años. Tenía quince cuernos y protuberancias en la cabeza, más que cualquier otro dinosaurio conocido.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "4,5 m",
+      "peso": "1200 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "kosmoceratops.webp",
+      "ancho": 900,
+      "alto": 426
+    },
+    "miniatura": {
+      "archivo": "kosmoceratops.webp",
+      "ancho": 900,
+      "alto": 426
+    },
+    "meta_descripcion": "Kosmoceratops: Dinosaurio herbívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "kritosaurus",
+    "nombre": "Kritosaurus",
+    "nombre_lista": "Kritosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto separado",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Nuevo México, EE.UU.",
+    "descripcion": "El Kritosaurus fue catalogado en el año 1910 y vivió hace 75 millones de años. Era un dinosaurio de pico de pato con una joroba sobre el hocico, que quizás usaba para exhibirse.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "9 m",
+      "peso": "3000 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "kritosaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "miniatura": {
+      "archivo": "kritosaurus.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "meta_descripcion": "Kritosaurus: Dinosaurio herbívoro ubicado en Nuevo México, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "kronosaurus",
+    "nombre": "Kronosaurus",
+    "nombre_lista": "Kronosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de Cronos",
+    "clasificacion": "Plesiosauria/Pliosauridae",
+    "ubicacion": "Reptil marino carnívoro ubicado en Australia.",
+    "descripcion": "El Kronosaurus fue catalogado en el año 1924 y vivió hace 110 millones de años. Su nombre alude al titán Cronos de la mitología griega. Tenía un cráneo enorme con dientes cónicos y cazaba en los mares poco profundos.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "10 m",
+      "peso": "11000 kg",
+      "velocidad": "15 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "kronosaurus.webp",
+      "ancho": 900,
+      "alto": 309
+    },
+    "miniatura": {
+      "archivo": "kronosaurus.webp",
+      "ancho": 900,
+      "alto": 309
+    },
+    "meta_descripcion": "Kronosaurus: Reptil marino carnívoro ubicado en Australia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "lambeosaurus",
+    "nombre": "Lambeosaurus",
+    "nombre_lista": "Lambeosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Lambe",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Alberta, Canadá.",
+    "descripcion": "El Lambeosaurus fue catalogado en el año 1923 y vivió hace 76 millones de años. Tenía una cresta hueca en forma de hacha que probablemente usaba para emitir sonidos y reconocer a los de su especie.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "9 m",
+      "peso": "3300 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "lambeosaurus.webp",
+      "ancho": 900,
+      "alto": 438
+    },
+    "miniatura": {
+      "archivo": "lambeosaurus.webp",
+      "ancho": 900,
+      "alto": 438
+    },
+    "meta_descripcion": "Lambeosaurus: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "leaellynasaura",
+    "nombre": "Leaellynasaura",
+    "nombre_lista": "Leaellynasaura",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Leaellyn",
+    "clasificacion": "Ornithopoda/Elasmaria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Victoria, Australia.",
+    "descripcion": "El Leaellynasaura fue catalogado en el año 1989 y vivió hace 110 millones de años. Vivía cerca del círculo polar, donde soportaba largos inviernos oscuros. Tenía una cola muy larga y ojos grandes.",
+    "datos": {
+      "altura": "0,5 m",
+      "longitud": "2 m",
+      "peso": "15 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "leaellynasaura.webp",
+      "ancho": 900,
+      "alto": 479
+    },
+    "miniatura": {
+      "archivo": "leaellynasaura.webp",
+      "ancho": 900,
+      "alto": 479
+    },
+    "meta_descripcion": "Leaellynasaura: Dinosaurio herbívoro ubicado en Victoria, Australia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "lesothosaurus",
+    "nombre": "Lesothosaurus",
+    "nombre_lista": "Lesothosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Lesoto",
+    "clasificacion": "Ornithischia/Genasauria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Lesoto.",
+    "descripcion": "El Lesothosaurus fue catalogado en el año 1978 y vivió hace 200 millones de años. Era un pequeño herbívoro bípedo y veloz, uno de los ornitisquios más primitivos que se conocen.",
+    "datos": {
+      "altura": "0,5 m",
+      "longitud": "1 m",
+      "peso": "6 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Jurásico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "lesothosaurus.webp",
+      "ancho": 900,
+      "alto": 499
+    },
+    "miniatura": {
+      "archivo": "lesothosaurus.webp",
+      "ancho": 900,
+      "alto": 499
+    },
+    "meta_descripcion": "Lesothosaurus: Dinosaurio herbívoro ubicado en Lesoto. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "liopleurodon",
+    "nombre": "Liopleurodon",
+    "nombre_lista": "Liopleurodón",
+    "dieta": "carnivoro",
+    "significado": "Dientes de lados lisos",
+    "clasificacion": "Plesiosauroidea/Pliosauridae",
+    "ubicacion": "Reptil marino carnívoro ubicado en Europa, Asia, Norteamérica y África.",
+    "descripcion": "Sus restos se catalogaron en 1873 y vivió hace 160 millones de años. Un tipo de plesiosaurios de cuello corto. Fue presentado en el programa de televisión \"Paseando con dinosaurios\", de la BBC, como un enorme animal de 25 metros de largo. Sin embargo, esto no se considera acertado para ninguna de las especies de Liopleurodon",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "7 m",
+      "peso": "2500",
+      "velocidad": "10 km/h",
+      "periodo": "Jurásico medio",
+      "especimenes": "4"
+    },
+    "imagen": {
+      "archivo": "liopleurodon.webp",
+      "ancho": 900,
+      "alto": 506
+    },
+    "miniatura": {
+      "archivo": "liopleurodon.webp",
+      "ancho": 900,
+      "alto": 506
+    },
+    "meta_descripcion": "Liopleurodon: Reptil marino carnívoro ubicado en Europa, Asia, Norteamérica y África Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "maiasaura",
+    "nombre": "Maiasaura",
+    "nombre_lista": "Maiasaura",
+    "dieta": "herbivoro",
+    "significado": "Lagarto buena madre",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Montana, EE.UU.",
+    "descripcion": "El Maiasaura fue catalogado en el año 1979 y vivió hace 76 millones de años. Se hallaron colonias de nidos con huevos y crías, la primera prueba de que algunos dinosaurios cuidaban a sus pequeños. En 1985 un fragmento de sus huesos viajó al espacio.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "9 m",
+      "peso": "3000 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "200"
+    },
+    "imagen": {
+      "archivo": "maiasaura.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "miniatura": {
+      "archivo": "maiasaura.webp",
+      "ancho": 900,
+      "alto": 377
+    },
+    "meta_descripcion": "Maiasaura: Dinosaurio herbívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "mapusaurus",
+    "nombre": "Mapusaurus",
+    "nombre_lista": "Mapusaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de la tierra",
+    "clasificacion": "Terópodo/Carcharodontosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Neuquén, Argentina.",
+    "descripcion": "El Mapusaurus fue catalogado en el año 2006 y vivió hace 95 millones de años. Era un pariente cercano del Giganotosaurus. En el Cañadón del Gato se hallaron al menos siete ejemplares juntos, lo que sugiere que vivía o se alimentaba en grupo.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "12 m",
+      "peso": "5000 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "7"
+    },
+    "imagen": {
+      "archivo": "mapusaurus.webp",
+      "ancho": 900,
+      "alto": 456
+    },
+    "miniatura": {
+      "archivo": "mapusaurus.webp",
+      "ancho": 900,
+      "alto": 456
+    },
+    "meta_descripcion": "Mapusaurus: Dinosaurio carnívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "megalosaurus",
+    "nombre": "Megalosaurus",
+    "nombre_lista": "Megalosaurus",
+    "dieta": "carnivoro",
+    "significado": "Gran lagarto",
+    "clasificacion": "Terópodo/Megalosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Inglaterra.",
+    "descripcion": "El Megalosaurus fue catalogado en el año 1824 y vivió hace 166 millones de años. Fue el primer dinosaurio descrito científicamente de la historia. Era un depredador bípedo de cráneo grande y dientes curvos y aserrados, y se lo conoce a partir de restos incompletos hallados cerca de Oxford.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "8 m",
+      "peso": "1000 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Jurásico medio",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "megalosaurus.webp",
+      "ancho": 1478,
+      "alto": 754
+    },
+    "miniatura": {
+      "archivo": "megalosaurus.webp",
+      "ancho": 1478,
+      "alto": 754
+    },
+    "meta_descripcion": "Megalosaurus: Dinosaurio carnívoro ubicado en Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "microraptor",
+    "nombre": "Microraptor",
+    "nombre_lista": "Microraptor",
+    "dieta": "carnivoro",
+    "significado": "Pequeño ladrón",
+    "clasificacion": "Terópodo/Dromaeosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Liaoning, China.",
+    "descripcion": "El Microraptor fue catalogado en el año 2000 y vivió hace 120 millones de años. Tenía plumas largas en los brazos y en las patas, como si tuviera cuatro alas, y podía planear entre los árboles. Sus plumas eran negras e iridiscentes.",
+    "datos": {
+      "altura": "0,3 m",
+      "longitud": "0,8 m",
+      "peso": "1 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "300"
+    },
+    "imagen": {
+      "archivo": "microraptor.webp",
+      "ancho": 900,
+      "alto": 453
+    },
+    "miniatura": {
+      "archivo": "microraptor.webp",
+      "ancho": 900,
+      "alto": 453
+    },
+    "meta_descripcion": "Microraptor: Dinosaurio carnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "neovenator",
+    "nombre": "Neovenator",
+    "nombre_lista": "Neovenator",
+    "dieta": "carnivoro",
+    "significado": "Nuevo cazador",
+    "clasificacion": "Terópodo/Neovenatoridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en la Isla de Wight, Inglaterra.",
+    "descripcion": "El Neovenator fue catalogado en el año 1996 y vivió hace 125 millones de años. Es uno de los dinosaurios carnívoros más completos hallados en Europa. Tenía un hocico muy sensible.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "7,5 m",
+      "peso": "1000 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "neovenator.webp",
+      "ancho": 900,
+      "alto": 459
+    },
+    "miniatura": {
+      "archivo": "neovenator.webp",
+      "ancho": 900,
+      "alto": 459
+    },
+    "meta_descripcion": "Neovenator: Dinosaurio carnívoro ubicado en la Isla de Wight, Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "nigersaurus",
+    "nombre": "Nigersaurus",
+    "nombre_lista": "Nigersaurus Taqueti",
+    "dieta": "herbivoro",
+    "significado": "Por completar",
+    "clasificacion": "Sauropoda/Rebbachisauridae",
+    "ubicacion": "Dinosaurio herbívoro hallado en Níger, África.",
+    "descripcion": "Vivió hace aproximadamente entre 115 y 105 millones de años durante el Cretácico Inferior. Fue descrito oficialmente en 1999 por Paul Sereno y sus colaboradores. Es famoso por poseer un hocico ancho con más de 500 dientes reemplazables, adaptados para cortar vegetación baja como helechos y equisetos. Su cráneo era extremadamente ligero y fue uno de los primeros cráneos de dinosaurio reconstruidos digitalmente mediante tomografías computarizadas.",
+    "datos": {
+      "altura": "2,4 m",
+      "longitud": "9 m",
+      "peso": "4000 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Decenas de restos pertenecientes a múltiples individuos"
+    },
+    "imagen": {
+      "archivo": "nigersaurus.webp",
+      "ancho": 330,
+      "alto": 160
+    },
+    "miniatura": {
+      "archivo": "nigersaurusface.webp",
+      "ancho": 220,
+      "alto": 229
+    },
+    "meta_descripcion": "Nigersaurus: Dinosaurio herbívoro hallado en Níger, África. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "nodosaurus",
+    "nombre": "Nodosaurus",
+    "nombre_lista": "Nodosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto con nudos",
+    "clasificacion": "Tireóforo/Nodosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Wyoming, EE.UU.",
+    "descripcion": "El Nodosaurus fue catalogado en el año 1889 y vivió hace 110 millones de años. Estaba cubierto de placas óseas con forma de nudos. A diferencia del Ankylosaurus, no tenía un mazo en la cola.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "5,5 m",
+      "peso": "3000 kg",
+      "velocidad": "8 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "nodosaurus.webp",
+      "ancho": 900,
+      "alto": 296
+    },
+    "miniatura": {
+      "archivo": "nodosaurus.webp",
+      "ancho": 900,
+      "alto": 296
+    },
+    "meta_descripcion": "Nodosaurus: Dinosaurio herbívoro ubicado en Wyoming, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "nothronychus",
+    "nombre": "Nothronychus",
+    "nombre_lista": "Nothronychus",
+    "dieta": "herbivoro",
+    "significado": "Garra perezosa",
+    "clasificacion": "Terópodo/Therizinosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Nuevo México y Utah, EE.UU.",
+    "descripcion": "El Nothronychus fue catalogado en el año 2001 y vivió hace 92 millones de años. Fue el primer terizinosaurio hallado fuera de Asia. Tenía grandes garras, panza voluminosa y comía plantas.",
+    "datos": {
+      "altura": "3,5 m",
+      "longitud": "5 m",
+      "peso": "1000 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "nothronychus.webp",
+      "ancho": 900,
+      "alto": 638
+    },
+    "miniatura": {
+      "archivo": "nothronychus.webp",
+      "ancho": 900,
+      "alto": 638
+    },
+    "meta_descripcion": "Nothronychus: Dinosaurio herbívoro ubicado en Nuevo México y Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "olorotitan",
+    "nombre": "Olorotitan",
+    "nombre_lista": "Olorotitan",
+    "dieta": "herbivoro",
+    "significado": "Cisne gigante",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Amur, Rusia.",
+    "descripcion": "El Olorotitan fue catalogado en el año 2003 y vivió hace 66 millones de años. Es uno de los dinosaurios más completos hallados en Rusia. Tenía un cuello largo, como un cisne, y una cresta en forma de abanico.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "8 m",
+      "peso": "2600 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "olorotitan.webp",
+      "ancho": 900,
+      "alto": 466
+    },
+    "miniatura": {
+      "archivo": "olorotitan.webp",
+      "ancho": 900,
+      "alto": 466
+    },
+    "meta_descripcion": "Olorotitan: Dinosaurio herbívoro ubicado en Amur, Rusia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "ornithomimus",
+    "nombre": "Ornithomimus",
+    "nombre_lista": "Ornithomimus",
+    "dieta": "omnivoro",
+    "significado": "Imitador de ave",
+    "clasificacion": "Terópodo/Ornithomimidae",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Centro oeste de América del Norte.",
+    "descripcion": "El Ornithomimus fue catalogado en el año 1890 y vivió hace 70 millones de años. Su aspecto recordaba al de un avestruz: cuello largo, cabeza pequeña, pico sin dientes y patas largas que lo hacían uno de los dinosaurios más veloces. Se cree que fue omnívoro porque su pico desdentado le permitía comer plantas y pequeños animales, y se han hallado ejemplares con plumas en los brazos.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "3,5 m",
+      "peso": "170 kg",
+      "velocidad": "60 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "ornithomimus.webp",
+      "ancho": 1500,
+      "alto": 900
+    },
+    "miniatura": {
+      "archivo": "ornithomimus.webp",
+      "ancho": 1500,
+      "alto": 900
+    },
+    "meta_descripcion": "Ornithomimus: Dinosaurio omnívoro ubicado en Centro oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "ouranosaurus",
+    "nombre": "Ouranosaurus",
+    "nombre_lista": "Ouranosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto valiente",
+    "clasificacion": "Ornithopoda/Iguanodontia",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Níger.",
+    "descripcion": "El Ouranosaurus fue catalogado en el año 1976 y vivió hace 112 millones de años. Tenía largas espinas en el lomo que formaban una vela o una joroba, quizás para regular su temperatura en el clima cálido.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "8 m",
+      "peso": "2200 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "ouranosaurus.webp",
+      "ancho": 900,
+      "alto": 379
+    },
+    "miniatura": {
+      "archivo": "ouranosaurus.webp",
+      "ancho": 900,
+      "alto": 379
+    },
+    "meta_descripcion": "Ouranosaurus: Dinosaurio herbívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "oviraptor",
+    "nombre": "Oviraptor",
+    "nombre_lista": "Oviraptor",
+    "dieta": "omnivoro",
+    "significado": "Ladrón de huevos",
+    "clasificacion": "Terópodo/Oviraptoridae",
+    "ubicacion": "Dinosaurio omnívoro ubicado en Mongolia.",
+    "descripcion": "El Oviraptor fue catalogado en el año 1924 y vivió hace 75 millones de años. Recibió su nombre porque lo hallaron sobre un nido y se pensó que robaba huevos, pero años después se descubrió que en realidad estaba incubando los suyos. Tenía un pico fuerte y sin dientes.",
+    "datos": {
+      "altura": "1 m",
+      "longitud": "2 m",
+      "peso": "30 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "oviraptor.webp",
+      "ancho": 900,
+      "alto": 540
+    },
+    "miniatura": {
+      "archivo": "oviraptor.webp",
+      "ancho": 900,
+      "alto": 540
+    },
+    "meta_descripcion": "Oviraptor: Dinosaurio omnívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "pachycephalosaurus",
+    "nombre": "Pachycephalosaurus",
+    "nombre_lista": "Pachycephalosaurus",
+    "dieta": "herbivoro",
+    "significado": "Reptil de cabeza gruesa",
+    "clasificacion": "Neornithischia/Pachycephalosauridae",
+    "ubicacion": "Dinosaurio herviboro ubicado en el Noroeste de EE. UU.",
+    "descripcion": "Este dinosaurio fue catalogado en 1943 y vivió hace 65 millones de años. Fue el mayor de los dinosaurios de casco: su cráneo alcanzaba el increíble espesor de 25cm. Tenía una gran vista y excelente olfato. Los expertos han llegado a la conclusión de que su casco no le servía para defenderse de los depredadores, sino que los machos lo utilizaban para golpearse y medir sus fuerzas en época de reproducción.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "5,5 m",
+      "peso": "1800 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "pachycephalosaurus.webp",
+      "ancho": 2200,
+      "alto": 2200
+    },
+    "miniatura": {
+      "archivo": "pachycephalosaurus.webp",
+      "ancho": 2200,
+      "alto": 2200
+    },
+    "meta_descripcion": "Pachycephalosaurus: Reptil de cabeza gruesa Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "parasaurolophus",
+    "nombre": "Parasaurolophus",
+    "nombre_lista": "Parasaurolophus",
+    "dieta": "herbivoro",
+    "significado": "Cercano al lagarto crestado",
+    "clasificacion": "Neornithischia/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en el Centro de Norteamérica.",
+    "descripcion": "El parasaurolophus fue catalogado en 1922 y vivió hace 75 millones de años. Dinosaurio de pico de pato que se caracteriza por su gran cresta. Podía andar en dos o cuatro patas y era muy buen nadador. Hasta 1960, se creía que era anfibio y que la cresta le servía para respirar debajo del agua. Sin embargo, luego se llegó a la conclusión de que esta era colorida y les servía a los machos para atraer a las hembras.",
+    "datos": {
+      "altura": "3.5 m",
+      "longitud": "10 m",
+      "peso": "5000 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "parasaurolophus.webp",
+      "ancho": 1280,
+      "alto": 809
+    },
+    "miniatura": {
+      "archivo": "parasaurolophus.webp",
+      "ancho": 1280,
+      "alto": 809
+    },
+    "meta_descripcion": "Parasaurolophus: Dinosaurio herbívoro ubicado en el Centro de Norteamérica Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "plateosaurus",
+    "nombre": "Plateosaurus",
+    "nombre_lista": "Plateosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto plano",
+    "clasificacion": "Prosauropodo/Plateosauridae",
+    "ubicacion": "Dinosaurio herviboro ubicado en Groenlandia, Suiza, Francia y Alemania.",
+    "descripcion": "Fue catalogado en 1834 y vivió hace 220 millones de años. Era un animal de tamaño mediano comparado con los saurópodos gigantes del período jurásico. Poseía una gran garra en el pulgar. Sus garras no solo le servían para rasgar ramas y raíces, sino también para defenderse de depredadores. Podía correr erguido para escapar de algún peligro.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "8 m",
+      "peso": "2800 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "112"
+    },
+    "imagen": {
+      "archivo": "plateosaurus.webp",
+      "ancho": 1440,
+      "alto": 962
+    },
+    "miniatura": {
+      "archivo": "plateosaurus.webp",
+      "ancho": 1440,
+      "alto": 962
+    },
+    "meta_descripcion": "Plateosaurus: Dinosaurio herviboro ubicado en Groenlandia, Suiza, Francia y Alemania Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "protoceratops",
+    "nombre": "Protoceratops",
+    "nombre_lista": "Protoceratops",
+    "dieta": "herbivoro",
+    "significado": "Primera cara con cuernos",
+    "clasificacion": "Marginocéfalo/Protoceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Mongolia.",
+    "descripcion": "El Protoceratops fue catalogado en el año 1923 y vivió hace 75 millones de años. Era un pequeño ceratopsio con gola pero sin cuernos desarrollados. Es famoso por el fósil de los «dinosaurios luchando», hallado en 1971, donde quedó atrapado en pleno combate con un Velociraptor.",
+    "datos": {
+      "altura": "0,7 m",
+      "longitud": "2 m",
+      "peso": "85 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "protoceratops.webp",
+      "ancho": 900,
+      "alto": 394
+    },
+    "miniatura": {
+      "archivo": "protoceratops.webp",
+      "ancho": 900,
+      "alto": 394
+    },
+    "meta_descripcion": "Protoceratops: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "psittacosaurus",
+    "nombre": "Psittacosaurus",
+    "nombre_lista": "Psittacosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto loro",
+    "clasificacion": "Marginocéfalo/Psittacosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Mongolia, China y Rusia.",
+    "descripcion": "El Psittacosaurus fue catalogado en el año 1923 y vivió hace 120 millones de años. Tenía un pico parecido al de un loro y largas cerdas en la cola. Un ejemplar con la piel conservada permitió conocer su coloración: oscuro arriba y claro abajo, para camuflarse.",
+    "datos": {
+      "altura": "0,6 m",
+      "longitud": "2 m",
+      "peso": "20 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "400"
+    },
+    "imagen": {
+      "archivo": "psittacosaurus.webp",
+      "ancho": 900,
+      "alto": 485
+    },
+    "miniatura": {
+      "archivo": "psittacosaurus.webp",
+      "ancho": 900,
+      "alto": 485
+    },
+    "meta_descripcion": "Psittacosaurus: Dinosaurio herbívoro ubicado en Mongolia, China y Rusia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "pteranodon",
+    "nombre": "Pteranodon",
+    "nombre_lista": "Pteranodón",
+    "dieta": "carnivoro",
+    "significado": "Ala desdentado",
+    "clasificacion": "Pterodacyloidea/Pteranodontidea",
+    "ubicacion": "Reptil volador Piscívoro ubicado en Norteamérica.",
+    "descripcion": "El Pteranodon fue catalogado en 1870 y vivió hace 85 millones de años. Es una de las criaturas más grandes que alguna vez surcó los cielos. Tenía unas enormes alas de 6 metros de envergadura. Se caracteriza por su enorme tamaño. Poseía una gran cresta craneal y un pico sin dientes con el cual capturaba peces y calamares.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "3 m",
+      "peso": "20 kg",
+      "velocidad": "100 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "5"
+    },
+    "imagen": {
+      "archivo": "pteranodon.webp",
+      "ancho": 540,
+      "alto": 360
+    },
+    "miniatura": {
+      "archivo": "pteranodon.webp",
+      "ancho": 540,
+      "alto": 360
+    },
+    "meta_descripcion": "Pteranodon: Reptil volador Piscívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "qantassaurus",
+    "nombre": "Qantassaurus",
+    "nombre_lista": "Qantassaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Qantas",
+    "clasificacion": "Ornithopoda/Elasmaria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Victoria, Australia.",
+    "descripcion": "El Qantassaurus fue catalogado en el año 1999 y vivió hace 115 millones de años. Su nombre honra a la aerolínea australiana Qantas, que ayudó a transportar exposiciones de dinosaurios. Tenía mandíbulas cortas y fuertes.",
+    "datos": {
+      "altura": "0,5 m",
+      "longitud": "1,8 m",
+      "peso": "10 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "qantassaurus.webp",
+      "ancho": 900,
+      "alto": 486
+    },
+    "miniatura": {
+      "archivo": "qantassaurus.webp",
+      "ancho": 900,
+      "alto": 486
+    },
+    "meta_descripcion": "Qantassaurus: Dinosaurio herbívoro ubicado en Victoria, Australia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "qianzhousaurus",
+    "nombre": "Qianzhousaurus",
+    "nombre_lista": "Qianzhousaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de Qianzhou",
+    "clasificacion": "Terópodo/Tyrannosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Jiangxi, China.",
+    "descripcion": "El Qianzhousaurus fue catalogado en el año 2014 y vivió hace 66 millones de años. Por su hocico largo y fino se lo apodó «Pinocho rex». Era un tiranosáurido más liviano que el Tyrannosaurus Rex.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "8 m",
+      "peso": "750 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "qianzhousaurus.webp",
+      "ancho": 900,
+      "alto": 434
+    },
+    "miniatura": {
+      "archivo": "qianzhousaurus.webp",
+      "ancho": 900,
+      "alto": 434
+    },
+    "meta_descripcion": "Qianzhousaurus: Dinosaurio carnívoro ubicado en Jiangxi, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "quaesitosaurus",
+    "nombre": "Quaesitosaurus",
+    "nombre_lista": "Quaesitosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto extraordinario",
+    "clasificacion": "Saurópodo/Nemegtosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Mongolia.",
+    "descripcion": "El Quaesitosaurus fue catalogado en el año 1983 y vivió hace 80 millones de años. Solo se conoce su cráneo, alargado y con dientes en forma de lápiz, por lo que sus medidas son una estimación.",
+    "datos": {
+      "altura": "5 m",
+      "longitud": "20 m",
+      "peso": "15000 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "quaesitosaurus.webp",
+      "ancho": 900,
+      "alto": 464
+    },
+    "miniatura": {
+      "archivo": "quaesitosaurus.webp",
+      "ancho": 900,
+      "alto": 464
+    },
+    "meta_descripcion": "Quaesitosaurus: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "quetzalcoatlus",
+    "nombre": "Quetzalcoatlus",
+    "nombre_lista": "Quetzalcoatlus",
+    "dieta": "carnivoro",
+    "significado": "Serpiente emplumada",
+    "clasificacion": "Pterosaurio/Azhdarchidae",
+    "ubicacion": "Pterosaurio carnívoro ubicado en Texas, Estados Unidos.",
+    "descripcion": "El Quetzalcoatlus fue catalogado en el año 1975 y vivió hace 68 millones de años. Su nombre alude a Quetzalcóatl, la serpiente emplumada de la mitología azteca. No fue un dinosaurio sino un reptil volador, y es uno de los animales voladores más grandes que existieron, con una envergadura de entre 10 y 11 metros. Se cree que cazaba presas pequeñas caminando sobre sus cuatro extremidades.",
+    "datos": {
+      "altura": "5 m",
+      "longitud": "11 m (envergadura)",
+      "peso": "250 kg",
+      "velocidad": "130 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "quetzalcoatlus.webp",
+      "ancho": 2443,
+      "alto": 1653
+    },
+    "miniatura": {
+      "archivo": "quetzalcoatlus.webp",
+      "ancho": 2443,
+      "alto": 1653
+    },
+    "meta_descripcion": "Quetzalcoatlus: Pterosaurio carnívoro ubicado en Texas, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "rajasaurus",
+    "nombre": "Rajasaurus",
+    "nombre_lista": "Rajasaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto rey",
+    "clasificacion": "Terópodo/Abelisauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Gujarat, India.",
+    "descripcion": "El Rajasaurus fue catalogado en el año 2003 y vivió hace 67 millones de años. Tenía un pequeño cuerno sobre la cabeza. Sus restos se encontraron en la formación Lameta, junto a huevos de saurópodos.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "7 m",
+      "peso": "1000 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "rajasaurus.webp",
+      "ancho": 900,
+      "alto": 491
+    },
+    "miniatura": {
+      "archivo": "rajasaurus.webp",
+      "ancho": 900,
+      "alto": 491
+    },
+    "meta_descripcion": "Rajasaurus: Dinosaurio carnívoro ubicado en Gujarat, India. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "rapetosaurus",
+    "nombre": "Rapetosaurus",
+    "nombre_lista": "Rapetosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto del gigante Rapeto",
+    "clasificacion": "Saurópodo/Titanosauria",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Madagascar.",
+    "descripcion": "El Rapetosaurus fue catalogado en el año 2001 y vivió hace 70 millones de años. Su nombre alude a Rapeto, un gigante del folclore de Madagascar. Se halló un esqueleto casi completo de un juvenil, con el cráneo incluido, algo muy raro entre los titanosaurios, y eso permitió conocer mucho mejor a todo el grupo.",
+    "datos": {
+      "altura": "5 m",
+      "longitud": "15 m",
+      "peso": "8000 kg",
+      "velocidad": "8 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "rapetosaurus.webp",
+      "ancho": 472,
+      "alto": 227
+    },
+    "miniatura": {
+      "archivo": "rapetosaurus.webp",
+      "ancho": 472,
+      "alto": 227
+    },
+    "meta_descripcion": "Rapetosaurus: Dinosaurio herbívoro ubicado en Madagascar. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "riojasaurus",
+    "nombre": "Riojasaurus",
+    "nombre_lista": "Riojasaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de La Rioja",
+    "clasificacion": "Sauropodomorpha/Riojasauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en La Rioja, Argentina.",
+    "descripcion": "El Riojasaurus fue catalogado en el año 1969 y vivió hace 220 millones de años. Fue uno de los herbívoros más grandes de su época y caminaba sobre cuatro patas. Es pariente de los grandes saurópodos posteriores.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "8 m",
+      "peso": "1000 kg",
+      "velocidad": "15 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "20"
+    },
+    "imagen": {
+      "archivo": "riojasaurus.webp",
+      "ancho": 900,
+      "alto": 367
+    },
+    "miniatura": {
+      "archivo": "riojasaurus.webp",
+      "ancho": 900,
+      "alto": 367
+    },
+    "meta_descripcion": "Riojasaurus: Dinosaurio herbívoro ubicado en La Rioja, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "rugops",
+    "nombre": "Rugops",
+    "nombre_lista": "Rugops",
+    "dieta": "carnivoro",
+    "significado": "Cara arrugada",
+    "clasificacion": "Terópodo/Abelisauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Níger.",
+    "descripcion": "El Rugops fue catalogado en el año 2004 y vivió hace 95 millones de años. Su cráneo tenía arrugas y pequeños agujeros, que quizás sostenían escamas o crestas de colores. Probablemente comía carroña.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "5,5 m",
+      "peso": "750 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "rugops.webp",
+      "ancho": 900,
+      "alto": 495
+    },
+    "miniatura": {
+      "archivo": "rugops.webp",
+      "ancho": 900,
+      "alto": 495
+    },
+    "meta_descripcion": "Rugops: Dinosaurio carnívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "spinosaurus",
+    "nombre": "Spinosaurus",
+    "nombre_lista": "Spinosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de espina",
+    "clasificacion": "Terópodo/Spinosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Egipto y Marruecos.",
+    "descripcion": "El Spinosaurus fue catalogado en 1910 y vivió hace 100 millones de años. Fue un enorme dinosaurio, su cabeza era parecida a la de un cocodrilo y en el lomo tenía una gran membrana de piel en forma de vela. Se asume que la vela le servía de termorregulador: sus vasos sanguíneos enfriaban al animal en caso de extremo calor y viceversa.",
+    "datos": {
+      "altura": "5 m",
+      "longitud": "15 m",
+      "peso": "7000 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "6"
+    },
+    "imagen": {
+      "archivo": "spinosaurus.webp",
+      "ancho": 400,
+      "alto": 312
+    },
+    "miniatura": {
+      "archivo": "spinosaurus.webp",
+      "ancho": 400,
+      "alto": 312
+    },
+    "meta_descripcion": "Spinosaurus: Dinosaurio carnívoro ubicado en Egipto y Marruecos Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "stegosaurus",
+    "nombre": "Stegosaurus",
+    "nombre_lista": "Stegosaurus",
+    "dieta": "herbivoro",
+    "significado": "Reptil con tejado",
+    "clasificacion": "Thyreophora/Stegosauridae",
+    "ubicacion": "Dinosaurio herviboro ubicado en el oeste de EE.UU.",
+    "descripcion": "Sus restos fueron hallados en 1877 y vivió hace 150 millones de años. Es el más conocido de su familia, caracterizado por las placas y espinas óseas que se extendían por toda la espalda. A pesar de su gran tamaño, su cerebro era como una nuez. Su principal arma era la cola con espinas. El Allosaurus era su principal depredador.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "9 m",
+      "peso": "3500 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "stegosaurus.webp",
+      "ancho": 870,
+      "alto": 700
+    },
+    "miniatura": {
+      "archivo": "stegosaurus.webp",
+      "ancho": 870,
+      "alto": 700
+    },
+    "meta_descripcion": "Stegosaurus: Reptil con tejado Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "styracosaurus",
+    "nombre": "Styracosaurus",
+    "nombre_lista": "Styracosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto espinoso",
+    "clasificacion": "Neornithischia/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en el Centro de Norteamérica.",
+    "descripcion": "Fue catalogado en 1913 y vivió hace 75 millones de años. Uno de los ceratópsidos de cornamenta más impresionante, se caracterizaba por tener largas púas y un gran cuerno en la nariz. Su cuerpo nasal medía 60cm de longitud. Vivía en grandes rebaños, como los mamíferos actuales que pastorean. A pesar de su peso y sus cortas patas, era muy veloz.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "5,5 m",
+      "peso": "3000 kg",
+      "velocidad": "32 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "styracosaurus.webp",
+      "ancho": 1350,
+      "alto": 759
+    },
+    "miniatura": {
+      "archivo": "styracosaurus.webp",
+      "ancho": 1350,
+      "alto": 759
+    },
+    "meta_descripcion": "Styracosaurus: Dinosaurio herbívoro ubicado en el Centro de Norteamérica Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "suchomimus",
+    "nombre": "Suchomimus",
+    "nombre_lista": "Suchomimus",
+    "dieta": "carnivoro",
+    "significado": "Imitador de cocodrilo",
+    "clasificacion": "Terópodo/Spinosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Níger.",
+    "descripcion": "El Suchomimus fue catalogado en el año 1998 y vivió hace 120 millones de años. Tenía un hocico largo como el de un cocodrilo, ideal para pescar, y una baja cresta sobre el lomo.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "10 m",
+      "peso": "3000 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "suchomimus.webp",
+      "ancho": 900,
+      "alto": 432
+    },
+    "miniatura": {
+      "archivo": "suchomimus.webp",
+      "ancho": 900,
+      "alto": 432
+    },
+    "meta_descripcion": "Suchomimus: Dinosaurio carnívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "therizinosaurus",
+    "nombre": "Therizinosaurus",
+    "nombre_lista": "Therizinosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto guadaña",
+    "clasificacion": "Teropodo/Therizinosauridae",
+    "ubicacion": "Dinosaurio herviboro ubicado en Mongolia y norte de China.",
+    "descripcion": "El Therizinosaurio fue catalogado en 1954 y vivió hace 70 millones de años. Es un extraño dinosaurio. Una de sus principales características es que tenía las garras más grandes que se hayan conocido. Es el único terópodo conocido que se supone se alimentaba de vegetales. Sus enormes garras podían llegar a medir 70 cm.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "9 m",
+      "peso": "4500 kg",
+      "velocidad": "27 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "therizinosaurus.webp",
+      "ancho": 266,
+      "alto": 189
+    },
+    "miniatura": {
+      "archivo": "therizinosaurus.webp",
+      "ancho": 266,
+      "alto": 189
+    },
+    "meta_descripcion": "Therizinosaurus: Dinosaurio herviboro ubicado en Mongolia y norte de China Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "triceratops",
+    "nombre": "Triceratops",
+    "nombre_lista": "Triceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara de tres cuernos",
+    "clasificacion": "Neornithischia/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en el Oeste de América del Norte.",
+    "descripcion": "Este dinosaurio vivió hace 68 millones de años y fue catalogado en 1887. Era el mayor de los dinosaurios cornudos, uno de los más abundantes de su época y uno de los más reconocidos popularmente. Una de las escenas más recurrentes, sobre todo en los libros infantiles de dinosaurios, lo representa en feroces peleas con Tyrannosaurus Rex.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "9 m",
+      "peso": "6000 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "9"
+    },
+    "imagen": {
+      "archivo": "triceratops.webp",
+      "ancho": 768,
+      "alto": 768
+    },
+    "miniatura": {
+      "archivo": "triceratops.webp",
+      "ancho": 768,
+      "alto": 768
+    },
+    "meta_descripcion": "Triceratops: Dinosaurio herbívoro ubicado en el Oeste de América del Norte Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "tylosaurus",
+    "nombre": "Tylosaurus",
+    "nombre_lista": "Tylosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto con protuberancia",
+    "clasificacion": "Scleroglossa/Mosasauridae",
+    "ubicacion": "Reptil marino carnívoro ubicado en Norteamérica,.",
+    "descripcion": "Este reptil marino fue catalogado en 1872 y vivió hace 70 millones de años. Gran depredador marino, pariente cercano de los lagartos y las serpientes de la actualidad. Los fósiles muestran que estas criaturas parían a sus crías, ya que no podían salir a tierra firme a poner huevos y estos no habrían sobrevivido en el agua salada del mar.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "9 m",
+      "peso": "2250 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "5"
+    },
+    "imagen": {
+      "archivo": "tylosaurus.webp",
+      "ancho": 601,
+      "alto": 460
+    },
+    "miniatura": {
+      "archivo": "tylosaurus.webp",
+      "ancho": 601,
+      "alto": 460
+    },
+    "meta_descripcion": "Tylosaurus: Reptil marino carnívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "tyrannosaurus",
+    "nombre": "Tyrannosaurus Rex",
+    "nombre_lista": "Tyrannosaurus Rex",
+    "dieta": "carnivoro",
+    "significado": "Rey lagarto tirano",
+    "clasificacion": "Terópodo/Tyrannosauroidea",
+    "ubicacion": "Dinosaurio carnívoro ubicado en el Oeste de América del Norte.",
+    "descripcion": "El Tyrannosaurus Rex vivió hace 65 millones de años y fue catalogado en 1874. Uno de los más temibles depredadores que haya existido y tal vez el dinosaurio más conocido popularmente. Es el único dinosaurio reconocido comúnmente por su nombre científico completo. Sus dientes podían llegar a medir 23 cm. En carrera, podía dar zancadas de más de cuatro metros.",
+    "datos": {
+      "altura": "4,5 m",
+      "longitud": "13 m",
+      "peso": "6000 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "30"
+    },
+    "imagen": {
+      "archivo": "tyrannosaurus.webp",
+      "ancho": 384,
+      "alto": 256
+    },
+    "miniatura": {
+      "archivo": "tyrannosaurus.webp",
+      "ancho": 384,
+      "alto": 256
+    },
+    "meta_descripcion": "Tyrannosaurus Rex: Dinosaurio carnívoro ubicado en el Oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "udanoceratops",
+    "nombre": "Udanoceratops",
+    "nombre_lista": "Udanoceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara con cuernos de Udan",
+    "clasificacion": "Marginocéfalo/Leptoceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Mongolia.",
+    "descripcion": "El Udanoceratops fue catalogado en el año 1992 y vivió hace 80 millones de años. Es uno de los leptoceratópsidos más grandes. No tenía cuernos desarrollados y quizás podía caminar en dos patas.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "4 m",
+      "peso": "700 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "udanoceratops.webp",
+      "ancho": 900,
+      "alto": 398
+    },
+    "miniatura": {
+      "archivo": "udanoceratops.webp",
+      "ancho": 900,
+      "alto": 398
+    },
+    "meta_descripcion": "Udanoceratops: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "unaysaurus",
+    "nombre": "Unaysaurus",
+    "nombre_lista": "Unaysaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto del agua negra",
+    "clasificacion": "Sauropodomorpha/Plateosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Rio Grande do Sul, Brasil.",
+    "descripcion": "El Unaysaurus fue catalogado en el año 2004 y vivió hace 225 millones de años. Es uno de los dinosaurios más antiguos de Brasil y un pariente cercano del Plateosaurus.",
+    "datos": {
+      "altura": "1 m",
+      "longitud": "2,5 m",
+      "peso": "70 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "unaysaurus.webp",
+      "ancho": 900,
+      "alto": 468
+    },
+    "miniatura": {
+      "archivo": "unaysaurus.webp",
+      "ancho": 900,
+      "alto": 468
+    },
+    "meta_descripcion": "Unaysaurus: Dinosaurio herbívoro ubicado en Rio Grande do Sul, Brasil. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "unenlagia",
+    "nombre": "Unenlagia",
+    "nombre_lista": "Unenlagia",
+    "dieta": "carnivoro",
+    "significado": "Mitad ave",
+    "clasificacion": "Terópodo/Dromaeosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Neuquén, Argentina.",
+    "descripcion": "El Unenlagia fue catalogado en el año 1997 y vivió hace 90 millones de años. Sus brazos podían plegarse como las alas de un ave, lo que lo hace clave para estudiar el origen del vuelo.",
+    "datos": {
+      "altura": "1 m",
+      "longitud": "3 m",
+      "peso": "50 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "unenlagia.webp",
+      "ancho": 900,
+      "alto": 485
+    },
+    "miniatura": {
+      "archivo": "unenlagia.webp",
+      "ancho": 900,
+      "alto": 485
+    },
+    "meta_descripcion": "Unenlagia: Dinosaurio carnívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "utahraptor",
+    "nombre": "Utahraptor",
+    "nombre_lista": "Utahraptor",
+    "dieta": "carnivoro",
+    "significado": "Ladrón de Utah",
+    "clasificacion": "Terópodo/Dromaeosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Utah, Estados Unidos.",
+    "descripcion": "El Utahraptor fue catalogado en el año 1993 y vivió hace 126 millones de años. Es uno de los dromeosáuridos más grandes que se conocen. Tenía en cada pie una garra en forma de hoz de unos 24 cm de largo, y probablemente estaba cubierto de plumas.",
+    "datos": {
+      "altura": "1,8 m",
+      "longitud": "6 m",
+      "peso": "500 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "utahraptor.webp",
+      "ancho": 1114,
+      "alto": 638
+    },
+    "miniatura": {
+      "archivo": "utahraptor.webp",
+      "ancho": 1114,
+      "alto": 638
+    },
+    "meta_descripcion": "Utahraptor: Dinosaurio carnívoro ubicado en Utah, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "vagaceratops",
+    "nombre": "Vagaceratops",
+    "nombre_lista": "Vagaceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara con cuernos vagabunda",
+    "clasificacion": "Marginocéfalo/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Alberta, Canadá.",
+    "descripcion": "El Vagaceratops fue catalogado en el año 2010 y vivió hace 75 millones de años. Su nombre alude a que su familia «vagó» hasta Norteamérica desde el sur. Tenía una gola corta y ancha con espinas curvadas.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "4,5 m",
+      "peso": "1500 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "vagaceratops.webp",
+      "ancho": 900,
+      "alto": 417
+    },
+    "miniatura": {
+      "archivo": "vagaceratops.webp",
+      "ancho": 900,
+      "alto": 417
+    },
+    "meta_descripcion": "Vagaceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "velafrons",
+    "nombre": "Velafrons",
+    "nombre_lista": "Velafrons",
+    "dieta": "herbivoro",
+    "significado": "Frente con vela",
+    "clasificacion": "Ornithopoda/Hadrosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Coahuila, México.",
+    "descripcion": "El Velafrons fue catalogado en el año 2007 y vivió hace 72 millones de años. Tenía una cresta en la frente parecida a una vela. Es uno de los pocos dinosaurios descritos a partir de fósiles de México.",
+    "datos": {
+      "altura": "2,5 m",
+      "longitud": "7,5 m",
+      "peso": "2500 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "velafrons.webp",
+      "ancho": 900,
+      "alto": 387
+    },
+    "miniatura": {
+      "archivo": "velafrons.webp",
+      "ancho": 900,
+      "alto": 387
+    },
+    "meta_descripcion": "Velafrons: Dinosaurio herbívoro ubicado en Coahuila, México. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "velociraptor",
+    "nombre": "Velociraptor",
+    "nombre_lista": "Velocirráptor",
+    "dieta": "carnivoro",
+    "significado": "Ladrón rápido",
+    "clasificacion": "Terópodo/Dromaeosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Mongolia y China.",
+    "descripcion": "Este dinosaurio fue catalogado en el 1922 y vivió hace 76 millones de años. Pequeño carnívoro, tenía una terrible garra cortante en cada pie y multitud de dientes agudos en sus mandíbulas. Estaba cubierto de plumas similares a las de las aves actuales, aunque es imposible que haya podido volar",
+    "datos": {
+      "altura": "0.7 m",
+      "longitud": "1.8 m",
+      "peso": "15 kg",
+      "velocidad": "48 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "13"
+    },
+    "imagen": {
+      "archivo": "velocirraptor.webp",
+      "ancho": 918,
+      "alto": 428
+    },
+    "miniatura": {
+      "archivo": "velocirraptor.webp",
+      "ancho": 918,
+      "alto": 428
+    },
+    "meta_descripcion": "Velociraptor: Dinosaurio carnívoro ubicado en Mongolia y China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "vulcanodon",
+    "nombre": "Vulcanodon",
+    "nombre_lista": "Vulcanodon",
+    "dieta": "herbivoro",
+    "significado": "Diente volcánico",
+    "clasificacion": "Saurópodo/Vulcanodontidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Zimbabue.",
+    "descripcion": "El Vulcanodon fue catalogado en el año 1972 y vivió hace 200 millones de años. Es uno de los saurópodos más antiguos. Sus restos se hallaron entre capas de roca volcánica, de ahí su nombre.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "6,5 m",
+      "peso": "3500 kg",
+      "velocidad": "12 km/h",
+      "periodo": "Jurásico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "vulcanodon.webp",
+      "ancho": 900,
+      "alto": 408
+    },
+    "miniatura": {
+      "archivo": "vulcanodon.webp",
+      "ancho": 900,
+      "alto": 408
+    },
+    "meta_descripcion": "Vulcanodon: Dinosaurio herbívoro ubicado en Zimbabue. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "wannanosaurus",
+    "nombre": "Wannanosaurus",
+    "nombre_lista": "Wannanosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Wannan",
+    "clasificacion": "Marginocéfalo/Homalocephalidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en China.",
+    "descripcion": "El Wannanosaurus fue catalogado en el año 1977 y vivió hace 80 millones de años. Es uno de los paquicefalosaurios más pequeños que se conocen, con apenas unos 60 cm de largo. A diferencia de sus parientes no tenía un domo, sino un cráneo de techo plano, aunque el único ejemplar hallado probablemente no era adulto.",
+    "datos": {
+      "altura": "0,3 m",
+      "longitud": "0,6 m",
+      "peso": "3 kg",
+      "velocidad": "20 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "wannanosaurus.webp",
+      "ancho": 500,
+      "alto": 364
+    },
+    "miniatura": {
+      "archivo": "wannanosaurus.webp",
+      "ancho": 500,
+      "alto": 364
+    },
+    "meta_descripcion": "Wannanosaurus: Dinosaurio herbívoro ubicado en China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "wendiceratops",
+    "nombre": "Wendiceratops",
+    "nombre_lista": "Wendiceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara con cuernos de Wendy",
+    "clasificacion": "Marginocéfalo/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Alberta, Canadá.",
+    "descripcion": "El Wendiceratops fue catalogado en el año 2015 y vivió hace 79 millones de años. Su nombre honra a Wendy Sloboda, la cazadora de fósiles que lo encontró. Tenía cuernos curvados en el borde de la gola.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "6 m",
+      "peso": "1500 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "wendiceratops.webp",
+      "ancho": 900,
+      "alto": 426
+    },
+    "miniatura": {
+      "archivo": "wendiceratops.webp",
+      "ancho": 900,
+      "alto": 426
+    },
+    "meta_descripcion": "Wendiceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "wiehenvenator",
+    "nombre": "Wiehenvenator",
+    "nombre_lista": "Wiehenvenator",
+    "dieta": "carnivoro",
+    "significado": "Cazador de Wiehen",
+    "clasificacion": "Terópodo/Megalosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Baja Sajonia, Alemania.",
+    "descripcion": "El Wiehenvenator fue catalogado en el año 2016 y vivió hace 165 millones de años. Fue uno de los mayores depredadores de la Europa del Jurásico medio. Sus restos estuvieron años guardados antes de ser estudiados.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "9 m",
+      "peso": "2000 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Jurásico medio",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "wiehenvenator.webp",
+      "ancho": 900,
+      "alto": 461
+    },
+    "miniatura": {
+      "archivo": "wiehenvenator.webp",
+      "ancho": 900,
+      "alto": 461
+    },
+    "meta_descripcion": "Wiehenvenator: Dinosaurio carnívoro ubicado en Baja Sajonia, Alemania. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "wuerhosaurus",
+    "nombre": "Wuerhosaurus",
+    "nombre_lista": "Wuerhosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Wuerho",
+    "clasificacion": "Tireóforo/Stegosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Xinjiang, China.",
+    "descripcion": "El Wuerhosaurus fue catalogado en el año 1973 y vivió hace 130 millones de años. Fue uno de los últimos estegosaurios. Sus placas eran más bajas y redondeadas que las del Stegosaurus.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "7 m",
+      "peso": "4000 kg",
+      "velocidad": "10 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "wuerhosaurus.webp",
+      "ancho": 900,
+      "alto": 419
+    },
+    "miniatura": {
+      "archivo": "wuerhosaurus.webp",
+      "ancho": 900,
+      "alto": 419
+    },
+    "meta_descripcion": "Wuerhosaurus: Dinosaurio herbívoro ubicado en Xinjiang, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "xenoceratops",
+    "nombre": "Xenoceratops",
+    "nombre_lista": "Xenoceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara con cuernos extraña",
+    "clasificacion": "Marginocéfalo/Ceratopsidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Alberta, Canadá.",
+    "descripcion": "El Xenoceratops fue catalogado en el año 2012 y vivió hace 78 millones de años. Tenía grandes espinas en la parte superior de la gola. Es uno de los ceratópsidos más antiguos de Canadá.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "6 m",
+      "peso": "2000 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "xenoceratops.webp",
+      "ancho": 900,
+      "alto": 459
+    },
+    "miniatura": {
+      "archivo": "xenoceratops.webp",
+      "ancho": 900,
+      "alto": 459
+    },
+    "meta_descripcion": "Xenoceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "xenotarsosaurus",
+    "nombre": "Xenotarsosaurus",
+    "nombre_lista": "Xenotarsosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de tobillo extraño",
+    "clasificacion": "Terópodo/Abelisauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Chubut, Argentina.",
+    "descripcion": "El Xenotarsosaurus fue catalogado en el año 1986 y vivió hace 95 millones de años. Su nombre alude a la forma inusual de su tobillo. Se lo conoce solo por algunas vértebras y huesos de la pata trasera hallados en la formación Bajo Barreal, por lo que sus medidas son una estimación a partir de dinosaurios emparentados.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "5,5 m",
+      "peso": "700 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "xenotarsosaurus.webp",
+      "ancho": 500,
+      "alto": 318
+    },
+    "miniatura": {
+      "archivo": "xenotarsosaurus.webp",
+      "ancho": 500,
+      "alto": 318
+    },
+    "meta_descripcion": "Xenotarsosaurus: Dinosaurio carnívoro ubicado en Chubut, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "xiongguanlong",
+    "nombre": "Xiongguanlong",
+    "nombre_lista": "Xiongguanlong",
+    "dieta": "carnivoro",
+    "significado": "Dragón de Xiongguan",
+    "clasificacion": "Terópodo/Tyrannosauroidea",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Gansu, China.",
+    "descripcion": "El Xiongguanlong fue catalogado en el año 2010 y vivió hace 110 millones de años. Es un antepasado de los grandes tiranosaurios, con un hocico largo y estrecho.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "4,5 m",
+      "peso": "270 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "xiongguanlong.webp",
+      "ancho": 900,
+      "alto": 474
+    },
+    "miniatura": {
+      "archivo": "xiongguanlong.webp",
+      "ancho": 900,
+      "alto": 474
+    },
+    "meta_descripcion": "Xiongguanlong: Dinosaurio carnívoro ubicado en Gansu, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "xuanhanosaurus",
+    "nombre": "Xuanhanosaurus",
+    "nombre_lista": "Xuanhanosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de Xuanhan",
+    "clasificacion": "Terópodo/Megalosauroidea",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Sichuan, China.",
+    "descripcion": "El Xuanhanosaurus fue catalogado en el año 1984 y vivió hace 165 millones de años. Tenía brazos bastante fuertes para un terópodo. Se conoce solo por parte del esqueleto.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "6 m",
+      "peso": "250 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Jurásico medio",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "xuanhanosaurus.webp",
+      "ancho": 900,
+      "alto": 465
+    },
+    "miniatura": {
+      "archivo": "xuanhanosaurus.webp",
+      "ancho": 900,
+      "alto": 465
+    },
+    "meta_descripcion": "Xuanhanosaurus: Dinosaurio carnívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "yangchuanosaurus",
+    "nombre": "Yangchuanosaurus",
+    "nombre_lista": "Yangchuanosaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto de Yangchuan",
+    "clasificacion": "Terópodo/Metriacanthosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Sichuan, China.",
+    "descripcion": "El Yangchuanosaurus fue catalogado en el año 1978 y vivió hace 160 millones de años. Era el principal depredador de su ambiente, con un cráneo grande y crestas sobre el hocico.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "10 m",
+      "peso": "2500 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "yangchuanosaurus.webp",
+      "ancho": 900,
+      "alto": 473
+    },
+    "miniatura": {
+      "archivo": "yangchuanosaurus.webp",
+      "ancho": 900,
+      "alto": 473
+    },
+    "meta_descripcion": "Yangchuanosaurus: Dinosaurio carnívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "yinlong",
+    "nombre": "Yinlong",
+    "nombre_lista": "Yinlong",
+    "dieta": "herbivoro",
+    "significado": "Dragón escondido",
+    "clasificacion": "Marginocéfalo/Ceratopsia",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Xinjiang, China.",
+    "descripcion": "El Yinlong fue catalogado en el año 2006 y vivió hace 160 millones de años. Es uno de los ceratopsios más antiguos. Su nombre alude a la película «El tigre y el dragón», filmada cerca de donde fue hallado.",
+    "datos": {
+      "altura": "0,4 m",
+      "longitud": "1,2 m",
+      "peso": "15 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Jurásico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "yinlong.webp",
+      "ancho": 900,
+      "alto": 500
+    },
+    "miniatura": {
+      "archivo": "yinlong.webp",
+      "ancho": 900,
+      "alto": 500
+    },
+    "meta_descripcion": "Yinlong: Dinosaurio herbívoro ubicado en Xinjiang, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "yunnanosaurus",
+    "nombre": "Yunnanosaurus",
+    "nombre_lista": "Yunnanosaurus",
+    "dieta": "herbivoro",
+    "significado": "Lagarto de Yunnan",
+    "clasificacion": "Sauropodomorpha/Yunnanosauridae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Yunnan, China.",
+    "descripcion": "El Yunnanosaurus fue catalogado en el año 1942 y vivió hace 195 millones de años. Tenía dientes que se desgastaban solos como los de los saurópodos posteriores. Se hallaron más de veinte esqueletos.",
+    "datos": {
+      "altura": "2 m",
+      "longitud": "7 m",
+      "peso": "1000 kg",
+      "velocidad": "15 km/h",
+      "periodo": "Jurásico inferior",
+      "especimenes": "20"
+    },
+    "imagen": {
+      "archivo": "yunnanosaurus.webp",
+      "ancho": 900,
+      "alto": 406
+    },
+    "miniatura": {
+      "archivo": "yunnanosaurus.webp",
+      "ancho": 900,
+      "alto": 406
+    },
+    "meta_descripcion": "Yunnanosaurus: Dinosaurio herbívoro ubicado en Yunnan, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "yutyrannus",
+    "nombre": "Yutyrannus",
+    "nombre_lista": "Yutyrannus",
+    "dieta": "carnivoro",
+    "significado": "Tirano emplumado",
+    "clasificacion": "Terópodo/Proceratosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Liaoning, China.",
+    "descripcion": "El Yutyrannus fue catalogado en el año 2012 y vivió hace 125 millones de años. Es uno de los dinosaurios de mayor tamaño con plumas confirmadas por fósiles. Se hallaron tres ejemplares juntos, lo que sugiere que quizás vivía o cazaba en grupo.",
+    "datos": {
+      "altura": "3 m",
+      "longitud": "9 m",
+      "peso": "1400 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico inferior",
+      "especimenes": "3"
+    },
+    "imagen": {
+      "archivo": "yutyrannus.webp",
+      "ancho": 1280,
+      "alto": 700
+    },
+    "miniatura": {
+      "archivo": "yutyrannus.webp",
+      "ancho": 1280,
+      "alto": 700
+    },
+    "meta_descripcion": "Yutyrannus: Dinosaurio carnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "zalmoxes",
+    "nombre": "Zalmoxes",
+    "nombre_lista": "Zalmoxes",
+    "dieta": "herbivoro",
+    "significado": "Zalmoxis",
+    "clasificacion": "Ornithopoda/Rhabdodontidae",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Rumania.",
+    "descripcion": "El Zalmoxes fue catalogado en el año 2003 y vivió hace 70 millones de años. Su nombre alude a una divinidad de los dacios. Vivía en una isla, por lo que era más pequeño que sus parientes del continente.",
+    "datos": {
+      "altura": "0,8 m",
+      "longitud": "2,5 m",
+      "peso": "50 kg",
+      "velocidad": "30 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "zalmoxes.webp",
+      "ancho": 900,
+      "alto": 478
+    },
+    "miniatura": {
+      "archivo": "zalmoxes.webp",
+      "ancho": 900,
+      "alto": 478
+    },
+    "meta_descripcion": "Zalmoxes: Dinosaurio herbívoro ubicado en Rumania. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "zhuchengtyrannus",
+    "nombre": "Zhuchengtyrannus",
+    "nombre_lista": "Zhuchengtyrannus",
+    "dieta": "carnivoro",
+    "significado": "Tirano de Zhucheng",
+    "clasificacion": "Terópodo/Tyrannosauridae",
+    "ubicacion": "Dinosaurio carnívoro ubicado en Shandong, China.",
+    "descripcion": "El Zhuchengtyrannus fue catalogado en el año 2011 y vivió hace 73 millones de años. Era un gran tiranosáurido, de tamaño parecido al Tyrannosaurus Rex. Se conoce por partes del cráneo y la mandíbula.",
+    "datos": {
+      "altura": "4 m",
+      "longitud": "11 m",
+      "peso": "6000 kg",
+      "velocidad": "35 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "2"
+    },
+    "imagen": {
+      "archivo": "zhuchengtyrannus.webp",
+      "ancho": 900,
+      "alto": 457
+    },
+    "miniatura": {
+      "archivo": "zhuchengtyrannus.webp",
+      "ancho": 900,
+      "alto": 457
+    },
+    "meta_descripcion": "Zhuchengtyrannus: Dinosaurio carnívoro ubicado en Shandong, China. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "zuniceratops",
+    "nombre": "Zuniceratops",
+    "nombre_lista": "Zuniceratops",
+    "dieta": "herbivoro",
+    "significado": "Cara con cuernos de Zuni",
+    "clasificacion": "Marginocéfalo/Neoceratopsia",
+    "ubicacion": "Dinosaurio herbívoro ubicado en Nuevo México, Estados Unidos.",
+    "descripcion": "El Zuniceratops fue catalogado en el año 1998 y vivió hace 91 millones de años. Fue uno de los primeros ceratopsios con cuernos sobre los ojos. Sus primeros fósiles los encontró en 1996 un niño de ocho años, Christopher Wolfe, en Nuevo México.",
+    "datos": {
+      "altura": "1,2 m",
+      "longitud": "3,5 m",
+      "peso": "150 kg",
+      "velocidad": "25 km/h",
+      "periodo": "Cretácico superior",
+      "especimenes": "Varios"
+    },
+    "imagen": {
+      "archivo": "zuniceratops.webp",
+      "ancho": 474,
+      "alto": 355
+    },
+    "miniatura": {
+      "archivo": "zuniceratops.webp",
+      "ancho": 474,
+      "alto": 355
+    },
+    "meta_descripcion": "Zuniceratops: Dinosaurio herbívoro ubicado en Nuevo México, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período."
+  },
+  {
+    "id": "zupaysaurus",
+    "nombre": "Zupaysaurus",
+    "nombre_lista": "Zupaysaurus",
+    "dieta": "carnivoro",
+    "significado": "Lagarto diablo",
+    "clasificacion": "Terópodo/Coelophysoidea",
+    "ubicacion": "Dinosaurio carnívoro ubicado en La Rioja, Argentina.",
+    "descripcion": "El Zupaysaurus fue catalogado en el año 2003 y vivió hace 215 millones de años. Su nombre viene de «Zupay», el diablo en quechua. Es uno de los terópodos grandes más antiguos.",
+    "datos": {
+      "altura": "1,5 m",
+      "longitud": "5 m",
+      "peso": "250 kg",
+      "velocidad": "40 km/h",
+      "periodo": "Triásico tardío",
+      "especimenes": "1"
+    },
+    "imagen": {
+      "archivo": "zupaysaurus.webp",
+      "ancho": 900,
+      "alto": 497
+    },
+    "miniatura": {
+      "archivo": "zupaysaurus.webp",
+      "ancho": 900,
+      "alto": 497
+    },
+    "meta_descripcion": "Zupaysaurus: Dinosaurio carnívoro ubicado en La Rioja, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+  }
+]
