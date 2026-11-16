@@ -1,0 +1,88 @@
+/* ============================================================
+   perfil.css
+   Foto de perfil automática + menú de "Cerrar sesión".
+   Lo carga usuario.js solo cuando hay una sesión iniciada.
+
+   IMPORTANTE: nada de esto se engancha al elemento <nav>, porque
+   hay otros nav con otros usos (índice alfabético, selector de
+   período geológico). Todo cuelga de la clase .paginas (la barra
+   principal) o de clases propias (.perfil_*).
+   ============================================================ */
+
+/* La barra principal pasa a ser el "marco" donde se posiciona el perfil.
+   El padding derecho evita que los enlaces queden debajo del círculo. */
+.paginas.con_sesion
+{
+    position: relative;
+    padding-right: 70px;
+}
+
+/* Contenedor del círculo + menú: arriba a la derecha de la barra */
+.perfil_usuario
+{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+/* El círculo con la inicial (el color de fondo lo pone usuario.js) */
+.perfil_avatar
+{
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--acento);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover { filter: brightness(1.15); }
+    &:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
+    &[aria-expanded="true"] { box-shadow: 0 0 0 4px rgba(var(--acento-rgb), 0.35); }
+}
+
+/* Menú desplegable debajo del círculo */
+.perfil_menu
+{
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    min-width: 210px;
+    max-width: 260px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid var(--acento);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+
+    &[hidden] { display: none; }
+}
+
+.perfil_cerrar
+{
+    white-space: nowrap;
+}
+
+.perfil_nombre
+{
+    margin: 0;
+    color: var(--acento);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}

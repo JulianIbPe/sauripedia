@@ -1,0 +1,113 @@
+<!--
+<?php
+
+    session_start();
+
+    if(isset($_SESSION['usuario'])){
+        //hacer alguna funcion con esto y cambiar el index a .php
+    }
+?>
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sauripedia | La enciclopedia de dinosaurios en español</title>
+        <meta name="description" content="Sauripedia es una enciclopedia de dinosaurios en español: especies, hábitats, dietas, mundo prehistórico y un quiz interactivo para poner a prueba lo que sabes.">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Sauripedia">
+        <!-- Reemplazar https://www.sauripedia.com/ por el dominio real cuando se publique -->
+        <link rel="canonical" href="https://www.sauripedia.com/">
+        <link rel="icon" href="/favicon.ico" sizes="48x48">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="theme-color" content="#120706">
+
+        <!-- Open Graph / redes sociales -->
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="es_AR">
+        <meta property="og:site_name" content="Sauripedia">
+        <meta property="og:title" content="Sauripedia | La enciclopedia de dinosaurios en español">
+        <meta property="og:description" content="Descubre dinosaurios, el mundo prehistórico y pon a prueba tus conocimientos con nuestro quiz interactivo.">
+        <meta property="og:url" content="https://www.sauripedia.com/">
+        <meta property="og:image" content="https://www.sauripedia.com/imagenes/fondo_jurassico_renderizado.webp">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/tema_volcan.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+        <script src="javascript/transiciones.js"></script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Sauripedia",
+            "url": "https://www.sauripedia.com/",
+            "inLanguage": "es",
+            "description": "Enciclopedia de dinosaurios en español con información didáctica e interactiva."
+        }
+        </script>
+    </head>
+    <body class="fondo_jurassico">
+        <header>
+            <nav class="paginas" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html" class="opcion_seleccionada" aria-current="page">Inicio</a></li>
+                    <li><a href="pages/dinosaurioslista.html">Dinosaurios</a></li>
+                    <li><a href="pages/mundo.html">Mundo prehistórico</a></li>
+                    <li><a href="pages/quiz.html">Quiz</a></li>
+                    <li><a href="pages/comentarios.html">Comentarios</a></li>
+                    <li class="botones_sesion_nav">
+                        <button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button>
+                        <button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main_content">
+                <h1>La Sauripedia: enciclopedia de dinosaurios</h1>
+                <section class="informacion_base">
+                    <p>La Sauripedia es la mayor enciclopedia de dinosaurios jamás creada. Aquí está recopilada información recolectada a lo largo de muchos años, organizada y puesta a disposición de manera didáctica e interactiva. Esto con el fin de expandir el conocimiento sobre estos interesantes reptiles prehistóricos.</p>
+                </section>
+            </div>
+            <section class="contenedor_apartados" aria-label="Secciones del sitio">
+                <article class="apartados">
+                    <h2><a href="pages/dinosaurioslista.html">Dinosaurios</a></h2>
+                    <p>Descubre el fascinante mundo de los dinosaurios y sus diferentes especies. Aprende sobre sus hábitats, dietas y comportamientos.</p>
+                </article>
+                <article class="apartados">
+                    <h2><a href="pages/mundo.html">Mundo prehistórico</a></h2>
+                    <p>Descubre el fascinante mundo prehistórico y las ubicaciones de los dinosaurios. Explora los diferentes períodos geológicos.</p>
+                </article>
+                <article class="apartados">
+                    <h2><a href="pages/quiz.html">Quiz</a></h2>
+                    <p>¿Cuánto sabes sobre los dinosaurios? Pon a prueba tus conocimientos con nuestro quiz interactivo. Responde preguntas sobre diferentes especies, períodos geológicos y curiosidades del mundo prehistórico. ¡Diviértete aprendiendo mientras desafías tu memoria sauriana!</p>
+                </article>
+                <article class="apartados">
+                    <h2><a href="pages/comentarios.html">Comentarios</a></h2>
+                    <p>Deja un comentario sobre el sitio o sus contenidos. Ayúdanos a mejorar nuestro proyecto.</p>
+                </article>
+            </section>
+        </main>
+        <footer class="pie_pagina">
+            <div class="informacion_left">
+                <p>© 2026 Sauripedia.<br> Todos los derechos <br>reservados.</p>
+            </div>
+            <address class="informacion_center">
+                <h2 class="titulo_footer">Contacto</h2>
+                <p><a href="mailto:ibeasjulian08@gmail.com" class="redes">ibeasjulian08@gmail.com</a><br><a href="mailto:matiezeflorio6@gmail.com" class="redes">matiezeflorio6@gmail.com</a><br><a href="mailto:juan.i.colombo08@gmail.com" class="redes">juan.i.colombo08@gmail.com</a></p>
+            </address>
+            <div class="informacion_right">
+                <h2 class="titulo_footer">Redes Sociales</h2>
+                <p><a href="https://www.facebook.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Facebook</a><br><a href="https://www.twitter.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Twitter</a><br><a href="https://www.instagram.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+            </div>
+        </footer>
+        <script src="javascript/usuario.js"></script>
+    </body>
+</html>

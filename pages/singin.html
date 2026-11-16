@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse | Sauripedia</title>
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/tema_volcan.css">
+        <link rel="stylesheet" href="../css/navegacion.css">
+        <script src="../javascript/transiciones.js"></script>
+    </head>
+    <body class="fondo_jurassico">
+        <header>
+            <nav class="paginas" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/dinosaurioslista.html">Dinosaurios</a></li>
+                    <li><a href="../pages/mundo.html">Mundo prehistórico</a></li>
+                    <li><a href="../pages/quiz.html">Quiz</a></li>
+                    <li><a href="../pages/comentarios.html">Comentarios</a></li>
+                    <li class="botones_sesion_nav">
+                        <button type="button" class="boton_sesion" data-accion="login">Iniciar sesión</button>
+                        <button type="button" class="boton_sesion boton_sesion_destacado" data-accion="singin">Registrarse</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <br></br><br></br>
+                <section class="contenedor_apartados">
+                    <form method="POST" action="../php/registro_usuario_be.php" accept-charset="UTF-8">
+                        <table class="sec_ingreso">
+                            <tr><td colspan="2"><h1>Registrarse</h1></td></tr>
+                            <tr><td><label>Nombre de usuario</label></td></tr>
+                            <tr><td><input type="text" placeholder="Ingrese su nombre de usuario" name="usuario" required minlength="3" maxlength="50" autocomplete="username" /></td></tr>
+                            <tr><td><label>Correo electronico</label></td></tr>
+                            <tr><td><input type="email" placeholder="Ingrese su correo electrónico" name="correo" required maxlength="50" autocomplete="email" /></td></tr>
+                            <tr><td><label>Contraseña</label></td></tr>
+                            <tr><td><input type="password" placeholder="Ingrese su contraseña (mínimo 8 caracteres)" name="password" required minlength="8" maxlength="72" autocomplete="new-password" /></td></tr>
+                            <tr><td><input type="submit" value="Ingresar" /></td></tr>
+                        </table>
+                    </form>
+                </section>
+        </main>
+        <footer class="pie_pagina">
+            <div class="informacion_left">
+                <p>© 2026 Sauripedia.<br> Todos los derechos <br>reservados.</p>
+            </div>
+            <address class="informacion_center">
+                <h2 class="titulo_footer">Contacto</h2>
+                <p><a href="mailto:ibeasjulian08@gmail.com" class="redes">ibeasjulian08@gmail.com</a><br><a href="mailto:matiezeflorio6@gmail.com" class="redes">matiezeflorio6@gmail.com</a><br><a href="mailto:juan.i.colombo08@gmail.com" class="redes">juan.i.colombo08@gmail.com</a></p>
+            </address>
+                <div class="informacion_right">
+                    <h2 class="titulo_footer">Redes Sociales</h2>
+                    <p><a href="https://www.facebook.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Facebook</a><br><a href="https://www.twitter.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Twitter</a><br><a href="https://www.instagram.com/sauripedia" class="redes" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+                </div>
+            </footer>
+        <script src="../javascript/usuario.js"></script>
+    </body>
+</html>

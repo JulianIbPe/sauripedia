@@ -1,0 +1,63 @@
+/* ============================================================
+   tema_volcan.css  -  Tema "Volcán del Triásico"
+   Todos los colores del sitio salen de estas variables.
+   Para cambiar de paleta, solo se editan los valores de :root.
+   ============================================================ */
+:root
+{
+    --acento: #ff6a3d;                /* títulos, bordes, botones, enlaces */
+    --acento-rgb: 255, 106, 61;       /* el mismo color, para usar con transparencia */
+    --acento-suave: #d9532b;          /* apartado seleccionado del nav */
+    --texto: #ffe9e0;                 /* texto de párrafos */
+    --panel: rgba(38, 12, 8, 0.88);   /* fondo de los paneles */
+    --panel-hover: rgba(80, 26, 14, 0.92);
+    --fondo-base: #120706;
+    --correcto: #5ee08a;              /* respuesta correcta del quiz (se mantiene verde) */
+}
+
+body
+{
+    color: var(--texto);
+}
+
+/* Foto de fondo teñida de rojo volcánico y oscurecida */
+body::before
+{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(rgba(18, 5, 3, 0.55), rgba(18, 5, 3, 0.55)),
+        rgb(190, 70, 30);
+    mix-blend-mode: multiply;
+}
+
+/* Párrafos en color claro; títulos, etiquetas y enlaces en el acento */
+:is(.apartados, .main_content, .informacion_base, .introduccion_mundo, .introduccion_quiz,
+    #sec_comentarios, .comentario_item, .sec_ingreso, #quiz-juego, #quiz-resultado, .texto_quiz)
+{
+    color: var(--texto);
+}
+
+:is(.apartados, .main_content, .introduccion_mundo, .introduccion_quiz,
+    #sec_comentarios, .comentario_item, .sec_ingreso, #quiz-juego, #quiz-resultado)
+    :is(h1, h2, h3, label, a, strong)
+{
+    color: var(--acento);
+}
+
+/* Campos de formulario */
+:is(.sec_ingreso input, #sec_comentarios textarea)
+{
+    color: var(--texto);
+}
+:is(.sec_ingreso input, #sec_comentarios textarea)::placeholder
+{
+    color: var(--texto);
+    opacity: 0.6;
+}
+
+/* Carnívoros: rojo sangre para distinguirlos del acento */
+.separador_carnivoro h1 { color: #ff3b3b; }
