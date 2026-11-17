@@ -49,6 +49,19 @@ main
     padding: 40px 20px 60px;
 }
 
+/* Páginas cortas (todas menos Dinosaurios): reparten el contenido en
+   toda la altura de la pantalla para que el footer quede más abajo */
+main:not([data-seccion="dinosaurios"])
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
 img
 {
     max-width: 100%;

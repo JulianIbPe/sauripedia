@@ -137,4 +137,4 @@ function color_perfil(string $nombre): string
                 </div>
             </nav>
         </header>
-        <main id="contenido">
+        <main id="contenido" data-seccion="<?= e($pagina['seccion']) ?>">
