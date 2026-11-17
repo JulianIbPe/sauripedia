@@ -113,7 +113,7 @@
 
 .separacion_alfabetica
 {
-    margin-bottom: 16px;
+    margin: 0 calc(50% - 50vw) 16px; /* ocupa todo el ancho de la pantalla */
     padding: 6px 0;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.75);
