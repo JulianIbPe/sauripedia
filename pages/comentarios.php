@@ -43,7 +43,15 @@ require __DIR__ . '/../includes/cabecera.php';
             <section class="lista_comentarios" aria-labelledby="titulo_lista_comentarios">
                 <h2 id="titulo_lista_comentarios" class="solo_lectores">Comentarios publicados</h2>
                 <div id="lista_comentarios" aria-live="polite">
-                    <p class="panel comentario_item">Cargando comentarios...</p>
+                    <!-- Skeleton mientras llegan los comentarios (comentarios.js lo reemplaza) -->
+                    <p class="solo_lectores">Cargando comentarios...</p>
+<?php for ($i = 0; $i < 3; $i++): ?>
+                    <div class="panel comentario_item" aria-hidden="true">
+                        <span class="esqueleto esqueleto_linea corta"></span>
+                        <span class="esqueleto esqueleto_linea"></span>
+                        <span class="esqueleto esqueleto_linea media"></span>
+                    </div>
+<?php endfor; ?>
                 </div>
             </section>
 <?php require __DIR__ . '/../includes/pie.php'; ?>

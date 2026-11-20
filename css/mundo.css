@@ -2,10 +2,16 @@
    mundo.css  -  Mundo prehistórico (mapas por período)
    ============================================================ */
 
+/* Más aire entre los bloques de la página (base.css usa 40px) */
+main[data-seccion="mundo"]
+{
+    gap: 120px;
+}
+
 .introduccion_mundo
 {
     max-width: 1000px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     font-size: 19px;
 }
 
@@ -67,12 +73,86 @@
     animation: aparecer_mapa 0.5s var(--vt-curva) both;
 }
 
-.mapa_ayuda
-{
-    color: var(--texto-suave);
-}
-
 @keyframes aparecer_mapa
 {
     from { opacity: 0; transform: scale(0.97); }
+}
+
+/* ===== Mapa de hallazgos (Leaflet; lo maneja hallazgos.js) ===== */
+.mapa_hallazgos
+{
+    text-align: center;
+}
+
+.mh_ayuda
+{
+    color: var(--texto-suave);
+    margin: 8px 0;
+}
+
+.mh_leyenda
+{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 12px;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.mh_color
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border-radius: 50%;
+    vertical-align: -1px;
+}
+
+.mh_color.dieta_carnivoro { background: var(--carnivoro); }
+.mh_color.dieta_herbivoro { background: var(--herbivoro); }
+.mh_color.dieta_omnivoro  { background: var(--omnivoro); }
+
+.mh_marco
+{
+    border-radius: 22px;
+    background-color: var(--panel); /* fondo oscuro debajo del brillo del skeleton */
+}
+
+.mh_mapa
+{
+    height: 460px;
+    border: 1px solid var(--acento);
+    border-radius: 22px;
+}
+
+/* Fondo transparente (Leaflet pone gris) para que se vea el skeleton de .mh_marco */
+.mh_mapa.leaflet-container
+{
+    background: transparent;
+}
+
+.mh_popup
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    color: #04140a;
+    text-decoration: none;
+}
+
+.mh_popup img
+{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.mh_popup span
+{
+    font-size: 12px;
+    color: #44573f;
 }

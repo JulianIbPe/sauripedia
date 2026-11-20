@@ -96,6 +96,7 @@
 /* ---------- Lista de comentarios ---------- */
 .lista_comentarios
 {
+    width: 100%; /* sin esto se achica al contenido y el skeleton (sin texto) queda angosto */
     max-width: 640px;
     margin: 30px auto 0;
 }
@@ -110,6 +111,7 @@
 {
     padding: 14px 18px;
 }
+
 
 /* Comentarios nuevos aparecen suavemente (comentarios.js) */
 .comentario_item.nuevo

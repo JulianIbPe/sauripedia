@@ -300,3 +300,10 @@
     .boton_nivel { width: 100%; }
     .niveles_quiz li { width: 100%; max-width: 320px; }
 }
+
+/* Skeleton: las opciones falsas se parecen a los botones de respuesta */
+.quiz-opcion-falsa
+{
+    height: 48px;
+    border-radius: 14px;
+}

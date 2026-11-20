@@ -123,10 +123,17 @@
 
 .lista_dinosaurios
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* flex + center: las filas incompletas (letras con pocas especies) quedan centradas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
     list-style: none;
+}
+
+.lista_dinosaurios .tarjeta
+{
+    width: 230px;
 }
 
 /* Tarjeta: todo el cuadro es un enlace */
@@ -329,6 +336,7 @@
 
     #lista_alfabetica ul { grid-auto-flow: column; }
     .boton_abc { font-size: 15px; padding: 4px 0; }
-    .lista_dinosaurios { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .lista_dinosaurios { gap: 12px; }
+    .lista_dinosaurios .tarjeta { width: 160px; }
     .texto_lista { font-size: 17px; }
 }

@@ -45,6 +45,7 @@
         </footer>
 
         <button type="button" id="boton_arriba" aria-label="Volver arriba" hidden>&uarr;</button>
+        <script src="<?= url_version('javascript/esqueleto.js') ?>" defer></script>
         <script src="<?= url_version('javascript/arriba.js') ?>" defer></script>
 
         <script src="<?= url_version('javascript/usuario.js') ?>" defer></script>

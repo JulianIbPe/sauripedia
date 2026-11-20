@@ -35,7 +35,15 @@ require __DIR__ . '/../includes/cabecera.php';
 
                 <!-- Pantalla de preguntas (la llena quiz.js) -->
                 <div id="quiz-juego" class="panel" aria-live="polite">
-                    <p class="quiz-cargando">Cargando preguntas...</p>
+                    <!-- Skeleton mientras se descargan las preguntas (quiz.js lo oculta) -->
+                    <div class="quiz-cargando">
+                        <span class="solo_lectores">Cargando preguntas...</span>
+                        <span class="esqueleto esqueleto_linea corta" aria-hidden="true"></span>
+                        <span class="esqueleto esqueleto_linea media" aria-hidden="true"></span>
+<?php for ($i = 0; $i < 4; $i++): ?>
+                        <span class="esqueleto esqueleto_linea quiz-opcion-falsa" aria-hidden="true"></span>
+<?php endfor; ?>
+                    </div>
                     <div class="quiz-info">
                         <span id="contador"></span>
                         <span id="puntaje"></span>

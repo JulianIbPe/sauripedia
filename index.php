@@ -119,36 +119,4 @@ require __DIR__ . '/includes/cabecera.php';
                 </div>
                 <p class="comp_datos" id="comp_datos" aria-live="polite"></p>
             </section>
-
-<?php
-// Puntos del mapa: un punto por cada lugar donde se halló cada especie
-$puntos = [];
-foreach (dinosaurios() as $dino) {
-    foreach ($dino['hallazgos'] ?? [] as $h) {
-        $puntos[] = [
-            'nombre' => $dino['nombre'],
-            'dieta'  => $dino['dieta'],
-            'imagen' => url('imagenes/' . $dino['miniatura']['archivo']),
-            'ficha'  => url(ruta_dinosaurio($dino['id'])),
-            'lugar'  => $h['lugar'],
-            'lat'    => $h['lat'],
-            'lng'    => $h['lng'],
-        ];
-    }
-}
-?>
-            <section class="mapa_hallazgos" aria-labelledby="titulo_hallazgos">
-                <h2 id="titulo_hallazgos">Mapa de hallazgos</h2>
-                <p class="mh_ayuda">Dónde se encontraron los fósiles de cada especie (ubicación aproximada). Toca un punto para ver el dinosaurio.</p>
-                <ul class="mh_leyenda">
-<?php foreach (DIETAS as $clave => $nombre): ?>
-                    <li><span class="mh_color dieta_<?= $clave ?>"></span><?= e($nombre) ?></li>
-<?php endforeach; ?>
-                </ul>
-                <div id="mh_mapa" class="mh_mapa" role="region" aria-label="Mapa del mundo con los hallazgos de fósiles"></div>
-                <script type="application/json" id="mh_datos"><?= json_encode($puntos, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) ?></script>
-                <!-- Leaflet: librería del mapa (versión fija + integridad comprobada) -->
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
-            </section>
 <?php require __DIR__ . '/includes/pie.php'; ?>

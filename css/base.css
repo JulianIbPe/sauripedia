@@ -572,3 +572,39 @@ address.pie_columna
 {
     display: none;
 }
+
+/* ===== Skeleton de carga =====
+   Bloques grises con un brillo que se desliza mientras algo no terminó de cargar.
+   .esqueleto      -> cualquier bloque (comentarios, quiz, mapa)
+   img.cargando    -> imágenes que todavía se están descargando (la pone esqueleto.js) */
+.esqueleto,
+img.cargando
+{
+    background-color: rgba(var(--acento-rgb), 0.07);
+    background-image: linear-gradient(90deg, transparent 25%, rgba(var(--acento-rgb), 0.14) 50%, transparent 75%);
+    background-size: 200% 100%;
+    animation: esqueleto_brillo 1.4s ease-in-out infinite;
+}
+
+img.cargando
+{
+    border-radius: 12px;
+}
+
+/* Líneas de texto falsas dentro de un skeleton */
+.esqueleto_linea
+{
+    display: block;
+    height: 14px;
+    margin: 10px 0;
+    border-radius: 999px;
+}
+
+.esqueleto_linea.corta { width: 40%; }
+.esqueleto_linea.media { width: 70%; }
+
+@keyframes esqueleto_brillo
+{
+    from { background-position: 150% 0; }
+    to   { background-position: -50% 0; }
+}
