@@ -3,7 +3,7 @@
 // pie.php
 // Cierra el <main> que abre cabecera.php, dibuja el pie de página
 // (con el mapa del sitio) y carga los scripts.
-// El mapa del sitio se arma desde SECCIONES y NIVELES_QUIZ: si se agrega
+// El mapa del sitio se arma desde SECCIONES: si se agrega
 // una sección, aparece sola en el menú, en el pie y en el sitemap.xml.
 // ============================================================
 ?>
@@ -18,16 +18,9 @@
             <nav class="pie_columna pie_mapa" aria-label="Mapa del sitio">
                 <h2 class="titulo_footer">Mapa del sitio</h2>
                 <ul>
-<?php foreach (SECCIONES as $clave => $seccion): ?>
+<?php foreach (SECCIONES as $seccion): ?>
                     <li>
                         <a href="<?= url($seccion['ruta']) ?>"><?= e($seccion['titulo']) ?></a>
-<?php if ($clave === 'quiz'): ?>
-                        <ul>
-<?php foreach (NIVELES_QUIZ as $nivel => $datos_nivel): ?>
-                            <li><a href="<?= url(ruta_quiz($nivel)) ?>">Nivel <?= e(mb_strtolower($datos_nivel['titulo'])) ?></a></li>
-<?php endforeach; ?>
-                        </ul>
-<?php endif; ?>
                     </li>
 <?php endforeach; ?>
                     <li><a href="<?= url('pages/login.php') ?>">Iniciar sesión</a></li>

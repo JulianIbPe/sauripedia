@@ -26,7 +26,14 @@
       "ancho": 595,
       "alto": 378
     },
-    "meta_descripcion": "Albertosaurus: Dinosaurio carnívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Albertosaurus: Dinosaurio carnívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Alberta, Canadá",
+        "lat": 51.46,
+        "lng": -112.71
+      }
+    ]
   },
   {
     "id": "alosaurio",
@@ -55,7 +62,34 @@
       "ancho": 612,
       "alto": 408
     },
-    "meta_descripcion": "Allosaurus: Dinosaurio carnívoro ubicado en Tanzania, China, Siberia rusa, Portugal y EE.UU. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Allosaurus: Dinosaurio carnívoro ubicado en Tanzania, China, Siberia rusa, Portugal y EE.UU. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Colorado, EE.UU.",
+        "lat": 39.3,
+        "lng": -108.5
+      },
+      {
+        "lugar": "Portugal",
+        "lat": 39.3,
+        "lng": -9.3
+      },
+      {
+        "lugar": "Tanzania",
+        "lat": -9.7,
+        "lng": 39.0
+      },
+      {
+        "lugar": "China",
+        "lat": 44.0,
+        "lng": 88.0
+      },
+      {
+        "lugar": "Siberia, Rusia",
+        "lat": 55.0,
+        "lng": 90.0
+      }
+    ]
   },
   {
     "id": "amargasaurus",
@@ -84,7 +118,14 @@
       "ancho": 330,
       "alto": 192
     },
-    "meta_descripcion": "Amargasaurus: Reptil de amarga Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Amargasaurus: Reptil de amarga Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Neuquén, Argentina",
+        "lat": -39.5,
+        "lng": -70.0
+      }
+    ]
   },
   {
     "id": "ankilosaurio",
@@ -113,7 +154,14 @@
       "ancho": 1000,
       "alto": 777
     },
-    "meta_descripcion": "Ankylosaurus: Dinosaurio herbívoro ubicado en Centro oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Ankylosaurus: Dinosaurio herbívoro ubicado en Centro oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 47.6,
+        "lng": -106.9
+      }
+    ]
   },
   {
     "id": "argentinosaurio",
@@ -142,7 +190,14 @@
       "ancho": 281,
       "alto": 179
     },
-    "meta_descripcion": "Argentinosaurus: Dinosaurio herbívoro ubicado en la Patagonia Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Argentinosaurus: Dinosaurio herbívoro ubicado en la Patagonia Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Neuquén, Argentina",
+        "lat": -38.93,
+        "lng": -69.2
+      }
+    ]
   },
   {
     "id": "bambiraptor",
@@ -171,7 +226,14 @@
       "ancho": 674,
       "alto": 325
     },
-    "meta_descripcion": "Bambiraptor: Dinosaurio carnívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Bambiraptor: Dinosaurio carnívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 48.5,
+        "lng": -112.8
+      }
+    ]
   },
   {
     "id": "baryonyx",
@@ -200,7 +262,29 @@
       "ancho": 1363,
       "alto": 748
     },
-    "meta_descripcion": "Baryonyx: Dinosaurio Piscívoro ubicado en España, Portugal, Inglaterra y Níger. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Baryonyx: Dinosaurio Piscívoro ubicado en España, Portugal, Inglaterra y Níger. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "España",
+        "lat": 40.3,
+        "lng": -1.0
+      },
+      {
+        "lugar": "Portugal",
+        "lat": 39.4,
+        "lng": -9.1
+      },
+      {
+        "lugar": "Inglaterra",
+        "lat": 51.15,
+        "lng": -0.4
+      },
+      {
+        "lugar": "Níger",
+        "lat": 17.5,
+        "lng": 8.5
+      }
+    ]
   },
   {
     "id": "brachiosaurio",
@@ -229,7 +313,24 @@
       "ancho": 612,
       "alto": 611
     },
-    "meta_descripcion": "Brachiosaurus: Dinosaurio herbívoro ubicado en Centro de EE.UU, África y Europa. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Brachiosaurus: Dinosaurio herbívoro ubicado en Centro de EE.UU, África y Europa. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Colorado, EE.UU.",
+        "lat": 39.1,
+        "lng": -108.6
+      },
+      {
+        "lugar": "Tanzania",
+        "lat": -9.6,
+        "lng": 39.2
+      },
+      {
+        "lugar": "Portugal",
+        "lat": 39.5,
+        "lng": -9.0
+      }
+    ]
   },
   {
     "id": "brontosaurus",
@@ -258,7 +359,19 @@
       "ancho": 471,
       "alto": 331
     },
-    "meta_descripcion": "Brontosaurus: Dinosaurio herbívoro ubicado en Wyoming y Colorado, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Brontosaurus: Dinosaurio herbívoro ubicado en Wyoming y Colorado, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Wyoming, EE.UU.",
+        "lat": 41.9,
+        "lng": -106.2
+      },
+      {
+        "lugar": "Colorado, EE.UU.",
+        "lat": 39.6,
+        "lng": -105.2
+      }
+    ]
   },
   {
     "id": "camarasaurus",
@@ -287,7 +400,14 @@
       "ancho": 700,
       "alto": 700
     },
-    "meta_descripcion": "Camarasaurus: Dinosaurio herbívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Camarasaurus: Dinosaurio herbívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 40.44,
+        "lng": -109.3
+      }
+    ]
   },
   {
     "id": "carcharodontosaurus",
@@ -316,7 +436,24 @@
       "ancho": 814,
       "alto": 308
     },
-    "meta_descripcion": "Carcharodontosaurus: Dinosaurio carnívoro ubicado en Marruecos, Argelia y Egipto. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Carcharodontosaurus: Dinosaurio carnívoro ubicado en Marruecos, Argelia y Egipto. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Marruecos",
+        "lat": 31.0,
+        "lng": -4.0
+      },
+      {
+        "lugar": "Argelia",
+        "lat": 28.0,
+        "lng": 2.0
+      },
+      {
+        "lugar": "Egipto",
+        "lat": 28.5,
+        "lng": 28.8
+      }
+    ]
   },
   {
     "id": "carnotauro",
@@ -345,7 +482,14 @@
       "ancho": 1152,
       "alto": 768
     },
-    "meta_descripcion": "Carnotaurus: Dinosaurio carnívoro ubicado en la Patagonia Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Carnotaurus: Dinosaurio carnívoro ubicado en la Patagonia Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Chubut, Argentina",
+        "lat": -43.5,
+        "lng": -69.5
+      }
+    ]
   },
   {
     "id": "ceratosaurus",
@@ -374,7 +518,24 @@
       "ancho": 1000,
       "alto": 1000
     },
-    "meta_descripcion": "Ceratosaurus: Reptil con cuernos Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Ceratosaurus: Reptil con cuernos Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 39.0,
+        "lng": -109.5
+      },
+      {
+        "lugar": "Tanzania",
+        "lat": -9.8,
+        "lng": 38.8
+      },
+      {
+        "lugar": "Portugal",
+        "lat": 39.2,
+        "lng": -9.2
+      }
+    ]
   },
   {
     "id": "coelophysis",
@@ -403,7 +564,19 @@
       "ancho": 577,
       "alto": 304
     },
-    "meta_descripcion": "Coelophysis: Dinosaurio carnívoro ubicado en Nuevo México y Arizona, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Coelophysis: Dinosaurio carnívoro ubicado en Nuevo México y Arizona, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Nuevo México, EE.UU.",
+        "lat": 36.33,
+        "lng": -106.47
+      },
+      {
+        "lugar": "Arizona, EE.UU.",
+        "lat": 34.9,
+        "lng": -109.8
+      }
+    ]
   },
   {
     "id": "compsognathus",
@@ -432,7 +605,14 @@
       "ancho": 352,
       "alto": 350
     },
-    "meta_descripcion": "Compsognathus: Dinosaurio carnívoro ubicado en el centro de Europa. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Compsognathus: Dinosaurio carnívoro ubicado en el centro de Europa. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Baviera, Alemania",
+        "lat": 48.9,
+        "lng": 11.0
+      }
+    ]
   },
   {
     "id": "deinonychus",
@@ -461,7 +641,14 @@
       "ancho": 845,
       "alto": 563
     },
-    "meta_descripcion": "Deinonychus: Dinosaurio carnívoro ubicado en el centro norte de EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Deinonychus: Dinosaurio carnívoro ubicado en el centro norte de EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 45.5,
+        "lng": -108.5
+      }
+    ]
   },
   {
     "id": "dilophosaurus",
@@ -490,7 +677,14 @@
       "ancho": 500,
       "alto": 437
     },
-    "meta_descripcion": "Dilophosaurus: Dinosaurio carnívoro ubicado en el centro oeste de EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Dilophosaurus: Dinosaurio carnívoro ubicado en el centro oeste de EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Arizona, EE.UU.",
+        "lat": 36.0,
+        "lng": -111.3
+      }
+    ]
   },
   {
     "id": "dimetrodon",
@@ -519,7 +713,19 @@
       "ancho": 660,
       "alto": 815
     },
-    "meta_descripcion": "Ficha de Dimetrodón. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Ficha de Dimetrodón. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Texas, EE.UU.",
+        "lat": 33.6,
+        "lng": -99.3
+      },
+      {
+        "lugar": "Alemania",
+        "lat": 50.9,
+        "lng": 10.7
+      }
+    ]
   },
   {
     "id": "diplodocus",
@@ -548,7 +754,14 @@
       "ancho": 600,
       "alto": 342
     },
-    "meta_descripcion": "Diplodocus: Dinosaurio herbívoro ubicado en el centro de EE.UU. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Diplodocus: Dinosaurio herbívoro ubicado en el centro de EE.UU. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Wyoming, EE.UU.",
+        "lat": 41.0,
+        "lng": -107.0
+      }
+    ]
   },
   {
     "id": "edmontosaurus",
@@ -577,7 +790,14 @@
       "ancho": 844,
       "alto": 282
     },
-    "meta_descripcion": "Edmontosaurus: Dinosaurio herbívoro ubicado en el Oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Edmontosaurus: Dinosaurio herbívoro ubicado en el Oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Dakota del Sur, EE.UU.",
+        "lat": 45.0,
+        "lng": -103.0
+      }
+    ]
   },
   {
     "id": "einiosaurus",
@@ -606,7 +826,14 @@
       "ancho": 590,
       "alto": 385
     },
-    "meta_descripcion": "Einiosaurus: Dinosaurio herbívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Einiosaurus: Dinosaurio herbívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 48.6,
+        "lng": -112.4
+      }
+    ]
   },
   {
     "id": "elasmosaurus",
@@ -635,7 +862,14 @@
       "ancho": 800,
       "alto": 427
     },
-    "meta_descripcion": "Elasmosaurus: Reptil marino ovoviviparo ubicado en los mares de europa Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Elasmosaurus: Reptil marino ovoviviparo ubicado en los mares de europa Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mares de Europa",
+        "lat": 50.0,
+        "lng": 5.0
+      }
+    ]
   },
   {
     "id": "eoraptor",
@@ -664,7 +898,14 @@
       "ancho": 436,
       "alto": 527
     },
-    "meta_descripcion": "Eoraptor: Dinosaurio omnívoro ubicado en San Juan, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Eoraptor: Dinosaurio omnívoro ubicado en San Juan, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "San Juan, Argentina",
+        "lat": -30.1,
+        "lng": -67.9
+      }
+    ]
   },
   {
     "id": "falcarius",
@@ -693,7 +934,14 @@
       "ancho": 758,
       "alto": 334
     },
-    "meta_descripcion": "Falcarius: Dinosaurio omnívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Falcarius: Dinosaurio omnívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 38.9,
+        "lng": -110.2
+      }
+    ]
   },
   {
     "id": "fruitadens",
@@ -722,7 +970,14 @@
       "ancho": 818,
       "alto": 274
     },
-    "meta_descripcion": "Fruitadens: Dinosaurio omnívoro ubicado en Colorado, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Fruitadens: Dinosaurio omnívoro ubicado en Colorado, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Colorado, EE.UU.",
+        "lat": 39.15,
+        "lng": -108.73
+      }
+    ]
   },
   {
     "id": "fukuiraptor",
@@ -751,7 +1006,14 @@
       "ancho": 568,
       "alto": 302
     },
-    "meta_descripcion": "Fukuiraptor: Dinosaurio carnívoro ubicado en Fukui, Japón. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Fukuiraptor: Dinosaurio carnívoro ubicado en Fukui, Japón. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Fukui, Japón",
+        "lat": 36.06,
+        "lng": 136.22
+      }
+    ]
   },
   {
     "id": "futalognkosaurus",
@@ -780,7 +1042,14 @@
       "ancho": 1125,
       "alto": 711
     },
-    "meta_descripcion": "Futalognkosaurus: Dinosaurio herbívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Futalognkosaurus: Dinosaurio herbívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Neuquén, Argentina",
+        "lat": -38.7,
+        "lng": -68.4
+      }
+    ]
   },
   {
     "id": "gallimimus",
@@ -809,7 +1078,14 @@
       "ancho": 384,
       "alto": 449
     },
-    "meta_descripcion": "Gallimimus: Dinosaurio omnívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Gallimimus: Dinosaurio omnívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 43.5,
+        "lng": 101.0
+      }
+    ]
   },
   {
     "id": "gastonia",
@@ -838,7 +1114,14 @@
       "ancho": 490,
       "alto": 228
     },
-    "meta_descripcion": "Gastonia: Dinosaurio herbívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Gastonia: Dinosaurio herbívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 38.8,
+        "lng": -109.8
+      }
+    ]
   },
   {
     "id": "giganotosaurus",
@@ -867,7 +1150,14 @@
       "ancho": 1000,
       "alto": 794
     },
-    "meta_descripcion": "Giganotosaurus: Reptil gigante del viento del sur Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Giganotosaurus: Reptil gigante del viento del sur Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Neuquén, Argentina",
+        "lat": -39.25,
+        "lng": -68.82
+      }
+    ]
   },
   {
     "id": "gigantoraptor",
@@ -896,7 +1186,14 @@
       "ancho": 1800,
       "alto": 1050
     },
-    "meta_descripcion": "Gigantoraptor: Dinosaurio omnívoro ubicado en Mongolia Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Gigantoraptor: Dinosaurio omnívoro ubicado en Mongolia Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 43.5,
+        "lng": 112.0
+      }
+    ]
   },
   {
     "id": "hadrosaurus",
@@ -925,7 +1222,14 @@
       "ancho": 791,
       "alto": 534
     },
-    "meta_descripcion": "Hadrosaurus: Dinosaurio herbívoro ubicado en Nueva Jersey, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Hadrosaurus: Dinosaurio herbívoro ubicado en Nueva Jersey, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Nueva Jersey, EE.UU.",
+        "lat": 39.9,
+        "lng": -75.03
+      }
+    ]
   },
   {
     "id": "herrerasaurus",
@@ -954,7 +1258,14 @@
       "ancho": 1000,
       "alto": 548
     },
-    "meta_descripcion": "Herrerasaurus: Dinosaurio carnívoro ubicado en Cuyo, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Herrerasaurus: Dinosaurio carnívoro ubicado en Cuyo, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "San Juan, Argentina",
+        "lat": -29.9,
+        "lng": -67.6
+      }
+    ]
   },
   {
     "id": "huayangosaurus",
@@ -983,7 +1294,14 @@
       "ancho": 382,
       "alto": 260
     },
-    "meta_descripcion": "Huayangosaurus: Dinosaurio herbívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Huayangosaurus: Dinosaurio herbívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Sichuan, China",
+        "lat": 29.35,
+        "lng": 104.78
+      }
+    ]
   },
   {
     "id": "hypsilophodon",
@@ -1012,7 +1330,14 @@
       "ancho": 523,
       "alto": 595
     },
-    "meta_descripcion": "Hypsilophodon: Dinosaurio herbívoro ubicado en la Isla de Wight, Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Hypsilophodon: Dinosaurio herbívoro ubicado en la Isla de Wight, Inglaterra. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Isla de Wight, Inglaterra",
+        "lat": 50.65,
+        "lng": -1.3
+      }
+    ]
   },
   {
     "id": "iguanodon",
@@ -1041,7 +1366,24 @@
       "ancho": 1489,
       "alto": 895
     },
-    "meta_descripcion": "Iguanodon: Dinosaurio herviboro ubicado en el centro de EE.UU., Europa y Asia Oriental Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Iguanodon: Dinosaurio herviboro ubicado en el centro de EE.UU., Europa y Asia Oriental Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Bélgica",
+        "lat": 50.47,
+        "lng": 3.64
+      },
+      {
+        "lugar": "Centro de EE.UU.",
+        "lat": 39.0,
+        "lng": -104.0
+      },
+      {
+        "lugar": "Asia oriental",
+        "lat": 42.0,
+        "lng": 120.0
+      }
+    ]
   },
   {
     "id": "incisivosaurus",
@@ -1070,7 +1412,14 @@
       "ancho": 400,
       "alto": 460
     },
-    "meta_descripcion": "Incisivosaurus: Dinosaurio omnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Incisivosaurus: Dinosaurio omnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Liaoning, China",
+        "lat": 41.6,
+        "lng": 120.8
+      }
+    ]
   },
   {
     "id": "irritator",
@@ -1099,7 +1448,14 @@
       "ancho": 764,
       "alto": 397
     },
-    "meta_descripcion": "Irritator: Dinosaurio carnívoro ubicado en Brasil. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Irritator: Dinosaurio carnívoro ubicado en Brasil. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Ceará, Brasil",
+        "lat": -7.2,
+        "lng": -39.7
+      }
+    ]
   },
   {
     "id": "isisaurus",
@@ -1128,7 +1484,14 @@
       "ancho": 768,
       "alto": 618
     },
-    "meta_descripcion": "Isisaurus: Dinosaurio herbívoro ubicado en India. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Isisaurus: Dinosaurio herbívoro ubicado en India. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "India",
+        "lat": 21.0,
+        "lng": 79.0
+      }
+    ]
   },
   {
     "id": "jinzhousaurus",
@@ -1157,7 +1520,14 @@
       "ancho": 734,
       "alto": 406
     },
-    "meta_descripcion": "Jinzhousaurus: Dinosaurio herbívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Jinzhousaurus: Dinosaurio herbívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Liaoning, China",
+        "lat": 41.1,
+        "lng": 121.1
+      }
+    ]
   },
   {
     "id": "jobaria",
@@ -1186,7 +1556,14 @@
       "ancho": 800,
       "alto": 566
     },
-    "meta_descripcion": "Jobaria: Dinosaurio herbívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Jobaria: Dinosaurio herbívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Níger",
+        "lat": 17.0,
+        "lng": 8.0
+      }
+    ]
   },
   {
     "id": "juratyrant",
@@ -1215,7 +1592,14 @@
       "ancho": 775,
       "alto": 358
     },
-    "meta_descripcion": "Juratyrant: Dinosaurio carnívoro ubicado en Dorset, Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Juratyrant: Dinosaurio carnívoro ubicado en Dorset, Inglaterra. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Dorset, Inglaterra",
+        "lat": 50.6,
+        "lng": -2.0
+      }
+    ]
   },
   {
     "id": "juravenator",
@@ -1244,7 +1628,14 @@
       "ancho": 534,
       "alto": 410
     },
-    "meta_descripcion": "Juravenator: Dinosaurio carnívoro ubicado en Baviera, Alemania. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Juravenator: Dinosaurio carnívoro ubicado en Baviera, Alemania. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Baviera, Alemania",
+        "lat": 48.9,
+        "lng": 11.3
+      }
+    ]
   },
   {
     "id": "kentrosaurus",
@@ -1273,7 +1664,14 @@
       "ancho": 480,
       "alto": 360
     },
-    "meta_descripcion": "Kentrosaurus: Dinosaurio herbívoro ubicado en Tanzania. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Kentrosaurus: Dinosaurio herbívoro ubicado en Tanzania. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Tanzania",
+        "lat": -9.7,
+        "lng": 39.1
+      }
+    ]
   },
   {
     "id": "kosmoceratops",
@@ -1302,7 +1700,14 @@
       "ancho": 617,
       "alto": 464
     },
-    "meta_descripcion": "Kosmoceratops: Dinosaurio herbívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Kosmoceratops: Dinosaurio herbívoro ubicado en Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 37.4,
+        "lng": -111.7
+      }
+    ]
   },
   {
     "id": "kritosaurus",
@@ -1331,7 +1736,14 @@
       "ancho": 860,
       "alto": 328
     },
-    "meta_descripcion": "Kritosaurus: Dinosaurio herbívoro ubicado en Nuevo México, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Kritosaurus: Dinosaurio herbívoro ubicado en Nuevo México, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Nuevo México, EE.UU.",
+        "lat": 36.5,
+        "lng": -108.0
+      }
+    ]
   },
   {
     "id": "kronosaurus",
@@ -1360,7 +1772,14 @@
       "ancho": 427,
       "alto": 295
     },
-    "meta_descripcion": "Kronosaurus: Reptil marino carnívoro ubicado en Australia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Kronosaurus: Reptil marino carnívoro ubicado en Australia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Queensland, Australia",
+        "lat": -20.7,
+        "lng": 140.5
+      }
+    ]
   },
   {
     "id": "lambeosaurus",
@@ -1389,7 +1808,14 @@
       "ancho": 594,
       "alto": 391
     },
-    "meta_descripcion": "Lambeosaurus: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Lambeosaurus: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Alberta, Canadá",
+        "lat": 50.76,
+        "lng": -111.5
+      }
+    ]
   },
   {
     "id": "leaellynasaura",
@@ -1418,7 +1844,14 @@
       "ancho": 352,
       "alto": 100
     },
-    "meta_descripcion": "Leaellynasaura: Dinosaurio herbívoro ubicado en Victoria, Australia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Leaellynasaura: Dinosaurio herbívoro ubicado en Victoria, Australia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Victoria, Australia",
+        "lat": -38.78,
+        "lng": 143.4
+      }
+    ]
   },
   {
     "id": "lesothosaurus",
@@ -1447,7 +1880,14 @@
       "ancho": 489,
       "alto": 227
     },
-    "meta_descripcion": "Lesothosaurus: Dinosaurio herbívoro ubicado en Lesoto. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Lesothosaurus: Dinosaurio herbívoro ubicado en Lesoto. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Lesoto",
+        "lat": -29.6,
+        "lng": 28.2
+      }
+    ]
   },
   {
     "id": "liopleurodon",
@@ -1476,7 +1916,34 @@
       "ancho": 900,
       "alto": 506
     },
-    "meta_descripcion": "Liopleurodon: Reptil marino carnívoro ubicado en Europa, Asia, Norteamérica y África Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Liopleurodon: Reptil marino carnívoro ubicado en Europa, Asia, Norteamérica y África Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Inglaterra",
+        "lat": 52.6,
+        "lng": -0.3
+      },
+      {
+        "lugar": "Francia",
+        "lat": 47.0,
+        "lng": 0.5
+      },
+      {
+        "lugar": "Rusia",
+        "lat": 55.0,
+        "lng": 45.0
+      },
+      {
+        "lugar": "Norteamérica",
+        "lat": 40.0,
+        "lng": -100.0
+      },
+      {
+        "lugar": "África",
+        "lat": 15.0,
+        "lng": 15.0
+      }
+    ]
   },
   {
     "id": "maiasaura",
@@ -1505,7 +1972,14 @@
       "ancho": 607,
       "alto": 325
     },
-    "meta_descripcion": "Maiasaura: Dinosaurio herbívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Maiasaura: Dinosaurio herbívoro ubicado en Montana, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 47.9,
+        "lng": -112.4
+      }
+    ]
   },
   {
     "id": "mapusaurus",
@@ -1534,7 +2008,14 @@
       "ancho": 578,
       "alto": 582
     },
-    "meta_descripcion": "Mapusaurus: Dinosaurio carnívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Mapusaurus: Dinosaurio carnívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Neuquén, Argentina",
+        "lat": -38.85,
+        "lng": -69.5
+      }
+    ]
   },
   {
     "id": "megalosaurus",
@@ -1563,7 +2044,14 @@
       "ancho": 1478,
       "alto": 754
     },
-    "meta_descripcion": "Megalosaurus: Dinosaurio carnívoro ubicado en Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Megalosaurus: Dinosaurio carnívoro ubicado en Inglaterra. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Oxfordshire, Inglaterra",
+        "lat": 51.8,
+        "lng": -1.3
+      }
+    ]
   },
   {
     "id": "microraptor",
@@ -1592,7 +2080,14 @@
       "ancho": 713,
       "alto": 716
     },
-    "meta_descripcion": "Microraptor: Dinosaurio carnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Microraptor: Dinosaurio carnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Liaoning, China",
+        "lat": 41.4,
+        "lng": 120.4
+      }
+    ]
   },
   {
     "id": "neovenator",
@@ -1621,7 +2116,14 @@
       "ancho": 487,
       "alto": 293
     },
-    "meta_descripcion": "Neovenator: Dinosaurio carnívoro ubicado en la Isla de Wight, Inglaterra. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Neovenator: Dinosaurio carnívoro ubicado en la Isla de Wight, Inglaterra. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Isla de Wight, Inglaterra",
+        "lat": 50.63,
+        "lng": -1.2
+      }
+    ]
   },
   {
     "id": "nigersaurus",
@@ -1650,7 +2152,14 @@
       "ancho": 220,
       "alto": 229
     },
-    "meta_descripcion": "Nigersaurus: Dinosaurio herbívoro hallado en Níger, África. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Nigersaurus: Dinosaurio herbívoro hallado en Níger, África. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Níger",
+        "lat": 16.5,
+        "lng": 9.0
+      }
+    ]
   },
   {
     "id": "nodosaurus",
@@ -1679,7 +2188,14 @@
       "ancho": 804,
       "alto": 268
     },
-    "meta_descripcion": "Nodosaurus: Dinosaurio herbívoro ubicado en Wyoming, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Nodosaurus: Dinosaurio herbívoro ubicado en Wyoming, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Wyoming, EE.UU.",
+        "lat": 43.0,
+        "lng": -107.5
+      }
+    ]
   },
   {
     "id": "nothronychus",
@@ -1708,7 +2224,19 @@
       "ancho": 754,
       "alto": 489
     },
-    "meta_descripcion": "Nothronychus: Dinosaurio herbívoro ubicado en Nuevo México y Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Nothronychus: Dinosaurio herbívoro ubicado en Nuevo México y Utah, EE.UU.. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Nuevo México, EE.UU.",
+        "lat": 34.4,
+        "lng": -108.5
+      },
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 37.5,
+        "lng": -111.5
+      }
+    ]
   },
   {
     "id": "olorotitan",
@@ -1737,7 +2265,14 @@
       "ancho": 582,
       "alto": 553
     },
-    "meta_descripcion": "Olorotitan: Dinosaurio herbívoro ubicado en Amur, Rusia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Olorotitan: Dinosaurio herbívoro ubicado en Amur, Rusia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Amur, Rusia",
+        "lat": 49.5,
+        "lng": 129.5
+      }
+    ]
   },
   {
     "id": "ornithomimus",
@@ -1766,7 +2301,14 @@
       "ancho": 1500,
       "alto": 900
     },
-    "meta_descripcion": "Ornithomimus: Dinosaurio omnívoro ubicado en Centro oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Ornithomimus: Dinosaurio omnívoro ubicado en Centro oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Oeste de Norteamérica",
+        "lat": 46.0,
+        "lng": -108.0
+      }
+    ]
   },
   {
     "id": "ouranosaurus",
@@ -1795,7 +2337,14 @@
       "ancho": 749,
       "alto": 835
     },
-    "meta_descripcion": "Ouranosaurus: Dinosaurio herbívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Ouranosaurus: Dinosaurio herbívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Níger",
+        "lat": 16.9,
+        "lng": 9.4
+      }
+    ]
   },
   {
     "id": "oviraptor",
@@ -1824,7 +2373,14 @@
       "ancho": 682,
       "alto": 531
     },
-    "meta_descripcion": "Oviraptor: Dinosaurio omnívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Oviraptor: Dinosaurio omnívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 44.0,
+        "lng": 103.7
+      }
+    ]
   },
   {
     "id": "pachycephalosaurus",
@@ -1853,7 +2409,14 @@
       "ancho": 2200,
       "alto": 2200
     },
-    "meta_descripcion": "Pachycephalosaurus: Reptil de cabeza gruesa Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Pachycephalosaurus: Reptil de cabeza gruesa Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 46.5,
+        "lng": -105.5
+      }
+    ]
   },
   {
     "id": "parasaurolophus",
@@ -1882,7 +2445,14 @@
       "ancho": 1280,
       "alto": 809
     },
-    "meta_descripcion": "Parasaurolophus: Dinosaurio herbívoro ubicado en el Centro de Norteamérica Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Parasaurolophus: Dinosaurio herbívoro ubicado en el Centro de Norteamérica Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Centro de Norteamérica",
+        "lat": 42.0,
+        "lng": -100.0
+      }
+    ]
   },
   {
     "id": "plateosaurus",
@@ -1911,7 +2481,29 @@
       "ancho": 1440,
       "alto": 962
     },
-    "meta_descripcion": "Plateosaurus: Dinosaurio herviboro ubicado en Groenlandia, Suiza, Francia y Alemania Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Plateosaurus: Dinosaurio herviboro ubicado en Groenlandia, Suiza, Francia y Alemania Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Groenlandia",
+        "lat": 71.5,
+        "lng": -23.0
+      },
+      {
+        "lugar": "Suiza",
+        "lat": 47.5,
+        "lng": 7.9
+      },
+      {
+        "lugar": "Francia",
+        "lat": 48.0,
+        "lng": 6.0
+      },
+      {
+        "lugar": "Alemania",
+        "lat": 48.1,
+        "lng": 8.6
+      }
+    ]
   },
   {
     "id": "protoceratops",
@@ -1940,7 +2532,14 @@
       "ancho": 648,
       "alto": 574
     },
-    "meta_descripcion": "Protoceratops: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Protoceratops: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 44.1,
+        "lng": 103.8
+      }
+    ]
   },
   {
     "id": "psittacosaurus",
@@ -1969,7 +2568,24 @@
       "ancho": 797,
       "alto": 471
     },
-    "meta_descripcion": "Psittacosaurus: Dinosaurio herbívoro ubicado en Mongolia, China y Rusia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Psittacosaurus: Dinosaurio herbívoro ubicado en Mongolia, China y Rusia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 45.0,
+        "lng": 106.0
+      },
+      {
+        "lugar": "Liaoning, China",
+        "lat": 41.5,
+        "lng": 121.0
+      },
+      {
+        "lugar": "Siberia, Rusia",
+        "lat": 55.0,
+        "lng": 88.0
+      }
+    ]
   },
   {
     "id": "pteranodon",
@@ -1998,7 +2614,14 @@
       "ancho": 540,
       "alto": 360
     },
-    "meta_descripcion": "Pteranodon: Reptil volador Piscívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Pteranodon: Reptil volador Piscívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Kansas, EE.UU.",
+        "lat": 39.0,
+        "lng": -100.5
+      }
+    ]
   },
   {
     "id": "qantassaurus",
@@ -2027,7 +2650,14 @@
       "ancho": 798,
       "alto": 463
     },
-    "meta_descripcion": "Qantassaurus: Dinosaurio herbívoro ubicado en Victoria, Australia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Qantassaurus: Dinosaurio herbívoro ubicado en Victoria, Australia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Victoria, Australia",
+        "lat": -38.6,
+        "lng": 145.6
+      }
+    ]
   },
   {
     "id": "qianzhousaurus",
@@ -2056,7 +2686,14 @@
       "ancho": 784,
       "alto": 326
     },
-    "meta_descripcion": "Qianzhousaurus: Dinosaurio carnívoro ubicado en Jiangxi, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Qianzhousaurus: Dinosaurio carnívoro ubicado en Jiangxi, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Jiangxi, China",
+        "lat": 25.8,
+        "lng": 114.9
+      }
+    ]
   },
   {
     "id": "quaesitosaurus",
@@ -2085,7 +2722,14 @@
       "ancho": 417,
       "alto": 180
     },
-    "meta_descripcion": "Quaesitosaurus: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Quaesitosaurus: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 44.5,
+        "lng": 100.0
+      }
+    ]
   },
   {
     "id": "quetzalcoatlus",
@@ -2114,7 +2758,14 @@
       "ancho": 2443,
       "alto": 1653
     },
-    "meta_descripcion": "Quetzalcoatlus: Pterosaurio carnívoro ubicado en Texas, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Quetzalcoatlus: Pterosaurio carnívoro ubicado en Texas, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Texas, EE.UU.",
+        "lat": 29.3,
+        "lng": -103.3
+      }
+    ]
   },
   {
     "id": "rajasaurus",
@@ -2143,7 +2794,14 @@
       "ancho": 302,
       "alto": 265
     },
-    "meta_descripcion": "Rajasaurus: Dinosaurio carnívoro ubicado en Gujarat, India. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Rajasaurus: Dinosaurio carnívoro ubicado en Gujarat, India. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Gujarat, India",
+        "lat": 23.0,
+        "lng": 73.2
+      }
+    ]
   },
   {
     "id": "rapetosaurus",
@@ -2172,7 +2830,14 @@
       "ancho": 472,
       "alto": 227
     },
-    "meta_descripcion": "Rapetosaurus: Dinosaurio herbívoro ubicado en Madagascar. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Rapetosaurus: Dinosaurio herbívoro ubicado en Madagascar. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Madagascar",
+        "lat": -16.0,
+        "lng": 46.6
+      }
+    ]
   },
   {
     "id": "riojasaurus",
@@ -2201,7 +2866,14 @@
       "ancho": 791,
       "alto": 540
     },
-    "meta_descripcion": "Riojasaurus: Dinosaurio herbívoro ubicado en La Rioja, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Riojasaurus: Dinosaurio herbívoro ubicado en La Rioja, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "La Rioja, Argentina",
+        "lat": -29.9,
+        "lng": -67.2
+      }
+    ]
   },
   {
     "id": "rugops",
@@ -2230,7 +2902,14 @@
       "ancho": 527,
       "alto": 538
     },
-    "meta_descripcion": "Rugops: Dinosaurio carnívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Rugops: Dinosaurio carnívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Níger",
+        "lat": 17.3,
+        "lng": 7.9
+      }
+    ]
   },
   {
     "id": "spinosaurus",
@@ -2259,7 +2938,19 @@
       "ancho": 400,
       "alto": 312
     },
-    "meta_descripcion": "Spinosaurus: Dinosaurio carnívoro ubicado en Egipto y Marruecos Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Spinosaurus: Dinosaurio carnívoro ubicado en Egipto y Marruecos Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Egipto",
+        "lat": 28.3,
+        "lng": 28.9
+      },
+      {
+        "lugar": "Marruecos",
+        "lat": 30.9,
+        "lng": -4.0
+      }
+    ]
   },
   {
     "id": "stegosaurus",
@@ -2288,7 +2979,14 @@
       "ancho": 870,
       "alto": 700
     },
-    "meta_descripcion": "Stegosaurus: Reptil con tejado Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Stegosaurus: Reptil con tejado Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Colorado, EE.UU.",
+        "lat": 40.0,
+        "lng": -107.0
+      }
+    ]
   },
   {
     "id": "styracosaurus",
@@ -2317,7 +3015,14 @@
       "ancho": 1350,
       "alto": 759
     },
-    "meta_descripcion": "Styracosaurus: Dinosaurio herbívoro ubicado en el Centro de Norteamérica Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Styracosaurus: Dinosaurio herbívoro ubicado en el Centro de Norteamérica Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Alberta, Canadá",
+        "lat": 50.8,
+        "lng": -111.4
+      }
+    ]
   },
   {
     "id": "suchomimus",
@@ -2346,7 +3051,14 @@
       "ancho": 511,
       "alto": 319
     },
-    "meta_descripcion": "Suchomimus: Dinosaurio carnívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Suchomimus: Dinosaurio carnívoro ubicado en Níger. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Níger",
+        "lat": 16.8,
+        "lng": 9.2
+      }
+    ]
   },
   {
     "id": "therizinosaurus",
@@ -2375,7 +3087,19 @@
       "ancho": 266,
       "alto": 189
     },
-    "meta_descripcion": "Therizinosaurus: Dinosaurio herviboro ubicado en Mongolia y norte de China Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Therizinosaurus: Dinosaurio herviboro ubicado en Mongolia y norte de China Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 43.4,
+        "lng": 100.5
+      },
+      {
+        "lugar": "Norte de China",
+        "lat": 42.5,
+        "lng": 112.0
+      }
+    ]
   },
   {
     "id": "triceratops",
@@ -2404,7 +3128,14 @@
       "ancho": 768,
       "alto": 768
     },
-    "meta_descripcion": "Triceratops: Dinosaurio herbívoro ubicado en el Oeste de América del Norte Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Triceratops: Dinosaurio herbívoro ubicado en el Oeste de América del Norte Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Dakota del Sur, EE.UU.",
+        "lat": 45.5,
+        "lng": -102.5
+      }
+    ]
   },
   {
     "id": "tylosaurus",
@@ -2433,7 +3164,14 @@
       "ancho": 601,
       "alto": 460
     },
-    "meta_descripcion": "Tylosaurus: Reptil marino carnívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Tylosaurus: Reptil marino carnívoro ubicado en Norteamérica. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Kansas, EE.UU.",
+        "lat": 38.9,
+        "lng": -100.9
+      }
+    ]
   },
   {
     "id": "tyrannosaurus",
@@ -2462,7 +3200,14 @@
       "ancho": 384,
       "alto": 256
     },
-    "meta_descripcion": "Tyrannosaurus Rex: Dinosaurio carnívoro ubicado en el Oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Tyrannosaurus Rex: Dinosaurio carnívoro ubicado en el Oeste de América del Norte. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Montana, EE.UU.",
+        "lat": 47.6,
+        "lng": -106.9
+      }
+    ]
   },
   {
     "id": "udanoceratops",
@@ -2491,7 +3236,14 @@
       "ancho": 647,
       "alto": 260
     },
-    "meta_descripcion": "Udanoceratops: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Udanoceratops: Dinosaurio herbívoro ubicado en Mongolia. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 44.2,
+        "lng": 104.5
+      }
+    ]
   },
   {
     "id": "unaysaurus",
@@ -2520,7 +3272,14 @@
       "ancho": 835,
       "alto": 525
     },
-    "meta_descripcion": "Unaysaurus: Dinosaurio herbívoro ubicado en Rio Grande do Sul, Brasil. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Unaysaurus: Dinosaurio herbívoro ubicado en Rio Grande do Sul, Brasil. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Rio Grande do Sul, Brasil",
+        "lat": -29.7,
+        "lng": -53.8
+      }
+    ]
   },
   {
     "id": "unenlagia",
@@ -2549,7 +3308,14 @@
       "ancho": 495,
       "alto": 374
     },
-    "meta_descripcion": "Unenlagia: Dinosaurio carnívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Unenlagia: Dinosaurio carnívoro ubicado en Neuquén, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Neuquén, Argentina",
+        "lat": -38.6,
+        "lng": -68.9
+      }
+    ]
   },
   {
     "id": "utahraptor",
@@ -2578,7 +3344,14 @@
       "ancho": 1114,
       "alto": 638
     },
-    "meta_descripcion": "Utahraptor: Dinosaurio carnívoro ubicado en Utah, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Utahraptor: Dinosaurio carnívoro ubicado en Utah, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Utah, EE.UU.",
+        "lat": 38.9,
+        "lng": -109.6
+      }
+    ]
   },
   {
     "id": "vagaceratops",
@@ -2607,7 +3380,14 @@
       "ancho": 720,
       "alto": 561
     },
-    "meta_descripcion": "Vagaceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Vagaceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Alberta, Canadá",
+        "lat": 50.7,
+        "lng": -111.6
+      }
+    ]
   },
   {
     "id": "velafrons",
@@ -2636,7 +3416,14 @@
       "ancho": 711,
       "alto": 335
     },
-    "meta_descripcion": "Velafrons: Dinosaurio herbívoro ubicado en Coahuila, México. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Velafrons: Dinosaurio herbívoro ubicado en Coahuila, México. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Coahuila, México",
+        "lat": 25.6,
+        "lng": -101.3
+      }
+    ]
   },
   {
     "id": "velociraptor",
@@ -2665,7 +3452,19 @@
       "ancho": 918,
       "alto": 428
     },
-    "meta_descripcion": "Velociraptor: Dinosaurio carnívoro ubicado en Mongolia y China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Velociraptor: Dinosaurio carnívoro ubicado en Mongolia y China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Mongolia",
+        "lat": 44.1,
+        "lng": 103.6
+      },
+      {
+        "lugar": "Mongolia Interior, China",
+        "lat": 41.8,
+        "lng": 107.0
+      }
+    ]
   },
   {
     "id": "vulcanodon",
@@ -2694,7 +3493,14 @@
       "ancho": 607,
       "alto": 318
     },
-    "meta_descripcion": "Vulcanodon: Dinosaurio herbívoro ubicado en Zimbabue. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Vulcanodon: Dinosaurio herbívoro ubicado en Zimbabue. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Zimbabue",
+        "lat": -19.0,
+        "lng": 29.8
+      }
+    ]
   },
   {
     "id": "wannanosaurus",
@@ -2723,7 +3529,14 @@
       "ancho": 500,
       "alto": 364
     },
-    "meta_descripcion": "Wannanosaurus: Dinosaurio herbívoro ubicado en China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Wannanosaurus: Dinosaurio herbívoro ubicado en China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Anhui, China",
+        "lat": 30.0,
+        "lng": 118.0
+      }
+    ]
   },
   {
     "id": "wendiceratops",
@@ -2752,7 +3565,14 @@
       "ancho": 601,
       "alto": 377
     },
-    "meta_descripcion": "Wendiceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Wendiceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Alberta, Canadá",
+        "lat": 49.2,
+        "lng": -112.3
+      }
+    ]
   },
   {
     "id": "wiehenvenator",
@@ -2781,7 +3601,14 @@
       "ancho": 719,
       "alto": 399
     },
-    "meta_descripcion": "Wiehenvenator: Dinosaurio carnívoro ubicado en Baja Sajonia, Alemania. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Wiehenvenator: Dinosaurio carnívoro ubicado en Baja Sajonia, Alemania. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Baja Sajonia, Alemania",
+        "lat": 52.3,
+        "lng": 8.7
+      }
+    ]
   },
   {
     "id": "wuerhosaurus",
@@ -2810,7 +3637,14 @@
       "ancho": 660,
       "alto": 311
     },
-    "meta_descripcion": "Wuerhosaurus: Dinosaurio herbívoro ubicado en Xinjiang, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Wuerhosaurus: Dinosaurio herbívoro ubicado en Xinjiang, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Xinjiang, China",
+        "lat": 46.0,
+        "lng": 85.7
+      }
+    ]
   },
   {
     "id": "xenoceratops",
@@ -2839,7 +3673,14 @@
       "ancho": 683,
       "alto": 393
     },
-    "meta_descripcion": "Xenoceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Xenoceratops: Dinosaurio herbívoro ubicado en Alberta, Canadá. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Alberta, Canadá",
+        "lat": 49.1,
+        "lng": -111.0
+      }
+    ]
   },
   {
     "id": "xenotarsosaurus",
@@ -2868,7 +3709,14 @@
       "ancho": 500,
       "alto": 318
     },
-    "meta_descripcion": "Xenotarsosaurus: Dinosaurio carnívoro ubicado en Chubut, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Xenotarsosaurus: Dinosaurio carnívoro ubicado en Chubut, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Chubut, Argentina",
+        "lat": -45.8,
+        "lng": -68.8
+      }
+    ]
   },
   {
     "id": "xiongguanlong",
@@ -2897,7 +3745,14 @@
       "ancho": 812,
       "alto": 381
     },
-    "meta_descripcion": "Xiongguanlong: Dinosaurio carnívoro ubicado en Gansu, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Xiongguanlong: Dinosaurio carnívoro ubicado en Gansu, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Gansu, China",
+        "lat": 40.0,
+        "lng": 97.6
+      }
+    ]
   },
   {
     "id": "xuanhanosaurus",
@@ -2926,7 +3781,14 @@
       "ancho": 803,
       "alto": 294
     },
-    "meta_descripcion": "Xuanhanosaurus: Dinosaurio carnívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Xuanhanosaurus: Dinosaurio carnívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Sichuan, China",
+        "lat": 31.4,
+        "lng": 107.7
+      }
+    ]
   },
   {
     "id": "yangchuanosaurus",
@@ -2955,7 +3817,14 @@
       "ancho": 556,
       "alto": 488
     },
-    "meta_descripcion": "Yangchuanosaurus: Dinosaurio carnívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Yangchuanosaurus: Dinosaurio carnívoro ubicado en Sichuan, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Sichuan, China",
+        "lat": 29.36,
+        "lng": 105.93
+      }
+    ]
   },
   {
     "id": "yinlong",
@@ -2984,7 +3853,14 @@
       "ancho": 248,
       "alto": 130
     },
-    "meta_descripcion": "Yinlong: Dinosaurio herbívoro ubicado en Xinjiang, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Yinlong: Dinosaurio herbívoro ubicado en Xinjiang, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Xinjiang, China",
+        "lat": 44.5,
+        "lng": 89.0
+      }
+    ]
   },
   {
     "id": "yunnanosaurus",
@@ -3013,7 +3889,14 @@
       "ancho": 767,
       "alto": 440
     },
-    "meta_descripcion": "Yunnanosaurus: Dinosaurio herbívoro ubicado en Yunnan, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Yunnanosaurus: Dinosaurio herbívoro ubicado en Yunnan, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Yunnan, China",
+        "lat": 25.0,
+        "lng": 101.5
+      }
+    ]
   },
   {
     "id": "yutyrannus",
@@ -3042,7 +3925,14 @@
       "ancho": 1280,
       "alto": 700
     },
-    "meta_descripcion": "Yutyrannus: Dinosaurio carnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Yutyrannus: Dinosaurio carnívoro ubicado en Liaoning, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Liaoning, China",
+        "lat": 41.2,
+        "lng": 119.7
+      }
+    ]
   },
   {
     "id": "zalmoxes",
@@ -3071,7 +3961,14 @@
       "ancho": 734,
       "alto": 509
     },
-    "meta_descripcion": "Zalmoxes: Dinosaurio herbívoro ubicado en Rumania. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Zalmoxes: Dinosaurio herbívoro ubicado en Rumania. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Rumania",
+        "lat": 45.6,
+        "lng": 22.9
+      }
+    ]
   },
   {
     "id": "zhuchengtyrannus",
@@ -3100,7 +3997,14 @@
       "ancho": 485,
       "alto": 422
     },
-    "meta_descripcion": "Zhuchengtyrannus: Dinosaurio carnívoro ubicado en Shandong, China. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Zhuchengtyrannus: Dinosaurio carnívoro ubicado en Shandong, China. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Shandong, China",
+        "lat": 36.0,
+        "lng": 119.4
+      }
+    ]
   },
   {
     "id": "zuniceratops",
@@ -3129,7 +4033,14 @@
       "ancho": 474,
       "alto": 355
     },
-    "meta_descripcion": "Zuniceratops: Dinosaurio herbívoro ubicado en Nuevo México, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Zuniceratops: Dinosaurio herbívoro ubicado en Nuevo México, Estados Unidos. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "Nuevo México, EE.UU.",
+        "lat": 34.9,
+        "lng": -108.8
+      }
+    ]
   },
   {
     "id": "zupaysaurus",
@@ -3158,6 +4069,13 @@
       "ancho": 822,
       "alto": 362
     },
-    "meta_descripcion": "Zupaysaurus: Dinosaurio carnívoro ubicado en La Rioja, Argentina. Conoce su altura, longitud, peso, velocidad y período."
+    "meta_descripcion": "Zupaysaurus: Dinosaurio carnívoro ubicado en La Rioja, Argentina. Conoce su altura, longitud, peso, velocidad y período.",
+    "hallazgos": [
+      {
+        "lugar": "La Rioja, Argentina",
+        "lat": -29.4,
+        "lng": -67.5
+      }
+    ]
   }
 ]

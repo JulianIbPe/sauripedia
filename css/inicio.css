@@ -66,3 +66,243 @@
 {
     text-decoration: underline;
 }
+
+/* ===== Línea de tiempo (las tres eras; inicio.js va mostrando un dinosaurio a la vez) ===== */
+.linea_tiempo
+{
+    margin-top: 120px;
+}
+
+.linea_tiempo h2
+{
+    text-align: center;
+}
+
+.lt_pista
+{
+    position: relative;
+    height: 190px;
+    margin-top: 16px;
+}
+
+.lt_dino
+{
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--texto);
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition: left 0.9s var(--vt-curva, ease), opacity 0.5s ease;
+}
+
+.lt_dino.lt_oculto { opacity: 0; }
+
+.lt_dino img
+{
+    height: 110px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.lt_nombre
+{
+    color: var(--acento);
+    font-family: 'jurassic world', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.lt_fechas
+{
+    color: var(--texto-suave);
+    font-size: 13px;
+}
+
+.lt_eje
+{
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+    border-top: 3px solid var(--acento);
+}
+
+.lt_era
+{
+    position: relative;
+    padding: 10px 6px 0;
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+/* Marca vertical que atraviesa el eje donde cambia la era */
+.lt_era + .lt_era::before
+{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -16px;
+    width: 3px;
+    height: 30px;
+    border-radius: 2px;
+    background: var(--acento);
+}
+
+.lt_era strong
+{
+    display: block;
+    color: var(--texto);
+    font-family: 'jurassic world', Arial, sans-serif;
+    font-weight: normal;
+    font-size: clamp(14px, 2.4vw, 20px);
+    text-align: center;
+}
+
+.lt_fin
+{
+    position: absolute;
+    right: 4px;
+    bottom: 0;
+}
+
+/* Marca "desde - hasta" del dinosaurio actual, encima del eje */
+.lt_rango
+{
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    height: 15px;
+    border-radius: 999px;
+    background: var(--acento);
+    box-shadow: 0 0 12px rgba(var(--acento-rgb), 0.6);
+    transition: left 0.9s var(--vt-curva, ease), width 0.9s var(--vt-curva, ease);
+}
+
+/* ===== Comparador de tamaño (lo maneja inicio.js) ===== */
+.comparador
+{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.comp_elegir
+{
+    margin: 14px 0;
+}
+
+.comp_elegir select
+{
+    margin-left: 8px;
+    padding: 6px 10px;
+    font: inherit;
+    color: var(--texto);
+    background: var(--campo);
+    border: 1px solid var(--acento);
+    border-radius: 999px;
+}
+
+.comp_escena
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3%;
+    height: 280px;
+    border-bottom: 3px solid var(--acento); /* el "suelo" */
+}
+
+.comp_persona
+{
+    flex: none;
+    width: auto;
+    aspect-ratio: 50 / 175;
+    fill: var(--texto-suave);
+    transition: height 0.6s var(--vt-curva, ease);
+}
+
+.comp_dino img
+{
+    display: block;
+    max-width: none;
+    height: auto;
+    transition: width 0.6s var(--vt-curva, ease);
+}
+
+.comp_datos
+{
+    margin-top: 10px;
+    color: var(--texto-suave);
+}
+
+/* ===== Mapa de hallazgos (Leaflet; lo maneja inicio.js) ===== */
+.mapa_hallazgos
+{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.mh_ayuda
+{
+    color: var(--texto-suave);
+    margin: 8px 0;
+}
+
+.mh_leyenda
+{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 12px;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.mh_color
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border-radius: 50%;
+    vertical-align: -1px;
+}
+
+.mh_color.dieta_carnivoro { background: var(--carnivoro); }
+.mh_color.dieta_herbivoro { background: var(--herbivoro); }
+.mh_color.dieta_omnivoro  { background: var(--omnivoro); }
+
+.mh_mapa
+{
+    height: 460px;
+    border: 1px solid var(--acento);
+    border-radius: 22px;
+    background: var(--fondo-base);
+}
+
+.mh_popup
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    color: #04140a;
+    text-decoration: none;
+}
+
+.mh_popup img
+{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.mh_popup span
+{
+    font-size: 12px;
+    color: #44573f;
+}
